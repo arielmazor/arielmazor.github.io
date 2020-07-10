@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            background: #f2f2f2;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            right: 0;
+            top: 0;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .table {
+            margin-top: 5%;
+            background: white;
+            border-radius: 2px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            width: 800px;
+            border-bottom: #e0e0db solid 1px;
+            align-items: center;
+            padding-left: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+        }
+        
+        .row:hover{
+            background: #fcf8f8;
+        }
+
+        .input {
+            border-bottom: #e0e0db solid 0px;
+        }
+
+        .name {
+            font-size: 30px;
+            padding: 5px;
+            font-family: 'Anton', sans-serif;
+            color: black;
+        
+        }
+
+        .date {
+            padding: 5px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            justify-content: flex-start;
+        }
+        .img {
+            height: 80px;
+            width: 80px;
+        }
+
+        .title {
+            font-family: 'Anton', sans-serif;
+            font-size: 50px;
+            font-family: 'Luckiest Guy', cursive;
+        }
+
+        .text-wrapper {
+            flex-direction: column;
+            justify-content: flex-start;
+            display: flex;
+            padding: 15px 20px;
+            justify-content: center;
+        }
+    </style>
+
+<body>
+    <div class="container">
+        <div class="title">my projects</div>
+        <div class="table">
+            <a href="./friendsNum/friendsNum.HTML" class="row friendsNum">
+                <img class="img" src="https://www.pickpack.co.il/en/assets/frontend/onepage/img/task-done-outline.png">
+                <div class="text-wrapper">
+                    <div class="name">Friends Numbers </div>
+                    <div class="date">25/4/2020</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+<script src="https://ajatext-wrapper.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="table.js"></script>
+
+<head>
+
+</html>

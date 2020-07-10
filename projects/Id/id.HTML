@@ -1,0 +1,210 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Oxygen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Raleway:ital@1&display=swap"
+        rel="stylesheet">
+    <style>
+        /* -----------------------------------------------
+        modal        
+        ----------------------------------------------- */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.7);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.show {
+            display: flex;
+        }
+
+        .more-info .img {
+            position: absolute;
+            flex: 1;
+            height: 16px;
+            width: 25px;
+            left: 1214px;
+            bottom: 382px
+        }
+
+        .content {
+            background-color: #1db954;
+            padding: 80px;
+            width: 457px;
+            border: 1px solid #888;
+            align-items: center;
+            border-radius: 4px;
+        }
+
+        .info {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        .img-container {
+            justify-content: start;
+            position: absolute;
+            padding-right: 375px;
+        }
+
+        .adress-name-gender {
+            flex-direction: column;
+            padding-right: 21px;
+        }
+
+        .name {
+            font-size: 30px;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-family: 'Raleway', sans-serif;
+
+        }
+
+        .img {
+            border-radius: 100%;
+        }
+
+        .gender {
+            left: 790px;
+            position: absolute;
+            bottom: 377px;
+        }
+
+        .adress {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-family: 'Raleway', sans-serif;
+            font-size: 30px;
+            font-style: unset;
+        }
+
+        /* -----------------------------------------------
+        head        
+        ----------------------------------------------- */
+        .container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgb(255, 255, 255);
+        }
+
+        /* -----------------------------------------------
+        id        
+        ----------------------------------------------- */
+        .id-wrapper {
+            display: flex;
+        }
+
+        .row {
+            display: flex;
+            padding: 20px;
+        }
+
+        .img {
+            height: 160px;
+            width: 150;
+        }
+
+        .image {
+            height: 180px;
+            width: 170;
+        }
+
+        .deta-wrapper {
+            flex-direction: column;
+            padding-top: 42px;
+            padding-left: 12px;
+        }
+
+        .h1 {
+            font-size: 18;
+            text-transform: uppercase;
+            color: black;
+            font-family: 'Maven Pro', sans-serif;
+            font-weight: 20;
+        }
+
+        .id-wrapper.opacity {
+            opacity: 0;
+        }
+
+        .container.back {
+            background: hsla(0, 0%, 0%, 0.82);
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            opacity: 90px;
+        }
+
+        .remove-modal {
+            position: absolute;
+            left: 1219px;
+            height: 20px;
+            bottom: 551px;
+        }
+    </style>
+
+<body>
+    <div class="modal">
+
+        <div class="content">
+            <img onclick="closeModal()" class="remove-modal" src="x.png" alt="">
+            <div class="info-wrapper"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="id-wrapper">
+            <div>
+
+            </div>
+        </div>
+    </div>
+
+    <script type="text/html" id="contant-script">
+        <div class="info">
+            <div class="img-container">
+                <img class="img" src="<%= src %>" alt="">
+            </div>
+            <div class="adress-name-gender">
+                <div class="name"><%= fullName %></div>
+                <div class="name"><%= adrres %></div>
+               <% if(gender === 'male') { %>
+                <img class="gender" src="men-gender-icon.png" alt="">
+                <% } else { %>
+                    <img class="gender" src="women.png" alt="">
+                <% } %>
+            </div>
+        </div>
+</script>
+
+    <script type="text/html" id="script-list">
+    <% _.forEach(obj, function(item, index) { %>
+        <div class = "row">
+            <img onclick="showModal('<%= index %>')" class="image"  src="<%= obj[index].src %>">
+            </div>
+    <% }); %> 
+</script>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="id.js"></script>
+
+<head>
+
+</html>

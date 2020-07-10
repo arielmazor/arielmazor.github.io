@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,600&family=Raleway:wght@600&display=swap"
+        rel="stylesheet">
+    <style>
+        .container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+        }
+
+        .input_wrapper {
+            height: 100%;
+            width: 50%;
+            /* border: 1px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-right: 2px solid black;
+            flex-direction: column;
+        }
+
+        .input {
+            height: 60px;
+            width: 300;
+            border-radius: 12px;
+            outline: 0px;
+            border: 0px;
+        }
+
+        .input_border {
+            border: 1px solid black;
+            border-radius: 12px;
+
+        }
+
+        .title {
+            width: 290px;
+            font-size: 20px;
+            font-family: 'Prompt', sans-serif;
+        }
+
+        .wrapper {
+            height: 100px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            width: 300;
+        }
+
+        .button {
+            height: 35px;
+            width: 160px;
+            font-size: 17;
+            border-radius: 20px;
+            border: 1px solid black;
+            font-family: 'Prompt', sans-serif;
+            font-family: 'Raleway', sans-serif;
+            outline: 0px;
+        }
+
+        .circle {
+            border: black solid 1px;
+            border-radius: 100%;
+        }
+
+        .unswer_wrapper {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .areaandCircledcontainer{
+            position: absolute;
+            top: 12;
+            left: 51%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="input_wrapper">
+
+            <div class="title">radius:</div>
+            <div class="input_border">
+                <input class="input" type="text">
+            </div>
+            <div class="wrapper">
+                <button class="button" onclick="build()">press</button>
+            </div>
+        </div>
+        <div class="unswer_wrapper">
+            <div class="areaandCircledcontainer">
+                <div class="area"></div>
+                <div class="circled"></div>
+            </div>
+            <div class="circle"></div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="circle.js"></script>
+</body>
+
+</html>

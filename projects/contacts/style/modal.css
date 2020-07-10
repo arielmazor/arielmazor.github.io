@@ -1,0 +1,145 @@
+/* -----------------------------------------------
+/* modal            
+----------------------------------------------- */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.show1 {
+    display: flex;
+}
+
+/* -------------------------------------------------------------- 
+/* contant 
+/* -------------------------------------------------------------- */
+
+.content {
+    background-color: #ffffff;
+    width: 330px;
+    align-items: center;
+    border-radius: 14px;
+    position: relative;
+    height: 496px;
+}
+
+.btn-primary {
+    position: absolute;
+    bottom: 20px;
+    right: 45px;
+}
+
+.contacts-wrapper {
+    padding-left: 400;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-link {
+    position: absolute;
+    bottom: 20px;
+    right: 110px;
+}
+
+.img {
+    border-radius: 100%;
+    height: 69px;
+    background: white;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 51px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    margin-left: -31px;
+}
+
+.firsName-input:focus {
+    border-bottom: 1px solid rgb(0, 94, 153);
+    transform-origin: 3.5px center;
+}
+
+.header {
+    display: flex;
+}
+
+.btn1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+
+.btn1:hover {
+    background: lightgray;
+    cursor: pointer;
+}
+
+.title-content-wrapper {
+    width: 100%;
+    border-bottom: 1px solid #dadce0;
+}
+
+.fa-times {
+    color: rgb(10, 10, 10)(10, 10, 10);
+}
+
+.firsName-input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    padding: 3px;
+    font-size: 15px;
+}
+
+.action {
+    height: 55px;
+    padding-left: 86%;
+}
+
+.body {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding-top: 15px;
+}
+
+.name-title {
+    padding-right: 128px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 20;
+    font-size: 11px;
+    width: 100%;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+    padding-top: 33px;
+}

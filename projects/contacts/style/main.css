@@ -1,0 +1,155 @@
+/* -----------------------------------------------
+header
+----------------------------------------------- */
+
+.C {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.f-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------------------------------------------------
+row
+---------------------------------------------------*/
+
+.row {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    border-bottom: 1px solid lightgray;
+}
+
+.row-wrapper {
+    position: relative;
+    width: 70%;
+    display: table;
+    padding-top: 15%;
+}
+
+.row:hover {
+    background: rgb(246, 246, 246);
+}
+
+.row:hover>.actions, .actions:hover {
+    display: flex;
+}
+
+.phone-number {
+    font-family: 'Roboto', sans-serif;
+    color: #5f6368;
+    display: table-cell;
+    padding: 17px;
+    width: 25%;
+}
+
+.name-wrapper {
+    padding: 4px;
+    visibility: visible;
+    width: 35%;
+    padding-left: 5px;
+}
+
+.phoneNumber-wrapper {
+    padding: 4px;
+    visibility: visible;
+    width: 35%;
+}
+
+.image-wrapper {
+    padding-left: 12px;
+    width: 68px;
+    height: 84px;
+    align-items: center;
+    display: flex;
+}
+
+.actions {
+    display: none;
+    width: 100px;
+    position: absolute;
+    left: 962px;
+}
+
+.delete {
+    height: 19px;
+}
+
+.image {
+    border-radius: 50%;
+    vertical-align: middle;
+    width: 53px;
+}
+
+.edit {
+    height: 19px;
+}
+
+.actions-wrapper {
+    display: none;
+}
+
+.btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+}
+
+.btn-icon:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    background: rgb(187, 187, 187);
+    cursor: pointer;
+}
+
+.new-wrapper {
+    position: absolute;
+    left: 76%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.new-wrapper:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    background: rgb(187, 187, 187);
+    cursor: pointer;
+}
+
+.fa-plus {
+    font-size: 26px;
+}
+.title{
+    position: absolute;
+    width: 100%;
+    padding-top: 201px;
+}

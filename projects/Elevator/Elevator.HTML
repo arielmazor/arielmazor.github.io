@@ -1,0 +1,133 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <style>
+        .container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+        }
+
+        .menu-C {
+            height: 100%;
+            width: 50%;
+            border-right: 1px solid rgb(167, 167, 167);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .menu {
+            flex-direction: column;
+            margin-bottom: 100px;
+        }
+
+        .line {
+            display: flex;
+        }
+
+        .number {
+            height: 80px;
+            width: 80px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-family: 'Lobster', cursive;
+        }
+
+        .menu-title {
+            font-family: 'Lobster', cursive;
+            height: 150;
+            justify-content: center;
+            font-size: 70px;
+        }
+
+        .number:hover {
+            background: rgb(190, 190, 190);
+            font-size: 30px;
+        }
+
+        .Elevators-C {
+            height: 100%;
+            width: 26%;
+            position: relative;
+
+        }
+
+        .Elevators {
+            position: absolute;
+            height: 150px;
+            width: 150px;
+            background: rgb(190, 190, 190);
+            transition: all 1s ease;
+        }
+
+        .numbers {
+            height: 100%;
+            width: 15%;
+            flex-direction: column;
+            right: 0;
+            position: absolute;
+            display: flex;
+            align-items: center;
+        }
+
+        .x {
+            height: 150px;
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Lobster', cursive;
+            font-size: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <title>created by Drugs</title>
+    <div class="container">
+        <div class="menu-C">
+            <div class="menu-title">menu </div>
+            <div class="menu">
+                <div class="line">
+                    <div onclick="move(1)" class="number">1</div>
+                    <div onclick="move(2)" class="number">2</div>
+                </div>
+                <div class="line">
+                    <div onclick="move(3)" class="number">3</div>
+                    <div onclick="move(4)" class="number">4</div>
+                </div>
+                <div class="line">
+                    <div onclick="move(5)" class="number">5</div>
+                    <div onclick="move(6)" class="number">6</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="Elevators-C">
+            <div class="Elevators"></div>
+        </div>
+        <div class="numbers">
+            <div  class="x">1</div>
+            <div  class="x">2</div>
+            <div  class="x">3</div>
+            <div  class="x">4</div>
+            <div  class="x">5</div>
+            <div class="x">6</div>
+        </div>
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="Elevator.js"></script>
+
+<head>
+
+</html>
