@@ -402,6 +402,7 @@ header .pi-panel {
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  bottom: 14px;
 }
 
 .home .img-container .img {
