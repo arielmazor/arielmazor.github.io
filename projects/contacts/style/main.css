@@ -32,8 +32,26 @@ row
     position: relative;
     border-bottom: 1px solid lightgray;
 }
-
+.book{
+    padding-bottom: 26px;
+}
 .row-wrapper {
+    display: none;
+}
+
+.xwrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.show3 {
+    display: none;
+}
+
+.show2 {
     position: relative;
     width: 70%;
     display: table;
@@ -123,7 +141,6 @@ row
 }
 
 .new-wrapper {
-    position: absolute;
     left: 76%;
     display: flex;
     align-items: center;
@@ -132,6 +149,7 @@ row
     width: 35px;
     border-radius: 100%;
     cursor: pointer;
+    padding-top: 20px;
 }
 
 .new-wrapper:hover {
@@ -148,7 +166,8 @@ row
 .fa-plus {
     font-size: 26px;
 }
-.title{
+
+.title {
     position: absolute;
     width: 100%;
     padding-top: 201px;
