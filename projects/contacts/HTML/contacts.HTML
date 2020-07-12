@@ -17,9 +17,7 @@
             <div class="header">
             </div>
             <div class="body">
-
             </div>
-
             <div onclick="closeModal()" class="btn btn-link">cansel</div>
             <div onclick="onSave()" class="btn btn-primary">save</div>
         </div>
@@ -27,68 +25,41 @@
     <div class="C">
         <div class="title">
             <div onclick="showNewModal()" class="new-wrapper">
-                <i  class="fa fa-plus" aria-hidden="true"></i>
+                <i class="fa fa-plus" aria-hidden="true"></i>
             </div>
         </div>
         <div class="contacts-wrapper">
-            <div class="row-wrapper"></div>
-
+            <img src="/projects/contacts/Images/x.png" alt="">
         </div>
-
-
-        <script type="text/html" id="contant-script">
-            <% _.forEach(userlist, function(item, index) { %>  
-        <div class="row">
-
-            <div class="image-wrapper">
-                <img onclick="showModal('<%= index %>')" class="image" src="<%= userlist[index].src %>">
-            </div>
-            <div class="name-wrapper">
-                <div class="name"><%= userlist[index].fullName %></div>
-            </div>
-            <div class="phoneNumber-wrapper">
-                <div  class="phoneNumber"><%= userlist[index].phoneNumber %></div>
-            </div>
-            <div class="actions">
-                <div class="btn-icon">
-                    <img onclick="_remove()" class="delete" src="<%= userlist[index].delete %>">
-                </div>
-                <div class="btn-icon">
-                    <img onclick="showModal('<%= index %>')" class="edit" src="<%= userlist[index].edit %>">
-                </div>
-            </div>
-        </div>
-        <% }); %> 
-         </script>
-        <script type="text/html" id="contant">
-
-        <div class="img-container">
-            <img class="img" src="<%= src %>" alt="">
-        </div>
-
-        <div class="input-wrapper">
-            <div class="name-title">Name:</div>
-            <input id="name" value="<%= fullName %>" class="firsName-input" type="text">
-        </div>
-
-        <div class="input-wrapper">
-            <div class="name-title">Phone:</div>
-            <input id="Phonenumber" value="<%= phoneNumber %>" class="firsName-input" type="text">
-        </div>
-
-        <div class="input-wrapper">
-            <div class="name-title">Address:</div>
-            <input id="address" value="<%= address %>" class="firsName-input" type="text">
-        </div>
-
-    </div>
-
-    </script>
-
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../JavaScript/contacts.js"></script>
 </body>
+</script>
+<script type="text/html" id="contant">
+
+<div class="img-container">
+    <img class="img" src="<%= src %>" alt="">
+</div>
+
+<div class="input-wrapper">
+    <div class="name-title">Name:</div>
+    <input id="name" value="<%= fullName %>" class="firsName-input" type="text">
+</div>
+
+<div class="input-wrapper">
+    <div class="name-title">Phone:</div>
+    <input id="Phonenumber" value="<%= phoneNumber %>" class="firsName-input" type="text">
+</div>
+
+<div class="input-wrapper">
+    <div class="name-title">Address:</div>
+    <input id="address" value="<%= address %>" class="firsName-input" type="text">
+</div>
+
+</div>
+
+</script>
 
 </html>
