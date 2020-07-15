@@ -8,18 +8,37 @@
     <link rel="stylesheet" href="../style/main.css">
     <link rel="stylesheet" href="../style/modal.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="modal">
-        <div onclick="show3Modal()" class="wrapper image-list-wrapper"></div>
-        <div class="content">
+        <div -+ class="wrapper image-list-wrapper">
             <div class="header">
+                <div class="img-title">Pick a photo</div>
             </div>
+            <div class="images">
+                <div class="line">
+                    <div class="img1-container">
+                        <img onclick="imageNum(1)"  class="avatar" src="../Images/avatar2.png" alt="">
+                    </div>
+                    <div class="img2-container">
+                        <img onclick="imageNum(2)"  class="avatar" src="../Images/avatar3.png" alt="">
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="img3-container">
+                        <img onclick="imageNum(3)" class="avatar" src="../Images/avatar3.png" alt="">
+                    </div>
+                    <div class="img4-container">
+                        <img onclick="imageNum(4)" class="avatar" src="../Images/avatar2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
             <div class="body">
-
             </div>
-
             <div onclick="closeModal()" class="btn btn-link">cansel</div>
             <div onclick="onSave()" class="btn btn-primary">save</div>
         </div>
@@ -34,7 +53,7 @@
                     <i class="fa fa-plus" aria-hidden="true"></i>
                 </div>
             </div>
-            <div  class="wrapper list-wrapper"></div>
+            <div class="wrapper list-wrapper"></div>
 
         </div>
 
@@ -49,7 +68,7 @@
 
 
 
- 
+
 <script type="text/html" id="contant-script">
     <% _.forEach(userlist, function(item, index) { %>  
       
@@ -80,7 +99,8 @@
 <div class="avatar-container">
     <div  class="uploud-img">
         <img onclick="show3Modal()" class="upload"src="../Images/upload.png" alt="">
-    <img class="img" src="<%= src %>" alt=""></div>
+        <img class="icon" src="<%= src %>" alt="">
+    </div>
 </div>
 
 <div class="input-wrapper">
