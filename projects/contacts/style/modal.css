@@ -21,6 +21,29 @@
     display: flex;
 }
 
+.image-list-wrapper {
+
+    display: none;
+}
+.list-wrapper{
+    display: none;
+}
+.list-wrapper.show2{
+    display: block;
+    height: 100px;
+}
+.image-list-wrapper.show1 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 532px;
+    background: rgb(255, 255, 255);
+    z-index: 1;
+    position: absolute;
+    height: 600px;
+    border-radius: 16px;
+}
+
 /* -------------------------------------------------------------- 
 /* contant 
 /* -------------------------------------------------------------- */
@@ -34,13 +57,22 @@
     height: 496px;
 }
 
+
+.image-container {
+    background-color: #ffffff;
+    width: 330px;
+    align-items: center;
+    border-radius: 14px;
+    position: relative;
+    height: 496px;
+    justify-content: center;
+}
+
 .btn-primary {
     position: absolute;
     bottom: 20px;
     right: 45px;
 }
-
-
 
 .btn-link {
     position: absolute;
@@ -52,6 +84,23 @@
     border-radius: 100%;
     height: 69px;
     background: white;
+}
+.uploud-img{
+    position: absolute;
+}
+.upload {
+    border-radius: 100%;
+    height: 69px;
+    position: absolute;
+    opacity: 0;
+    position: absolute;
+}
+
+.upload:hover {
+    left: 33%;
+    height: 100px;
+    top: 0px;
+    opacity: 1;
 }
 
 .img-container {

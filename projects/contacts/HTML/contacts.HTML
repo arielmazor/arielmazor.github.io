@@ -12,7 +12,7 @@
 
 <body>
     <div class="modal">
-
+        <div onclick="show3Modal()" class="wrapper image-list-wrapper"></div>
         <div class="content">
             <div class="header">
             </div>
@@ -26,28 +26,33 @@
     </div>
     <div class="C">
         <div class="contacts-wrapper">
-            <div class="xwrapper">
-                <div class="book"> 
-                <img  src="../Images/book1.png" alt=""></div>
+            <div class="wrapper new-wrapper">
+                <div class="book">
+                    <img src="../Images/book1.png" alt=""></div>
                 <div class="error">No contacts yet</div>
-                <div onclick="showNewModal()" class="new-wrapper">
-                    <i  class="fa fa-plus" aria-hidden="true"></i>
+                <div onclick="showNewModal()" class="new-row-wrapper">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
                 </div>
             </div>
-            <div class="row-wrapper"></div>
+            <div  class="wrapper list-wrapper"></div>
 
         </div>
 
 
-       
+
 
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../JavaScript/contacts.js"></script>
 </body>
+
+
+
+ 
 <script type="text/html" id="contant-script">
     <% _.forEach(userlist, function(item, index) { %>  
+      
 <div class="row">
 
     <div class="image-wrapper">
@@ -72,8 +77,10 @@
  </script>
 <script type="text/html" id="contant">
 
-<div class="img-container">
-    <img class="img" src="<%= src %>" alt="">
+<div class="avatar-container">
+    <div  class="uploud-img">
+        <img onclick="show3Modal()" class="upload"src="../Images/upload.png" alt="">
+    <img class="img" src="<%= src %>" alt=""></div>
 </div>
 
 <div class="input-wrapper">
@@ -94,4 +101,5 @@
 </div>
 
 </script>
+
 </html>

@@ -24,13 +24,21 @@ header
 /* ---------------------------------------------------
 row
 ---------------------------------------------------*/
-
+.show1{
+    display: block;
+}
 .row {
     display: flex;
     align-items: center;
     height: 100%;
     position: relative;
     border-bottom: 1px solid lightgray;
+    width: 1150px;
+}
+.avatar-container{
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 .book{
     padding-bottom: 26px;
@@ -39,25 +47,30 @@ row
     display: none;
 }
 
-.xwrapper {
+.contacts-wrapper{
     height: 100%;
     width: 100%;
+    justify-content: center;
+    align-items: center;
     display: flex;
+}
+.new-wrapper {
+    display: none;
     align-items: center;
     justify-content: center;
+    height: 35px;
     flex-direction: column;
 }
-.show3 {
-    display: none;
+.show2{
+    display: flex;
+    flex-direction: column;
 }
-
-.show2 {
-    position: relative;
-    width: 70%;
-    display: table;
-    padding-top: 15%;
+.new-wrapper .show2{
+    display: flex;
 }
-
+.row-wrapper .show2{
+    display: flex;
+}
 .row:hover {
     background: rgb(246, 246, 246);
 }
@@ -140,7 +153,7 @@ row
     cursor: pointer;
 }
 
-.new-wrapper {
+.new-row-wrapper {
     left: 76%;
     display: flex;
     align-items: center;
@@ -152,7 +165,9 @@ row
     padding-top: 20px;
 }
 
-.new-wrapper:hover {
+
+
+.new-row-wrapper:hover {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,6 +180,8 @@ row
 
 .fa-plus {
     font-size: 26px;
+    padding-bottom: 15px;
+    padding-left: 2px;
 }
 
 .title {
