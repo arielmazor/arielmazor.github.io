@@ -20,10 +20,10 @@
             <div class="images">
                 <div class="line">
                     <div class="img1-container">
-                        <img onclick="imageNum(1)"  class="avatar" src="../Images/avatar2.png" alt="">
+                        <img onclick="imageNum(1)" class="avatar" src="../Images/avatar2.png" alt="">
                     </div>
                     <div class="img2-container">
-                        <img onclick="imageNum(2)"  class="avatar" src="../Images/avatar3.png" alt="">
+                        <img onclick="imageNum(2)" class="avatar" src="../Images/avatar3.png" alt="">
                     </div>
                 </div>
                 <div class="line">
@@ -39,26 +39,37 @@
         <div class="content">
             <div class="body">
             </div>
-            <div onclick="closeModal()" class="btn btn-link">cansel</div>
+            <div onclick="closeModal()" class="btn btn-link">cancel</div>
             <div onclick="onSave()" class="btn btn-primary">save</div>
         </div>
     </div>
-    <div class="C">
-        <div class="contacts-wrapper">
-            <div class="wrapper new-wrapper">
-                <div class="book">
-                    <img src="../Images/book1.png" alt=""></div>
-                <div class="error">No contacts yet</div>
-                <div onclick="showNewModal()" class="new-row-wrapper">
+
+
+
+    <div class="wrapper new-wrapper">
+        <div class="book">
+            <img src="../Images/book1.png" alt=""></div>
+        <div class="error">No contacts yet</div>
+        <div onclick="showNewModal()" class="new-row-wrapper">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+        </div>
+    </div>
+
+    <div class="contact-list-wrapper">
+        <div class="contact-list">
+            <div class="header">
+                <div class="contacts-title">My Contacts</div>
+                <div class="btn-plus" onclick="showNewModal()">
                     <i class="fa fa-plus" aria-hidden="true"></i>
                 </div>
             </div>
-            <div class="wrapper list-wrapper"></div>
+            <div class="body">
+                <div class="list"></div>
+            </div>
 
         </div>
 
-
-
+    </div>
 
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
@@ -72,7 +83,7 @@
 <script type="text/html" id="contant-script">
     <% _.forEach(userlist, function(item, index) { %>  
       
-<div class="row">
+<div onclick="showModal('<%= index %>')" class="row">
 
     <div class="image-wrapper">
         <img onclick="showModal('<%= index %>')" class="image" src="<%= userlist[index].src %>">

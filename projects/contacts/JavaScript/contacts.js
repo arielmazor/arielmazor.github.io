@@ -13,7 +13,7 @@ function build() {
     $(".new-wrapper").addClass("show2");
   } else {
     let template = _.template($("#contant-script").html());
-    $(".list-wrapper").html(template(userlist)).addClass("show2");
+    $(".list").html(template(userlist)).addClass("show2");
   }
 }
 // -------------------------------------------
@@ -36,14 +36,13 @@ function imageNum(index) {
     imgNum = "../Images/avatar3.png";
   }
   if (index == 3) {
-    imgNum = "../Images/avatar2.png";
+    imgNum = "../Images/avatar3.png";
   }
   if (index == 4) {
-    imgNum = "../Images/avatar3.png";
+    imgNum = "../Images/avatar2.png";
   }
 
   $(".uploud-img img.icon")[0].src = imgNum;
-  debugger;
   $(".image-list-wrapper").removeClass("show1");
 }
 // -------------------------------------------
@@ -88,8 +87,9 @@ function onSave() {
   if (currIndex === -1) {
     userlist.push(obj);
   }
+  $(".btn-plus").addClass("show2");
+  $(".contact-list-wrapper").addClass("show2");
 
-  $(".row-wrapper").addClass("show2");
 
   closeModal();
   build();
@@ -101,8 +101,8 @@ function onSave() {
 
 function _remove() {
   userlist.splice(currIndex, 1);
-
-  $(".list-wrapper").removeClass("show2");
+  $(".btn-plus").removeClass("show2");
+  $(".contact-list-wrapper").removeClass("show2");
   build();
 }
 
@@ -113,7 +113,7 @@ function _remove() {
 function showModal(index) {
   currIndex = index;
   let template = _.template($("#contant").html());
-  $(".list-wrapper").html(template(userlist[currIndex]));
+  $(".list").html(template(userlist[currIndex]));
 
   $(".modal").addClass("show1");
 }

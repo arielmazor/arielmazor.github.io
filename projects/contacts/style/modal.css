@@ -25,14 +25,7 @@
     display: none;
 }
 
-.list-wrapper {
-    display: none;
-}
 
-.list-wrapper.show2 {
-    display: block;
-    height: 100px;
-}
 
 .image-list-wrapper.show1 {
     display: block;
@@ -138,7 +131,7 @@
     transform-origin: 3.5px center;
 }
 
-.header {
+.modal .header {
     display: flex;
     align-items: center;
     justify-content: center;
