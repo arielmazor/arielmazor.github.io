@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/modal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="table-wrapper">
+        <div class="head">
+            <div class="title name">Name</div>
+            <div class="title value">Value</div>
+            <div class="title change">Change</div>
+        </div>
+        <div id="body" class="body">
+
+        </div>
+    </div>
+
+    <script type="text/html" id="list">
+        <% _.forEach(userlist, function(item, index) { %>  
+          
+    
+    
+        <div class="row">
+            <div class="title names"><%= item.fullName %></div>
+            <div class="title values"><%= item.value %></div>
+        </div>
+    <% }); %> 
+     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../JavaScript/indexes.js"></script>
+</body>
+
+
+
+
+
+<!-- <script type="text/html" id="list">
+    <% _.forEach(userlist, function(item, index) { %>  
+      <div class="row">
+          <div class="btn btn-link"><%= userlist[0] %></div>
+      </div>
+    <% }); %> 
+ </script> -->
+
+</html>
