@@ -24,13 +24,19 @@
     </div>
 
     <script type="text/html" id="list">
-        <% _.forEach(userlist, function(item, index) { %>  
+        <% _.forEach(deta, function(item, index) { %>  
           
     
     
         <div class="row">
-            <div class="title names"><%= item.fullName %></div>
+            <div class="title names"><%= item.StockName %></div>
             <div class="title values"><%= item.value %></div>
+
+
+
+                <div  class="<%= item.class %>">
+                    <div class ="title changes"><%= item.change %></div>
+                </div>
         </div>
     <% }); %> 
      </script>

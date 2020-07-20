@@ -1,26 +1,63 @@
-var userlist = [
+var isPos = false;
+var deta = [
   {
-    fullName: " Nasdaq TransporTtation Ix ",
-    value:40000,
+    StockName: " Nasdaq TransporTtation Ix ",
+    value: 40000,
+    change: "",
+    class: "",
   },
   {
-    fullName: " S&P 600 Smallcap Index ",value:70000,
+    StockName: " S&P 600 Smallcap Index ",
+    value: 70000,
+    change: "",
+    class: "",
   },
   {
-    fullName: "Nas Bbg US Reits Daq",value:30000,
+    StockName: "Nas Bbg US Reits Daq",
+    value: 30000,
+    change: "",
+    class: "",
   },
   {
-    fullName: " Dow Jones Utility Avg ",value:10000,
+    StockName: " Dow Jones Utility Avg ",
+    value: 10000,
+    change: "",
+    class: "",
   },
   {
-    fullName: " Kbw Bamk Index ",value:100000,
+    StockName: " Kbw Bamk Index ",
+    value: 100000,
+    change: "",
+    class: "",
   },
 ];
 
 function build() {
   let template = _.template($("#list").html());
-  let b = template(userlist);
+  let b = template(deta);
 
-  $(".body").html(template(userlist));
+  $(".body").html(template(deta));
 }
-build();
+
+function change() {
+  var OldValue = deta[2].value;
+  isPos = !isPos
+
+
+
+
+
+  if (isPos) {
+    deta[2].class = "green change-wrapper";
+    deta[2].value = deta[2].value * 1.005;
+  } else {
+    deta[2].class = "red change-wrapper";
+    deta[2].value = deta[2].value * 0.995;
+  }
+
+  deta[2].change = 0.005;
+  build();
+}
+change();
+change();
+

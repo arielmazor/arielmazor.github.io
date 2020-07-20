@@ -61,9 +61,34 @@
     align-items: center;
     border-bottom: 1px solid #ccc;
 }
-.names{
+
+.names {
     padding-left: 2px;
     font-size: 17;
     width: 343px;
-    white-space: unset ;
+    white-space: unset;
+}
+
+.change-wrapper {
+    padding: 3;
+    border-radius: 20%;
+    position: relative;
+    margin-left: 73px;
+    width: 63px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.changes {
+    color: white;
+}
+
+.change-wrapper.green {
+    background: rgb(0, 180, 0);
+}
+
+.change-wrapper.red {
+    background: red;
 }
