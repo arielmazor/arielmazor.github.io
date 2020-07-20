@@ -31,7 +31,13 @@ var deta = [
     class: "",
   },
 ];
+function main(){
+  change();
 
+  setTimeout(function(){
+    main()
+  }, 150)
+}
 function build() {
   let template = _.template($("#list").html());
   let b = template(deta);
@@ -40,24 +46,19 @@ function build() {
 }
 
 function change() {
-  var OldValue = deta[2].value;
+  var index = Math.floor(Math.random() * 5) + 0;
   isPos = !isPos
 
-
-
-
-
   if (isPos) {
-    deta[2].class = "green change-wrapper";
-    deta[2].value = deta[2].value * 1.005;
+    deta[index].class = "green change-wrapper";
+    deta[index].value = deta[index].value * 1.005;
   } else {
-    deta[2].class = "red change-wrapper";
-    deta[2].value = deta[2].value * 0.995;
+    deta[index].class = "red change-wrapper";
+    deta[index].value = deta[index].value * 0.995;
   }
 
-  deta[2].change = 0.005;
+  deta[index].change = 0.005;
   build();
 }
-change();
-change();
+main();
 
