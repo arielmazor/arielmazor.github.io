@@ -1,60 +1,113 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style/main.css">
-    <link rel="stylesheet" href="../style/modal.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <!-- // ------------------------------------------
+  // link
+  // ------------------------------------------ -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style/main.css">
+  <link rel="stylesheet" href="../style/modal.css">
+  <link rel="stylesheet" href="../style/chart.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
 </head>
 
 <body>
-    <div class="table-wrapper">
-        <div class="head">
-            <div class="title name">Name</div>
-            <div class="title value">Value</div>
-            <div class="title change">Change</div>
-        </div>
-        <div id="body" class="body">
+  <!-- // ------------------------------------------
+  // divs
+  // ------------------------------------------ -->
 
-        </div>
+  <div class="modal">
+  </div>
+  <div class="table-wrapper">
+    <div class="head">
+      <div class="title name">Name</div>
+      <div class="title value">Value</div>
+      <div class="title change">Change</div>
     </div>
+    <div id="body" class="body">
 
-    <script type="text/html" id="list">
-        <% _.forEach(data, function(item, index) { %>  
-          
-    
-    
-        <div class="row">
-            <div class="title names"><%= item.StockName %></div>
-            <div class="title values"><%= item.value.toFixed(2) %></div>
+    </div>
+    <div class="chart-container">
+      <canvas id="chart"></canvas>
+    </div>
+  </div>
 
+  <!-- // ------------------------------------------
+  // main table script
+  // ------------------------------------------ -->
 
+  <script type="text/html" id="list">
+  <% _.forEach(data, function(item, index) { %>
+  <div onclick="showModal('<%= index %>')" class="row">
+    <div class="title names"><%= item.StockName %></div>
+    <div class="title values"><%= item.value.toFixed(2) %></div>
+    <div class="<%= item.class %>">
+      <div class="title changes"><%= item.change %></div>
+    </div>
+  </div>
+  <% }); %> 
+  </script>
 
-                <div  class="<%= item.class %>">
-                    <div class ="title changes"><%= item.change %></div>
-                </div>
+  <!-- // ------------------------------------------
+  // modal script
+  // ------------------------------------------ -->
+
+  <script type="text/html" id="modal-contant">
+      <div class="head">
+        <div class="chart-icon-wrapper" onclick="showModal(1)">
+          <i class="fa fa-table" aria-hidden="true"></i>
         </div>
-    <% }); %> 
-     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../JavaScript/indexes.js"></script>
-</body>
-
-
-
-
-
-<!-- <script type="text/html" id="list">
-    <% _.forEach(userlist, function(item, index) { %>  
-      <div class="row">
-          <div class="btn btn-link"><%= userlist[0] %></div>
+        <div class="show_tbl tbl-icon-wrapper" onclick="showModal(2)">
+          <i class="fa fa-line-chart" aria-hidden="true"></i>
+        </div>
       </div>
-    <% }); %> 
- </script> -->
+      <div classs="tbl">
+        <div class="tbl-header">
+          <div class="title value-title">Value</div>
+          <div class="title change-title">Change</div>
+        </div>
+        <div class="tbl-body">
+            <% _.forEach(historyInfo, function(item, index) { %>
+            <% }); %>
+        </div>
+      </div>
+      <div class="chart-wrapper">
+        <div class="chart-header">
+          <div class="title chart-title">chest</div>
+        </div>
+        <div class="chart-body"></div>
+      </div>
+  </script>
+
+
+  <!-- // ------------------------------------------
+  // chest-script
+  // ------------------------------------------ -->
+
+  <script type="text/html" id="chest-contant">
+      <% _.forEach(historyInfo, function(item, index) { %>
+        <div class="head">
+          <div class="title chest-title">chest</div>
+          <div class="table-icon-wrapper">
+            
+          </div>
+        </div>
+      <% }); %>
+  </script>
+
+  <!-- // ------------------------------------------
+  // script-links
+  // ------------------------------------------ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="../JavaScript/indexes.js"></script>
+</body>
 
 </html>

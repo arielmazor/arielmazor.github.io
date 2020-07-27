@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 13%;
 }
 
 .title {
@@ -16,12 +17,14 @@
     color: black;
     font-family: 'Quicksand', sans-serif;
 }
-
+.show_tbl,.show_chart{
+    display: block;
+}
 /* -----------------------------------------------
  head            
 ----------------------------------------------- */
 
-.head {
+.table-wrapper .head {
     width: 900px;
     height: 50px;
     display: flex;
@@ -48,9 +51,9 @@
  body            
 ----------------------------------------------- */
 
-.body {
+.table-wrapper .body {
     width: 900px;
-    height: 200px;
+    height: 231px;
     flex-direction: column;
 }
 
@@ -60,6 +63,10 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid #ccc;
+}
+
+.row:hover {
+    background: rgb(240, 240, 240);
 }
 
 .names {
@@ -92,7 +99,7 @@
 .change-wrapper.red {
     background: red;
 }
-.values{
-    width: 145px;
 
+.values {
+    width: 145px;
 }
