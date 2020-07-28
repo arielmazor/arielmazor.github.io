@@ -8,16 +8,54 @@ chart
     background: white;
     display: none;
     height: 600px;
-    width: 200px;
-}
-
-.chart-wrapper.show_chart {
-    display: flex;
+    width: 451px;
 }
 
 /* -----------------------------------------------
  chart-head            
 ----------------------------------------------- */
+
+.chart-wrapper .chart-header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 31px;
+    border-bottom: 1px solid lightgray;
+    border-bottom-style: dotted;
+}
+
+.chart-icon-wrapper {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.chart-icon-wrapper:hover {
+    background: rgb(187, 187, 187);
+}
+
+.tbl-icon-wrapper {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.tbl-icon-wrapper:hover {
+    background: rgb(187, 187, 187);
+}
+
+.fa-table, .fa-line-chart {
+    font-size: 19px;
+}
 
 /* -----------------------------------------------
  contant-body            

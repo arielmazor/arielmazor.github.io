@@ -44,24 +44,22 @@ var data = [
   },
 ];
 var x = 0;
-var mod = 1;
+var mode = 1;
 var historyInfo;
 
 // ------------------------------------------
 // showModal
 // ------------------------------------------
 
-function showModal(index,mod) {
-
-  var clsName = mod==1 ? 'show-chart' : 'show-tbl';
-  $("#modal-contant").addClass(clsName);
+function showModal(index) {
+  var clsName = "show-chart" ;
+  $(".modal").addClass(clsName);
 
   let template = _.template($("#modal-contant").html());
   historyInfo = dataHistory[index];
-  
+
   $(".modal").html(template(historyInfo));
   $(".modal").addClass("show");
-
 }
 
 // ------------------------------------------
@@ -111,6 +109,18 @@ function change() {
   dataHistory.splice;
   build();
 }
+
+function onTableClick(){
+  $(".modal").removeClass("show-tbl");
+  $(".modal").addClass("show-chart");
+}
+
+function onChartClick(){
+  $(".modal").removeClass("show-chart");
+  $(".modal").addClass("show-tbl");
+}
+
+
 
 // ------------------------------------------
 // calls

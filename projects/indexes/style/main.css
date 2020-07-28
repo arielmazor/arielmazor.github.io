@@ -3,7 +3,6 @@
 ----------------------------------------------- */
 
 .table-wrapper {
-    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -19,6 +18,12 @@
 }
 .show_tbl,.show_chart{
     display: block;
+}
+.wrapper{
+    min-width: 451px;
+    min-height: 600px;
+    background: white;
+    border-radius: 15px;
 }
 /* -----------------------------------------------
  head            

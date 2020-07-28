@@ -20,6 +20,43 @@
 .modal.show{
     display: flex;
 }
+.modal .head{
+    position: absolute;
+    display: flex;
+    top: 175px;
+    right: 772px;
+}
+.modal.show-chart .chart-wrapper{
+    display: flex;
+}
+
+.modal.show-chart .head .chart-icon-wrapper{
+    display: flex;
+}
+
+.modal.show-chart .tbl{
+    display: none;
+}
+
+.modal.show-chart .head .tbl-icon-wrapper{
+    display: none;
+}
+
+.modal.show-tbl .chart-wrapper{
+    display: none;
+}
+
+.modal.show-tbl .head .chart-icon-wrapper{ 
+    display: none;
+}
+
+.modal.show-tbl .tbl{
+    display: flex;
+}
+
+.modal.show-tbl .head .tbl-icon-wrapper{
+    display: flex;
+}
 /* -----------------------------------------------
  table            
 ----------------------------------------------- */
@@ -30,13 +67,6 @@
     display: none;
     height: 600px;
 }
-.tbl.show_tbl{
-    display: flex;
-}
-.tbl.show_tbl{
-    display: flex;
-}
-
 
 /* -----------------------------------------------
  contant-head            

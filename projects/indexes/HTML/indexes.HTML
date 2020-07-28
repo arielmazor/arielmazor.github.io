@@ -34,9 +34,6 @@
     <div id="body" class="body">
 
     </div>
-    <div class="chart-container">
-      <canvas id="chart"></canvas>
-    </div>
   </div>
 
   <!-- // ------------------------------------------
@@ -59,16 +56,17 @@
   // modal script
   // ------------------------------------------ -->
 
-  <script type="text/html" id="modal-contant">
+  <script type="text/html" id="modal-contant" class="show-chart">
+    <div class="wrapper">
       <div class="head">
-        <div class="chart-icon-wrapper" onclick="showModal(1)">
+        <div class="chart-icon-wrapper" onclick="onChartClick()">
           <i class="fa fa-table" aria-hidden="true"></i>
         </div>
-        <div class="show_tbl tbl-icon-wrapper" onclick="showModal(2)">
+        <div class="tbl-icon-wrapper" onclick="onTableClick()">
           <i class="fa fa-line-chart" aria-hidden="true"></i>
         </div>
       </div>
-      <div classs="tbl">
+      <div class="tbl">
         <div class="tbl-header">
           <div class="title value-title">Value</div>
           <div class="title change-title">Change</div>
@@ -84,7 +82,8 @@
         </div>
         <div class="chart-body"></div>
       </div>
-  </script>
+    </div>
+    </script>
 
 
   <!-- // ------------------------------------------
