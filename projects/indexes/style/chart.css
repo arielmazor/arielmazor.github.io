@@ -11,6 +11,16 @@ chart
     width: 451px;
 }
 
+.chart-icon-wrapper {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
 /* -----------------------------------------------
  chart-head            
 ----------------------------------------------- */
@@ -25,36 +35,8 @@ chart
     border-bottom-style: dotted;
 }
 
-.chart-icon-wrapper {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    height: 35px;
-    width: 35px;
-    border-radius: 100%;
-    cursor: pointer;
-}
-
 .chart-icon-wrapper:hover {
     background: rgb(187, 187, 187);
-}
-
-.tbl-icon-wrapper {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    height: 35px;
-    width: 35px;
-    border-radius: 100%;
-    cursor: pointer;
-}
-
-.tbl-icon-wrapper:hover {
-    background: rgb(187, 187, 187);
-}
-
-.fa-table, .fa-line-chart {
-    font-size: 19px;
 }
 
 /* -----------------------------------------------

@@ -3,7 +3,7 @@
 ----------------------------------------------- */
 
 .modal {
-    display: none; 
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -17,50 +17,54 @@
     justify-content: center;
 }
 
-.modal.show{
+.modal.show {
     display: flex;
 }
-.modal .head{
+
+.modal .head {
     position: absolute;
     display: flex;
-    top: 175px;
-    right: 772px;
+    top: 180;
+    right: 757px;
 }
-.modal.show-chart .chart-wrapper{
+
+.modal.show-chart .chart-wrapper {
     display: flex;
 }
 
-.modal.show-chart .head .chart-icon-wrapper{
+.modal.show-chart .head .chart-icon-wrapper {
     display: flex;
 }
 
-.modal.show-chart .tbl{
+.modal.show-chart .tbl {
     display: none;
 }
 
-.modal.show-chart .head .tbl-icon-wrapper{
+.modal.show-chart .head .tbl-icon-wrapper {
     display: none;
 }
 
-.modal.show-tbl .chart-wrapper{
+.modal.show-tbl .chart-wrapper {
     display: none;
 }
 
-.modal.show-tbl .head .chart-icon-wrapper{ 
+.modal.show-tbl .head .chart-icon-wrapper {
     display: none;
 }
 
-.modal.show-tbl .tbl{
+.modal.show-tbl .tbl {
     display: flex;
 }
 
-.modal.show-tbl .head .tbl-icon-wrapper{
+.modal.show-tbl .head .tbl-icon-wrapper {
     display: flex;
 }
+
 /* -----------------------------------------------
  table            
 ----------------------------------------------- */
-.tbl{
+
+.tbl {
     flex-direction: column;
     border-radius: 15px;
     background: white;
@@ -68,20 +72,70 @@
     height: 600px;
 }
 
+.tbl-icon-wrapper {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.tbl-icon-wrapper:hover {
+    background: rgb(187, 187, 187);
+}
+
+.fa-table, .fa-line-chart {
+    font-size: 19px;
+}
+
+.tbl-body{
+    position: relative;
+    flex: 1;
+    display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+.tbl-body .row{
+    display: flex;
+    width: 90%;
+    height: 34px;
+    border-bottom: 1px solid lightgray;
+    border-bottom-style: dotted;
+    align-items: center;
+}
+.tbl-body .row .value,.change{
+    width: 50%;
+    justify-content: center;
+    display: flex;
+}
 /* -----------------------------------------------
  contant-head            
 ----------------------------------------------- */
 
-.tbl .head {
-    border-bottom: 1px solid lightgray;
-    height: 75px;
-    position: relative;
+.tbl-header {
+    height: 50px;
     display: flex;
-    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 31px;
+    border-bottom: 1px solid lightgray;
     border-bottom-style: dotted;
-    margin-top: 6px;
 }
 
+.value-title, .change-title {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-title {
+    border-right: 1px solid lightgray;
+    border-right-style: dotted;
+}
 
 /* -----------------------------------------------
  contant-body            
@@ -94,4 +148,3 @@
     position: relative;
     display: flex;
 }
-

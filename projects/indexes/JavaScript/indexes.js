@@ -1,42 +1,42 @@
 var isPos = false;
 var dataHistory = {
+  "0": [],
   "1": [],
   "2": [],
   "3": [],
   "4": [],
-  "5": [],
 };
 var data = [
   {
-    id: "1",
+    id: "0",
     StockName: " Nasdaq TransporTtation Ix ",
     value: 40000,
     change: "",
     class: "",
   },
   {
-    id: "2",
+    id: "1",
     StockName: " S&P 600 Smallcap Index ",
     value: 70000,
     change: "",
     class: "",
   },
   {
-    id: "3",
+    id: "2",
     StockName: "Nas Bbg US Reits Daq",
     value: 30000,
     change: "",
     class: "",
   },
   {
-    id: "4",
+    id: "3",
     StockName: " Dow Jones Utility Avg ",
     value: 10000,
     change: "",
     class: "",
   },
   {
-    id: "5",
+    id: "4",
     StockName: " Kbw Bamk Index ",
     value: 100000,
     change: "",
@@ -52,12 +52,12 @@ var historyInfo;
 // ------------------------------------------
 
 function showModal(index) {
-  var clsName = "show-chart" ;
+  var clsName = "show-chart";
   $(".modal").addClass(clsName);
 
   let template = _.template($("#modal-contant").html());
-  historyInfo = dataHistory[index];
 
+  historyInfo = dataHistory[index];
   $(".modal").html(template(historyInfo));
   $(".modal").addClass("show");
 }
@@ -66,21 +66,19 @@ function showModal(index) {
 // Main
 // ------------------------------------------
 
-function main() {
+function main(count) {
   change();
-
   setTimeout(function () {
-    if (x == 0) {
-      main();
-    }
-  }, 750);
+    main();
+  }, 1150);
 }
 
 function build() {
-  let template = _.template($("#list").html());
-  let b = template(data);
-
-  $(".table-wrapper .body").html(template(data));
+  if (x == 0) {
+    let template = _.template($("#list").html());
+    let b = template(data);
+    $(".table-wrapper .body").html(template(data));
+  }
 }
 
 // ------------------------------------------
@@ -100,27 +98,28 @@ function change() {
   }
 
   data[index].change = increase;
+  var _id;
+    _id = data[index].id;
+    dataHistory[_id].push({
+      val: data[index].value,
+      change: data[index].change,
+    });
 
-  var id = data[index].id;
-  dataHistory[id].push({
-    val: data[index].value,
-    change: data[index].change,
-  });
-  dataHistory.splice;
+  if (dataHistory[_id].length > 3) {
+    dataHistory[_id].splice(dataHistory[_id].length - 3);
+  }
   build();
 }
 
-function onTableClick(){
+function onTableClick() {
   $(".modal").removeClass("show-tbl");
   $(".modal").addClass("show-chart");
 }
 
-function onChartClick(){
+function onChartClick() {
   $(".modal").removeClass("show-chart");
   $(".modal").addClass("show-tbl");
 }
-
-
 
 // ------------------------------------------
 // calls

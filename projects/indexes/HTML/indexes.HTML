@@ -73,6 +73,10 @@
         </div>
         <div class="tbl-body">
             <% _.forEach(historyInfo, function(item, index) { %>
+              <div class="row">
+                <div class="value"><%= historyInfo[index].val.toFixed(1) %></div>
+                <div class="change"><%= historyInfo[index].change.toFixed(4) %></div>
+              </div>
             <% }); %>
         </div>
       </div>

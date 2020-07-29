@@ -16,15 +16,14 @@
     color: black;
     font-family: 'Quicksand', sans-serif;
 }
-.show_tbl,.show_chart{
-    display: block;
-}
-.wrapper{
+
+.wrapper {
     min-width: 451px;
     min-height: 600px;
     background: white;
     border-radius: 15px;
 }
+
 /* -----------------------------------------------
  head            
 ----------------------------------------------- */
@@ -38,12 +37,12 @@
     border-bottom: 1px solid #ccc;
 }
 
-.value {
+.body .row .value {
     padding-left: 306;
     color: #555;
 }
 
-.change {
+.body .row .change {
     padding-left: 172;
     color: #555;
 }
@@ -62,7 +61,7 @@
     flex-direction: column;
 }
 
-.row {
+.body .row {
     width: 900px;
     height: 45px;
     display: flex;
@@ -70,7 +69,7 @@
     border-bottom: 1px solid #ccc;
 }
 
-.row:hover {
+.body .row:hover {
     background: rgb(240, 240, 240);
 }
 
