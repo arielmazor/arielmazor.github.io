@@ -4,7 +4,6 @@
   <!-- // ------------------------------------------
   // link
   // ------------------------------------------ -->
-
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap" rel="stylesheet">
@@ -84,7 +83,10 @@
         <div class="chart-header">
           <div class="title chart-title">chest</div>
         </div>
-        <div class="chart-body"></div>
+        <div class="chart-body">
+          <canvas id="chart" width="600" height="400"></canvas>
+         </div>
+        </div>
       </div>
     </div>
     </script>
@@ -108,6 +110,8 @@
   <!-- // ------------------------------------------
   // script-links
   // ------------------------------------------ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.1/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="../JavaScript/indexes.js"></script>

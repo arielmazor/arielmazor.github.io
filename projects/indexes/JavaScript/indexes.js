@@ -54,12 +54,88 @@ var historyInfo;
 function showModal(index) {
   var clsName = "show-chart";
   $(".modal").addClass(clsName);
-
+  historyInfo = dataHistory[index];
   let template = _.template($("#modal-contant").html());
 
-  historyInfo = dataHistory[index];
   $(".modal").html(template(historyInfo));
   $(".modal").addClass("show");
+
+  var labels = [];
+  var values = [];
+  var _name = data[index].StockName;
+
+  historyInfo.forEach((item) => {
+    labels.push(item.time);
+    values.push(item.val);
+  });
+
+  var speedData = {
+    labels: labels,
+    datasets: [
+      {
+        label: _name,
+        data: values,
+        lineTension: 0.25,
+        fill: false,
+        borderColor: "orange",
+        backgroundColor: "transparent",
+        pointBorderColor: "orange",
+        pointBackgroundColor: "rgba(255,150,0,0.5)",
+        borderDash: [5, 5],
+        pointRadius: 5,
+        pointHoverRadius: 10,
+        pointHitRadius: 30,
+        pointBorderWidth: 2,
+        pointStyle: "rectRounded",
+      },
+    ],
+  };
+
+  var chartOptions = {
+    legend: {
+      display: true,
+      position: "top",
+      labels: {
+        boxWidth: 80,
+        fontColor: "black",
+      },
+    },
+    scales: {
+      xAxes: [
+        {
+          type: "time",
+          time: {
+            unit: "hour",
+            unitStepSize: 0.5,
+            round: "hour",
+            tooltipFormat: "h:mm:ss a",
+            displayFormats: {
+              hour: "MMM D, h:mm A",
+            },
+          },
+        },
+      ],
+      yAxes: [
+        {
+          gridLines: {
+            color: "black",
+            borderDash: [2, 5],
+          },
+          scaleLabel: {
+            display: true,
+            labelString: "Speed in Miles per Hour",
+            fontColor: "green",
+          },
+        },
+      ],
+    },
+  };
+
+  var lineChart = new Chart("chart", {
+    type: "line",
+    data: speedData,
+    // options: chartOptions
+  });
 }
 
 // ------------------------------------------
@@ -99,11 +175,13 @@ function change() {
 
   data[index].change = increase;
   var _id;
-    _id = data[index].id;
-    dataHistory[_id].push({
-      val: data[index].value,
-      change: data[index].change,
-    });
+  _id = data[index].id;
+
+  dataHistory[_id].push({
+    val: data[index].value,
+    change: data[index].change,
+    time: moment().format("mm:ss"),
+  });
 
   if (dataHistory[_id].length > 3) {
     dataHistory[_id].splice(dataHistory[_id].length - 3);
