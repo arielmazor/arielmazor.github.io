@@ -22,7 +22,10 @@
     min-height: 600px;
     background: white;
     border-radius: 15px;
+    z-index: 1;
+    position: absolute;
 }
+
 
 /* -----------------------------------------------
  head            
@@ -50,6 +53,7 @@
 .name {
     color: #555;
 }
+
 
 /* -----------------------------------------------
  body            
