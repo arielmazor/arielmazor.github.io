@@ -1,0 +1,57 @@
+/* -----------------------------------------------
+ header            
+----------------------------------------------- */
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    height: 400px;
+    width: 807px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    -moz-box-shadow: 2px 4px 39px -1px rgba(195, 194, 194, 0.97);
+    box-shadow: 2px 4px 39px -1px rgba(195, 194, 194, 0.97);
+    position: relative;
+}
+
+.register-side {
+    width: 50%;
+    height: 100%;
+}
+
+.img-side {
+    width: 50%;
+    height: 84%;
+    flex-direction: column;
+    border-left: 2px solid #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-button-wrapper {
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.question {
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 10;
+    font-size: 14px;
+}
+
+.btn {
+    padding: 5px;
+}
