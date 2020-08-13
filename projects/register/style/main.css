@@ -25,6 +25,9 @@
 .register-side {
     width: 50%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .img-side {
@@ -54,4 +57,101 @@
 
 .btn {
     padding: 5px;
+}
+
+.name-input-wrapper {
+    border-bottom: 1px solid #e8e8e8;
+    padding: 5;
+}
+
+.name-input-wrapper:hover {
+    border-bottom: 1px solid blue;
+}
+
+.col-3 {
+    float: left;
+    width: 27.33%;
+    margin: -21px 17%;
+    padding-top: 20px;
+    position: relative;
+    /* necessary to give position: relative to parent. */
+}
+
+input[type="text"] {
+    font: 15px/24px "Lato", Arial, sans-serif;
+    color: #333;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    outline: 0;
+    width: 312px;
+}
+
+.effect-1 {
+    border: 0;
+    padding: 4px 0;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+}
+
+.effect-1~.focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3399FF;
+    transition: 0.4s;
+}
+
+.effect-1:focus {
+    border-bottom: 1px solid #3399FF;
+}
+
+.effect-1:focus~.focus-border,
+.has-content.effect-1~.focus-border {
+    width: 100%;
+    transition: 0.4s;
+}
+
+.effect-1~label {
+    position: absolute;
+    left: 22px;
+    top: 21px;
+    color: #aaa;
+    transition: 0.3s;
+    z-index: -1;
+    letter-spacing: 0.5px;
+    display: flex;
+    height: 20px;
+    width: 100px;
+}
+
+.effect-1:focus~label,
+.has-content.effect-1~label {
+    top: 5px;
+    font-size: 12px;
+    color: #3399FF;
+    transition: 0.3s;
+}
+
+.title {
+    left: 5%;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    font-size: 25px;
+    position: absolute;
+}
+
+
+}
+.inputs-wrapper {
+    position: absolute;
+    left: -33px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
