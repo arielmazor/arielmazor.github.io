@@ -1,15 +1,27 @@
 var userlist = [3, 2, 1]
-
-function buildNextPage(clas) {
-    let template = _.template($("#bio").html());
-    $(".container .wrapper").html(template(userlist))
-    if (clas == 0) {
-        $(".first-page").addClass("show");
-        $(".second-page").removeClass("show");
-    }
-    if (clas == 1) {
-        $(".second-page").addClass("show");
-        $(".first-page").removeClass("show");
-    }
+var input1;
+var input2;
+function buildNextPage() {
+	input1 = $(".input1").val();
+	input2 = $(".input2").val();
+	{
+		$(".c1").addClass("close");
+		$(".c2").addClass("show")
+	}
 }
-buildNextPage(0);
+
+
+function butomCheck() {
+	var empty = false;
+	if (input1 == '') {
+
+		empty = true;
+
+	}
+	if (empty == true) {
+		$(".button-next").addClass('empty');
+		return;
+	} else {
+		$(".button-next").removeClass('empty');
+	}
+}

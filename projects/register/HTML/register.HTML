@@ -1,90 +1,110 @@
 <html>
 
-<head>
-    <!-- // ------------------------------------------
+    <head>
+        <!-- // ------------------------------------------
   // link
   // ------------------------------------------ -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style/main.css">
-    <link rel="stylesheet" href="../style/modal.css">
-    <link rel="stylesheet" href="../style/chart.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="../style/main.css">
+        <link rel="stylesheet" href="../style/modal.css">
+        <link rel="stylesheet" href="../style/chart.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+            rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
 
-<body>
-    <!-- // ------------------------------------------
+    <body>
+        <!-- // ------------------------------------------
   // divs
   // ------------------------------------------ -->
+        <div class="container">
+            <div class="first-title">OCEAN.</div>
+            <div class="wrapper">
+                <div class="first-page">
+                    <div class="register-side">
+                        <div class="title">Create an account</div>
+                        <div class="c">
+                            <div class="c1">
+                                <label for="inp" class="inp input1">
+                                    <input onkeyup="butomCheck()" type="text"
+                                        id="inp" placeholder="&nbsp;">
+                                    <span class="label">First name</span>
+                                    <span class="focus-bg"></span>
+                                </label>
+                                <label for="inp" class="inp input2">
+                                    <input onkeyup="butomCheck()" type="text"
+                                        id="inp" placeholder="&nbsp;">
+                                    <span class="label">Last name</span>
+                                    <span class="focus-bg"></span>
+                                </label>
+                                <div onclick="buildNextPage(1)"
+                                    class="button-next empty">next</div>
+                            </div>
 
-    <div class="container">
-        <div class="first-title">OCEAN.</div>
-        <div class="wrapper">
-        </div>
-    </div>
+                            <div class="c2">
+                                <label for="inp" class="inp input1">
+                                    <input onkeyup="butomCheck()" type="text"
+                                        id="inp" placeholder="&nbsp;">
+                                    <span class="label">Email</span>
+                                    <span class="focus-bg"></span>
+                                </label>
+                                <label for="inp" class="inp input2">
+                                    <input onkeyup="butomCheck()" type="text"
+                                        id="inp" placeholder="&nbsp;">
+                                    <span class="label">Password</span>
+                                    <span class="focus-bg"></span>
+                                </label>
+                                <div onclick="buildNextPage(1)"
+                                    class="button-next empty x">create</div>
+                            </div>
 
-    <script type="text/html" id="bio">
-        <div class="first-page">
-            <div class="register-side">
-                <div class="title">Create an account</div>
-                <div class="inputs-wrapper">
-                    <div class="col-3 input-effect">
-                        <input class="effect-1" type="text">
-                        <label>First Name</label>
+                        </div>
+
                     </div>
-                    <div class="col-3 input-effect">
-                        <input class="effect-1" type="text">
-                        <label>Last Name</label>
+
+                    <div class="img-side">
+                        <img class="img" src="../23.png" alt="">
+                        <div class="login-button-wrapper">
+                            <div class="question">Already have an account?</div>
+                            <div onclick="buildNextPage(3)" class="btn
+                                btn-link">Login</div>
+                        </div>
                     </div>
-                    <div onclick="buildNextPage(1)" class="button-next">next</div>
-                </div>
-            </div>
-            <div class="img-side">
-                <img class="img" src="../23.png" alt="">
-                <div class="login-button-wrapper">
-                    <div class="question">Already have an account?</div>
-                    <div class="btn btn-link">Login</div>
+
                 </div>
             </div>
         </div>
 
-        <div class="second-page">
-            <div class="register-side">
-                <div class="title">Create an account</div>
-                <div class="inputs-wrapper">
-                    <div class="col-3 input-effect">
-                        <input class="effect-1" type="text">
-                        <label>Email</label>
-                    </div>
-                    <div class="col-3 input-effect">
-                        <input class="effect-1" type="text">
-                        <label>password</label>
-                    </div>
-                    <div class="button-next">Create</div>
-                </div>
-            </div>
-            <div class="img-side">
-                <img class="img" src="../23.png" alt="">
-                <div class="login-button-wrapper">
-                    <div class="question">Already have an account?</div>
-                    <div class="btn btn-link">Login</div>
-                </div>
-            </div>
-        </div>
-    </script>
-    <!-- // ------------------------------------------
+
+        <!-- // ------------------------------------------
   // script-links
   // ------------------------------------------ -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.1/moment.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../JavaScript/register.js"></script>
-</body>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.1/moment.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="../JavaScript/register.js"></script>
+    </body>
 
 </html>
