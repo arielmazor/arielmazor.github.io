@@ -43,37 +43,43 @@
                         <div class="title">Create an account</div>
                         <div class="c">
                             <div class="c1">
-                                <label for="inp" class="inp input1">
-                                    <input onkeyup="butomCheck()" type="text"
-                                        id="inp" placeholder="&nbsp;">
+                                <label for="inp" class="inp l">
+                                    <input onkeyup="usernameCheck()" type="text"
+                                        class="input1" id="inp"
+                                        placeholder="&nbsp;">
                                     <span class="label">First name</span>
                                     <span class="focus-bg"></span>
                                 </label>
-                                <label for="inp" class="inp input2">
-                                    <input onkeyup="butomCheck()" type="text"
-                                        id="inp" placeholder="&nbsp;">
+                                <label for="inp" class="inp p">
+                                    <input onkeyup="usernameCheck()" type="text"
+                                        class="input2" id="inp"
+                                        placeholder="&nbsp;">
                                     <span class="label">Last name</span>
                                     <span class="focus-bg"></span>
                                 </label>
-                                <div onclick="buildNextPage(1)"
-                                    class="button-next empty">next</div>
+                                <div class="footer">
+                                    <div onclick="nextPage()"
+                                        class="button-next empty x">next</div></div>
                             </div>
 
                             <div class="c2">
-                                <label for="inp" class="inp input1">
-                                    <input onkeyup="butomCheck()" type="text"
-                                        id="inp" placeholder="&nbsp;">
+                                <label for="inp" class="inp l">
+                                    <input class="input3"
+                                        onkeyup="emailAndPasswordCheck()"
+                                        type="text" id="inp">
                                     <span class="label">Email</span>
                                     <span class="focus-bg"></span>
                                 </label>
-                                <label for="inp" class="inp input2">
-                                    <input onkeyup="butomCheck()" type="text"
-                                        id="inp" placeholder="&nbsp;">
+                                <label for="inp" class="inp p">
+                                    <input onkeyup="emailAndPasswordCheck()"
+                                        type="text" class="input4" id="inp">
                                     <span class="label">Password</span>
                                     <span class="focus-bg"></span>
                                 </label>
-                                <div onclick="buildNextPage(1)"
-                                    class="button-next empty x">create</div>
+                                <div class="footer">
+                                    <div onclick="prevPage()" class="y">back</div>
+                                    <div class="button-next empty">create</div>
+                                </div>
                             </div>
 
                         </div>
@@ -84,8 +90,7 @@
                         <img class="img" src="../23.png" alt="">
                         <div class="login-button-wrapper">
                             <div class="question">Already have an account?</div>
-                            <div onclick="buildNextPage(3)" class="btn
-                                btn-link">Login</div>
+                            <div class="btn btn-link">Login</div>
                         </div>
                     </div>
 

@@ -1,27 +1,37 @@
 var userlist = [3, 2, 1]
-var input1;
-var input2;
-function buildNextPage() {
-	input1 = $(".input1").val();
-	input2 = $(".input2").val();
-	{
-		$(".c1").addClass("close");
-		$(".c2").addClass("show")
-	}
+
+function nextPage() {
+  $(".c1").addClass("hide");
+  $(".c2").addClass("_show")
+  $(".c1").removeClass("show");
+  $(".c2").removeClass("hide");
 }
 
+function prevPage() {
+  $(".c1").removeClass("hide");
+  $(".c1").addClass("_show")
 
-function butomCheck() {
-	var empty = false;
-	if (input1 == '') {
+  $(".c2").removeClass("_show");
+  $(".c2").addClass("hide");
+}
 
-		empty = true;
+function usernameCheck() {
+  var input1 = $(".input1").val();
+  var input2 = $(".input2").val();
+  if (input1 === "" || input2 === "") {
+    $(".button-next").addClass('empty');
+  } else {
+    $(".button-next").removeClass('empty');
+  }
+}
 
-	}
-	if (empty == true) {
-		$(".button-next").addClass('empty');
-		return;
-	} else {
-		$(".button-next").removeClass('empty');
-	}
+function emailAndPasswordCheck() {
+
+  var input3 = $(".input3").val();
+  var input4 = $(".input4").val();
+  if (input3 === "" || input4 === "") {
+    $(".button-next").addClass('empty');
+  } else {
+    $(".button-next").removeClass('empty');
+  }
 }
