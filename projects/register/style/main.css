@@ -84,6 +84,24 @@
     height: 32px;
     transition: 1s;
     cursor: pointer;
+    transition: 1s;
+}
+
+._button-next {
+    border-radius: 42px;
+    border: 1px solid #116dff;
+    display: flex;
+    align-items: center;
+    color: #116dff;
+    font-family: Trebuchet MS;
+    font-size: 15px;
+    font-weight: bold;
+    justify-content: center;
+    width: 100;
+    height: 32px;
+    transition: 1s;
+    cursor: pointer;
+    transition: 1s;
 }
 
 .left {
@@ -93,13 +111,26 @@
 
 .empty {
     pointer-events: none;
-    color: gray;
-    border: 1px solid gray;
+    color: rgb(77, 77, 77);
+    border: 1px solid rgb(77, 77, 77);
+}
+
+._button-next.empty:hover {
+    color: white;
+    background: rgb(77, 77, 77);
+    transition: 1s;
+}
+
+._button-next:hover {
+    background: #116dff;
+    color: white;
+    transition: 7ms;
 }
 
 .button-next.empty:hover {
     color: white;
-    background: gray;
+    background: rgb(77, 77, 77);
+    transition: 1s;
 }
 
 .button-next:hover {
@@ -274,7 +305,7 @@ body {
     border-radius: 42px;
     display: flex;
     align-items: center;
-    color: #116dff;
+    color: rgb(77, 77, 77);
     font-family: Trebuchet MS;
     font-size: 15px;
     font-weight: bold;
@@ -304,7 +335,7 @@ body {
 }
 
 .title {
-    left: 5%;
+    left: 6%;
     color: black;
     font-family: 'Maven Pro', sans-serif;
     font-weight: 100;
@@ -340,18 +371,79 @@ body {
     transition: 1s;
 }
 
-._show {
-    left: 0;
-}
-
-.hide {
-    left: -150%;
-}
-
 .l {
     margin-top: 58px;
 }
 
 .p {
     margin-bottom: 27px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c3 {
+    position: absolute;
+    transition: 1s;
+    height: 100%;
+    background: white;
+    width: 100%;
+    flex-direction: column;
+    left: -112%;
+}
+
+.c3 .title {
+    left: 50%;
+}
+
+.c3-header {
+    height: 100px;
+    width: 100%;
+    margin-bottom: 33px;
+    flex-direction: column;
+}
+
+.c3-title {
+    font-weight: 300;
+    font-size: 41px;
+    padding: 17px;
+    letter-spacing: 1px;
+}
+
+.c3-explain {
+    color: rgb(77, 77, 77);
+}
+
+.c3-footer {
+    height: 100px;
+    width: 100%;
+    margin-bottom: 94px;
+}
+
+._btn {
+    border-radius: 25px;
+    width: 130px;
+    background: transparent;
+    border: 1px solid #3986ff;
+    color: #3986ff;
+    outline: 0px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+._btn:hover {
+    background: #3986ff;
+    color: white;
+    transition: 1s;
+}
+
+._show {
+    left: 0;
+}
+
+.hide {
+    left: -150%;
 }

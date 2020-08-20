@@ -1,5 +1,9 @@
 var userlist = [3, 2, 1]
-
+function createPage() {
+  $(".c1").addClass("hide");
+  $(".c2").addClass("hide");
+  $(".c3").addClass("_show")
+}
 function nextPage() {
   $(".c1").addClass("hide");
   $(".c2").addClass("_show")
@@ -30,8 +34,8 @@ function emailAndPasswordCheck() {
   var input3 = $(".input3").val();
   var input4 = $(".input4").val();
   if (input3 === "" || input4 === "") {
-    $(".button-next").addClass('empty');
+    $("._button-next").addClass('empty');
   } else {
-    $(".button-next").removeClass('empty');
+    $("._button-next").removeClass('empty');
   }
 }
