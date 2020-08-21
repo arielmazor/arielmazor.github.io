@@ -319,6 +319,7 @@ body {
 .footer {
     display: flex;
     justify-content: flex-end;
+    margin-top: 35px;
 }
 
 .inp input:focus+.label {
@@ -335,12 +336,11 @@ body {
 }
 
 .title {
-    left: 5%;
+    left: 29px;
     color: black;
     font-family: 'Maven Pro', sans-serif;
-    font-weight: 100;
-    font-size: 14px;
-    font-size: 25px;
+    font-weight: 600;
+    font-size: 16px;
     position: absolute;
     top: 60px;
 }
@@ -363,7 +363,9 @@ body {
 
 .c1 {
     position: absolute;
+    top: 45px;
     transition: 1s;
+    padding-top: 65px;
 }
 
 .move {
