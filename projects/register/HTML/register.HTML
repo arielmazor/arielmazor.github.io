@@ -59,7 +59,7 @@
                                 </label>
                                 <div class="footer">
                                     <div onclick="nextPage()"
-                                        class="button-next empty x">next</div></div>
+                                        class="button-next disable x">next</div></div>
                             </div>
 
                             <div class="c2">
@@ -79,17 +79,19 @@
                                 <div class="footer">
                                     <div onclick="prevPage()" class="y">back</div>
                                     <div onclick="createPage()"
-                                        class="_button-next empty">create</div>
+                                        class="_button-next disable">create</div>
                                 </div>
                             </div>
                             <div class="c3 center">
                                 <div class="c3-header center">
-                                    <div class="c3-title">Almost There!</div>
+                                    <div class="c3-title">Done!</div>
                                     <div class="c3-explain">Press Login buttom
                                         to continue</div>
                                 </div>
                                 <div class="c3-footer center">
-                                    <button type="button" class="_btn">Login</button>
+                                    <button target="_blank"
+                                        onclick="openSite()"
+                                        type="button" class="_btn">Login</button>
                                 </div>
                             </div>
                         </div>
