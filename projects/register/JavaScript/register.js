@@ -23,9 +23,9 @@ function usernameCheck() {
   var input1 = $(".input1").val();
   var input2 = $(".input2").val();
   if (input1 === "" || input2 === "") {
-    $(".button-next").addClass('disable');
+    $(".btn-next").addClass('disable');
   } else {
-    $(".button-next").removeClass('disable');
+    $(".btn-next").removeClass('disable');
   }
 }
 
@@ -34,9 +34,9 @@ function emailAndPasswordCheck() {
   var input3 = $(".input3").val();
   var input4 = $(".input4").val();
   if (input3 === "" || input4 === "") {
-    $("._button-next").addClass('disable');
+    $(".btn-create").addClass('disable');
   } else {
-    $("._button-next").removeClass('disable');
+    $(".btn-create").removeClass('disable');
   }
 }
 function openSite() {
