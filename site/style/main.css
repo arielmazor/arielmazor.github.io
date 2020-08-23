@@ -69,6 +69,9 @@ h1 {
   font-size: 34px;
   text-transform: uppercase;
   color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 h2 {
@@ -96,7 +99,6 @@ a {
 
 .section {
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 80px 0 50px 0;
@@ -1113,4 +1115,58 @@ footer .contact-icons .icon {
   .materials .icons-wrapper {
     margin-top: 45px;
   }
+}
+
+#wrap {
+  width: 100%;
+  padding: 50px 0;
+}
+
+#slider {
+  width: 300px;
+  margin: 0 auto;
+}
+
+#slider img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.slide-dots {
+  text-align: center;
+}
+
+.slide-dots li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.slide-dots li button {
+  position: relative;
+  text-indent: -9999px;
+}
+
+.slide-dots li.slick-active button:before {
+  content: ".";
+}
+
+.slick-prev:before, .slick-next:before {
+  color: lightgray;
+}
+
+.slick-prev {
+  left: 15px;
 }
