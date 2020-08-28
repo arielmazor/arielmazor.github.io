@@ -1,0 +1,255 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="TYPO3 CMS">
+  <meta name="author" content="Shaul Mazor">
+  <meta name="robots" content="index,follow">
+
+   <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" media="all"> 
+  <link rel="stylesheet" type="text/css" href="style/main.css" media="all"> 
+  
+  <title>{{content.pageTitle}}</title>			
+ </head>
+ <body>  
+    <header>
+      <div class="main">
+        <div class="menu-btn">
+          <span class="material-icons icon">menu</span>
+        </div>
+        <div class="menu-panel">
+          <div class="pi-icons">
+            <span class="material-icons">place</span>     
+            <span class="material-icons">phone</span>
+            <span class="material-icons">mail_outline</span>
+          </div>
+          <div class="login-wrapper">
+            <div class="login-btn">{{titles.login}}</div>
+          </div>
+        </div>
+      </div>
+      <div class="pi-panel">
+        <div class="inner">
+          <div class="left">
+            <div class="name">{{content.fullName}}</div>
+            <div class="line">
+              <span class="material-icons">phone</span>
+              <div class="txt">{{content.phone}}</div>
+            </div>
+            <div class="line">
+              <span class="material-icons">mail_outline</span>
+              <div class="txt">{{content.email}}</div>
+            </div>
+            <div class="line">
+              <span class="material-icons">place</span>   
+              <div class="address-line">
+                <div class="txt">{{content.address}} </div>
+                <a class="open-map">{{titles.viewMap}}</a>  
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <img class="profile-img" src="img/profile.jpg"> 
+          </div>
+        </div>
+      </div>  
+    </header>
+
+    <div class="overlay"></div>
+
+    <main>   
+      <div class="home">
+        <div class="bg"></div>
+        <div class="wrapper">
+          <div class="img-container">
+            <img class="img" src="img/flyer.png" alt=""/>
+          </div>
+          <div class="txt-container">
+            <div class="headline">
+              <h2 class="teacher-name">{{content.teacherName}}</h2>
+              <div class="slogen"> 
+                <div id="typed-strings" style="display: none;">
+                  {{#each content.subjects}}
+                    <div>{{this.name}}</div>
+                  {{/each}}
+                </div>
+                <div class="typed-wrapper f-c">
+                  <div id="typed"></div>
+                  <div class="material-icons btn-dd">arrow_drop_down</div>
+                </div>  
+                <div class="tutor">{{titles.tutor}}.</div>
+              </div>
+            </div>
+            {{#each content.subjects}}
+              <div class="subjects arr{{@index}} show">
+                {{#each topics}}
+                  <div class="subject">
+                    <div class="inner">{{this}}</div>
+                  </div>
+                {{/each}}
+              </div>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+
+      <div id="about-me" class="about-me section seb white">
+          <h1>{{titles.aboutMe}}</h1>
+          <div class="wrapper">
+            <p class="txt-wrapper f-c">{{content.aboutMe}}</p> 
+            <div class="img-frame">
+              <img src="img/profile.jpg">
+            </div>
+          </div>
+      </div>
+        
+      <div class="expertise section seb grey">
+        <h1>{{titles.myExpertise}}</h1>
+        <div class="wrapper">
+          <div class="items">
+            {{#each content.myExpertise}}
+            <div class="item">
+              <div class="chk-icon"></div>
+              <div class="body">
+                <div class="title"><div class="txt">{{title}}</div></div>
+                <div class="more">{{desc}}</div>
+              </div>
+              <div class="tgl-icon"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></div>
+            </div>  
+            {{/each}}
+          </div> 
+          <div class="img-wrapper">
+            <img src="img/expertise.png">      
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials section seb white">
+        <div class="owl-carousel owl-theme">
+          {{#each content.testimonials}}
+            <div class="item">
+              <p class="referer">{{referer}}</p>
+              <div class="testimonial">
+                {{testimonial}}
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </div> 
+
+      <div id="pricing" class="pricing section seb grey">
+        <h1>{{titles.pricing}}</h1>
+        <h2>{{titles.pricingSlogen}}</h2>
+        <div class="wrapper">
+          <div class="left f-c">
+            <div class="price">
+              <div class="currency">$</div>
+              <div class="num">200</div>
+            </div>
+            <div class="buy-now">{{titles.buyNow}}</div>
+          </div>
+          <div class="right">
+            <div class="main-panel">
+              <div class="line">
+                <div class="line-inner" data-type="lesson">
+                  <div class="input-like">
+                    <span class="lesson-val"></span>
+                  </div>
+                  <div class="desc">{{titles.lessons}}</div>
+                </div>
+              </div>  
+              <div class="plus"><div class="icn">+</div></div>
+              <div class="line">
+                <div class="line-inner" data-type="offline">
+                  <div class="input-like">
+                    <span class="offline-time-val"></span>
+                  </div>
+                  <div class="desc">{{titles.offlineWork}}</div>
+                </div>  
+              </div>
+            </div>
+            <div class="update-panel">
+              <div class="header">
+                <div class="txt chat">CHAT TIME (MINS)</div>
+                <div class="txt offline">OFFLINE WORK (MINS)</div>
+                <div class="txt lesson">Total LESSONS</div>
+                <div class="btn btn-close f-c">
+                  <div class="material-icons">close</div>
+                </div>
+              </div>
+              <div class="body">
+                <div class="num-frame">
+                  <div class="sign-btn down"></div>
+                  <div class="input-wrapper">
+                    <input id="price-input" type="text" value="" readonly>
+                  </div>
+                  <a class="sign-btn up"></a>
+                </div>
+                <div class="footer">
+                  <div class="btn btn-ok">OK</div>
+                </div>
+              </div>
+            </div>
+            <div class="info-panel">
+              <div class="btn btn-close f-c">
+                <div class="material-icons">close</div>
+              </div>
+              <ul class="note-list">
+                <li>Lesson is 50 minutes</li>
+                <li>Teaching only at my place</li>
+                <li>Lesson is 1:1 and 50 minutes</li>
+              </ul>
+            </div>
+          </div>
+          <div class="btn-open-info">
+            <svg enable-background="new 0 0 543.059 543.059" version="1.1" viewBox="0 0 543.06 543.06" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m346.44 468.14h-18.727v-297.08c0-5.062-1.855-9.456-5.557-13.17-3.709-3.703-8.098-5.557-13.164-5.557h-112.37c-5.073 0-9.461 1.854-13.17 5.557-3.708 3.715-5.563 8.103-5.563 13.17v37.454c0 5.074 1.854 9.462 5.563 13.17 3.703 3.715 8.091 5.569 13.17 5.569h18.727v240.88h-18.727c-5.073 0-9.461 1.855-13.17 5.557-3.708 3.715-5.563 8.104-5.563 13.17v37.455c0 5.074 1.854 9.461 5.563 13.17 3.703 3.715 8.091 5.57 13.17 5.57h149.82c5.074 0 9.461-1.855 13.17-5.57 3.703-3.701 5.564-8.09 5.564-13.17v-37.455c0-5.061-1.855-9.455-5.564-13.17-3.709-3.709-8.101-5.556-13.169-5.556z"/><circle cx="267.67" cy="62.92" r="62.92"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div id="materials" class="materials section seb white">
+        <h1>STUDY MATERIALS</h1>
+        <div class="icons-wrapper">
+          <div class="icn-wrapper">
+            <img alt="exams" class="exams" src="img/exams.png">
+            <div class="title">Exams</div>
+          </div>
+          <div class="icn-wrapper">
+            <img alt="Exercises" class="exercises" src="img/cube.svg">
+            <div class="title">Exercises</div>
+          </div>
+          <div class="icn-wrapper">
+            <img alt="vedio" class="vedio" src="img/vedio-icon.png">
+            <div class="title">Videos</div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="section">
+        <h1>{{titles.question}}</div>
+        <h2 class="question">{{titles.questionTitle}}</div>
+      </footer>  
+      
+      <div class="copyright">
+        <p>{{titles.copyrights}} <a class="tutorna">{{titles.tutorna}}</a></p>
+      </div> 
+    </main>
+
+    <script>
+      lessonNum = 10;
+      lessonPrice = 25;
+      chatTime = 90;
+      chatPrice = 20/60;
+      offlineTime = 60;
+      offlinePrice = 15/60;
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="../editor.js"></script>
+</body>
+</html>  
