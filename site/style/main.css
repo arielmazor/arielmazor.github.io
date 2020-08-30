@@ -1179,7 +1179,7 @@ button {
 
 .slide-dots li.slick-active button:before {
   content: '.';
-  color: black;
+  color: #77b1ff;
 }
 
 .slick-prev {
@@ -1203,14 +1203,14 @@ button {
   top: 364px;
   position: absolute;
   transition: 1s;
-  background: black;
+  background: #000000;
   opacity: 0.5;
   display: flex;
   align-items: center;
 }
 
 .project-wrapper:hover>.background {
-  top: 308px;
+  top: 289px;
   transition: 1s;
 }
 
@@ -1230,4 +1230,28 @@ button {
   width: 53%;
   display: flex;
   justify-content: center;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-family: 'slick';
+  font-size: 22px;
+  line-height: 1;
+  opacity: .75;
+  color: #77b1ff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev:before, .slick-next:before:hover {
+  font-family: 'slick';
+  font-size: 22px;
+  line-height: 1;
+  opacity: .75;
+  color: #2d76d4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
