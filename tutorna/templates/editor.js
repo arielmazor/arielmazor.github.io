@@ -83,8 +83,7 @@ var data = {
         testimonial: `"Who could judge our services better than our customers? Discover what does for companies in our reference reports."`
       }
     ]
-  },
-  domain: domain
+  }
 }
 
 //-----------------------------------------
@@ -92,7 +91,7 @@ var data = {
 function replaceHead(){
   var txt = $("head").html();
   var template = Handlebars.compile(txt);
-  $("head").html(template(data));
+  $("head").html(template({ pageTitle: data }));
 }
 
 //-------------------------------------------
