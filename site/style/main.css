@@ -1255,3 +1255,15 @@ button {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.slick-next:before {
+  content: '›';
+}
+
+.slick-prev:before {
+  content: '‹';
+}
+
+.slick-prev:before, .slick-next:before {
+  font-family: '';
+}

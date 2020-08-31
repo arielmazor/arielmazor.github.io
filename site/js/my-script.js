@@ -24,19 +24,33 @@ function initHeader() {
 		}
 	});
 };
+function href(num) {
+	if (num == 1) {
+		window.open("https://arielmazor.github.io/projects/register/HTML/register.HTML")
+	}
+	if (num == 2) {
+		window.open("https://arielmazor.github.io/projects/contacts/HTML/contacts.HTML")
+	}
+	if (num == 3) {
+		window.open("https://arielmazor.github.io/projects/indexes/HTML/indexes.HTML")
+	} if (num == 4) {
+		window.open("https://arielmazor.github.io/projects/Friends%20Num%20List/FriendsNumList.HTML")
+	}
 
+}
 function initProjectsCarousel() {
 
 	$("#slider").slick({
 		speed: 1000,
 		dots: true,
-		dotsClass: 'slide-dots'
+		dotsClass: 'slide-dots',
+		prevArrow: '<div class="slick-prev "></div>',
+		nextArrow: '<div  class="slick-next "></div>',
 	});
 }
 
 
 $(document).ready(function () {
-
 	initHeader();
 	initProjectsCarousel();
 });
