@@ -11,16 +11,13 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" media="all"> 
-  <link rel="stylesheet" type="text/css" href="{{domain}}/style/main.css" media="all"> 
+  <link rel="stylesheet" type="text/css" href="style/main.css" media="all"> 
   
   <title>{{content.pageTitle}}</title>			
  </head>
  <body>  
     <header>
       <div class="main">
-        <div class="menu-btn">
-          <span class="material-icons icon">menu</span>
-        </div>
         <div class="menu-panel">
           <div class="pi-icons">
             <span class="material-icons">place</span>     
@@ -33,6 +30,7 @@
         </div>
       </div>
       <div class="pi-panel">
+        <div class="btn-close"></div>
         <div class="inner">
           <div class="left">
             <div class="name">{{content.fullName}}</div>
@@ -48,13 +46,11 @@
               <span class="material-icons">place</span>   
               <div class="address-line">
                 <div class="txt">{{content.address}} </div>
-                <a class="open-map">{{titles.viewMap}}</a>  
               </div>
-            </div>
+          </div>
           </div>
           <div class="right">
-            <img class="profile-img" src="img/profile.jpg"> 
-          </div>
+          <img class="profile-img" src="img/profile.jpg"> 
         </div>
       </div>  
     </header>
@@ -66,7 +62,7 @@
         <div class="bg"></div>
         <div class="wrapper">
           <div class="img-container">
-            <img class="img" src="{{domain}}/img/woman.png" alt=""/>
+            <img class="img" src="img/woman.png" alt=""/>
           </div>
           <div class="txt-container">
             <div class="headline">
@@ -246,7 +242,6 @@
       chatPrice = 20/60;
       offlineTime = 60;
       offlinePrice = 15/60;
-      domain = "http://localhost:5000/templates/female"
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>   
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
