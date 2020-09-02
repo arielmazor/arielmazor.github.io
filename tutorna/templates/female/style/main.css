@@ -41,13 +41,6 @@ h1 {
   color: black;
 }
 
-h2 {
-  font-size: 24px;
-  text-transform: uppercase;
-  color: #f7ba05;
-  margin-top: 32px;
-}
-
 a {
   text-decoration: none;
   color: gray;
@@ -218,7 +211,7 @@ header .main{
 }
 
 .pi-icons:hover .material-icons{
-  color: #e43c30;
+  color: #5f4238;
 }
 
 .menu-panel{
@@ -229,6 +222,7 @@ header .main{
   background: white;
   position: relative;
 }
+
 .menu{
   display: flex;
   margin-right: 25px;
@@ -324,9 +318,10 @@ header .pi-panel {
 }
 
 .pi-panel .name {
-  padding: 10px 0 35px 0;
-  font-family: sans-serif;
-  font-size: 28px;
+  padding: 15px 0 30px 0;
+  font-weight: 600;
+  font-family: 'Eczar', serif;
+  font-size: 26px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -335,7 +330,7 @@ header .pi-panel {
 
 .pi-panel .line {
   display: flex;
-  padding: 12px 0;
+  padding: 15px 0;
 }
 
 .pi-panel .line .icon {
@@ -362,6 +357,7 @@ header .pi-panel {
 .pi-panel .address-line{
   display: flex;
   align-items: flex-start;
+  cursor: pointer;
 }
 
 .pi-panel .address-line .txt{
@@ -594,8 +590,9 @@ header .pi-panel {
 .about-me .img-frame{   
   border: 1px solid #9E9E9E;
   padding: 4%;
-  max-width: 375px;
+  max-width: 390px;
   margin: 0px 25px;
+  position: relative;
 }
 
 .about-me .img-frame img {
@@ -603,8 +600,38 @@ header .pi-panel {
   width:100%;
   height: auto;
   margin: 0 auto;
+  filter: grayscale(100%);
 }
 
+.about-me .ply{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.about-me .play::after{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 3;
+  content: "";
+  margin: auto;
+  transition: all 0.5s ease 0s;
+  width: 105px;
+  height: 65px;
+  background: url(../img/play.svg) center center / cover no-repeat;
+  opacity: 0;
+}
+
+
+.about-me .img-frame:hover .play::after{ 
+  opacity: 1;
+}
 
 /* -------------------------------------------
   expertise
@@ -763,6 +790,12 @@ header .pi-panel {
   pricing
 -------------------------------------------- */
 
+.pricing h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #f7ba05;
+  margin-top: 32px;
+}
 
 .pricing .wrapper{
   display: flex;
@@ -795,7 +828,7 @@ header .pi-panel {
 .pricing .wrapper .left::after { 
   content: "";
   display: block;
-  background: #f7c222;
+  background: #fec63b;
   position: absolute;
   top: -50px;
   bottom: -12px;
@@ -829,7 +862,7 @@ header .pi-panel {
   padding: 10px;
   border-radius: 10rem;
   margin-top: 25px;
-  min-width: 195px;
+  min-width: 165px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -862,7 +895,7 @@ header .pi-panel {
   justify-content: center;
   height: 100%;
   flex:1;
-  background: #f7c222;
+  background: #fec63b;
   padding-left: 35px;
   position: relative;
   overflow: hidden;
@@ -898,6 +931,28 @@ header .pi-panel {
   cursor: pointer;
 }
 
+.pricing .input-like .val{
+  font-family: sans-serif;
+  font-size: 23px;
+  padding-top: 3px;
+  margin-right: 5px;
+}
+
+.pricing .arrow-up, .pricing .arrow-down {
+  position: absolute;
+  font-size: 20px;
+  right: 5px;
+  color: #696868;
+}
+
+.pricing .arrow-up {
+  top: 4px;
+}
+
+.pricing .arrow-down {
+  top: 13px;
+}
+
 .pricing .plus {
   width: 100px;
   height: 40px;
@@ -917,10 +972,6 @@ header .pi-panel {
   border: 1px solid #b0b0b0;
 } 
 
-.pricing .line-inner:hover .desc{
-  color: #fff;
-} 
-
 .pricing .line-inner .input-like{
   border: 1px solid #ebebeb;
 }
@@ -929,7 +980,7 @@ header .pi-panel {
   display: flex;
   align-items: center;
   position: relative;
-  font-size:19px;
+  font-size: 20px;
 }
 
 .pricing .update-panel{
@@ -938,7 +989,7 @@ header .pi-panel {
   right: -100%;
   bottom: 0;
   width: 100%;
-  background: #f7c222;
+  background: #fec63b;
   transition: all 0.7s ease-in-out;
   z-index: 1;
 }
@@ -1207,7 +1258,9 @@ footer h1{
 }
 
 footer h2{
+  padding-top: 35px;
   color: #f3c332;
+  font-size: 30px;
 }
 
 footer .contact-icons{
@@ -1283,7 +1336,6 @@ footer .contact-icons .icon{
   .home .txt-container {
     padding-left: 25px;
     min-width: 525px;
-    margin-top: 30px;
   }
   
   .home .subjects .subject {
@@ -1322,10 +1374,6 @@ footer .contact-icons .icon{
   
   .section{
     margin-top: 85px;
-  }
-
-  header .main{
-    flex-wrap: wrap;
   }
 
   header .pi-panel{
@@ -1524,12 +1572,13 @@ footer .contact-icons .icon{
   }
 
   .pricing .price .num {
-    font-size: 55px;
+    font-size: 50px;
+    padding-top: 15px;
   }
 
   .pricing .buy-now {
     margin-right: 0;
-    border: 1px solid #525252;
+    border: 1px solid #795548;
     min-width: 163px;
   }
 
@@ -1541,7 +1590,7 @@ footer .contact-icons .icon{
   }
 
   .pricing .right .main-panel{
-    padding: 35px 0;
+    padding: 30px 0;
   }
 
   .pricing .line-inner .input-like {
@@ -1584,7 +1633,7 @@ footer .contact-icons .icon{
   .pricing .main-panel{
     align-items: center;
     justify-content: center;
-    background: #ffc107;
+    background: #fec63b;
   }
 
   .pricing .line {
@@ -1616,8 +1665,8 @@ footer .contact-icons .icon{
 
   .pricing .desc {
     margin-top: 13px;
-    font-size: 15px;
-    color: #fff;
+    font-size: 18px;
+    color: #000;
   }
 
   .materials {

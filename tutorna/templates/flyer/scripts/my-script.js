@@ -3,47 +3,24 @@ var priceType;
 
 function initHeader() {
 	$('header .pi-icons').click(function(){
-		if($('header .menu-btn').hasClass("open")) {
-			$('header .menu-btn').click();
-		}
-		if ($(this).hasClass("open")) {
-			$(this).removeClass("open");
-			$(".overlay").removeClass("show");
-			$("header .pi-panel").slideUp(350);
-		 } else {
-			$(this).addClass("open");
-			$(".overlay").addClass("show");
-			$("header .pi-panel").slideDown(350);
-		 }
-  });
-  
-	$('header .menu-btn').click(function(){
-		if($('header .pi-icons').hasClass("open")) {
-			$('header .pi-icons').click();
-		}
-		if ($(this).hasClass("open")) {
-			$(this).removeClass("open");
-			$(".overlay").removeClass("menu");
-			$("header .menu-panel").slideUp(300, function() { 
-				$(this).removeAttr("style");
-				$(this).removeClass("show");
-			});
-		 } else {
-			$(this).addClass("open");
-			$(".overlay").addClass("menu");
-			$("header .menu-panel").slideDown(300, function() { 
-				$(this).removeAttr("style");
-				$(this).addClass("show");
-			});
-		 }
+		$(".menu-panel").addClass("open");
+		$(".overlay").addClass("show");
+		$("header .pi-panel .btn-close").addClass("show");
+		$("header .pi-panel").slideDown(350);
 	});
+
+	$('header .pi-panel .btn-close').click(function(){
+		$(".menu-panel").removeClass("open");
+		$(".overlay").removeClass("show");
+		$("header .pi-panel .btn-close").removeClass("show");
+		$("header .pi-panel").slideUp(350);
+	});
+  
 	$('.overlay').click(function(){
-		if($('header .menu-btn').hasClass("open")) {
-			$('header .menu-btn').click();
-		}
-		if($('header .pi-icons').hasClass("open")) {
-			$('header .pi-icons').click();
-		}
+		$(".menu-panel").removeClass("open");
+		$(".overlay").removeClass("show");
+		$("header .pi-panel .btn-close").removeClass("show");
+		$("header .pi-panel").slideUp(350);
 	});
 
 	$('ul.menu .pricing').click(function(){
