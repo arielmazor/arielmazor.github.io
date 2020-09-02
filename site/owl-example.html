@@ -1,29 +1,83 @@
 <html>
-    <head>
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.1/assets/owl.carousel.css">
-        <link rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
-        <link rel="stylesheet" type="text/css" href="\style\carousel copy.css"
-            media="all">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-    </head>
-    <body>
 
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.1/assets/owl.carousel.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 
+    <style>
+        body {
+            background: #2E86DE;
+        }
 
+        .col-carousel {
+            margin: 70px 0;
+        }
 
+        /* owl nav */
+        .owl-prev span,
+        .owl-next span {
+            color: #FFF;
+        }
 
+        .owl-prev span:hover,
+        .owl-next span:hover {
+            color: #8199A3;
+        }
 
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="js\my-script copy.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.1/owl.carousel.min.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    </body>
+        .owl-prev,
+        .owl-next {
+            position: absolute;
+            top: 0;
+            height: 100%;
+        }
+
+        .owl-prev {
+            left: 7px;
+        }
+
+        .owl-next {
+            right: 7px;
+        }
+
+        /* removing blue outline from buttons */
+        button:focus,
+        button:active {
+            outline: none;
+        }
+    </style>
+    <script>
+        $('.carousel-main').owlCarousel({
+            items: 3,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 1500,
+            margin: 10,
+            nav: true,
+            dots: false,
+            navText: ['<span class="fas fa-chevron-left fa-2x"></span>', '<span class="fas fa-chevron-right fa-2x"></span>'],
+        })
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-carousel">
+                <div class="owl-carousel carousel-main">
+                    <div><img src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=1"></div>
+                    <div><img src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=2"></div>
+                    <div><img src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=3"></div>
+                    <div><img src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=4"></div>
+                    <div><img src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=5"></div>
+                    <div><img src="http://via.placeholder.com/350x200/FECA57/FFF.jpg?text=6"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.1/owl.carousel.min.js"></script>
+</body>
+
 </html>

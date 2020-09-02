@@ -537,6 +537,8 @@ header .pi-panel {
   margin: 45px 0 70px 0;
   max-width: 750px;
   text-align: center;
+  font-size: 27px;
+  font-weight: border;
 }
 
 .about-me .img-frame {
@@ -561,6 +563,109 @@ header .pi-panel {
 .code {
   width: 100%;
   background: #efefef;
+}
+
+.code .row {
+  margin-left: 92px;
+}
+
+.col-carousel {
+  margin: 70px 0;
+}
+
+/* owl nav */
+
+/* 
+.owl-prev span, .owl-next span {
+  color: #FFF;
+}
+
+.owl-prev span:hover, .owl-next span:hover {
+  color: #8199A3;
+} */
+
+.owl-prev, .owl-next {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+.owl-next {
+  right: -25px;
+}
+
+.owl-prev {
+  left: -25px;
+}
+
+.wide-arrow {
+  cursor: pointer;
+  display: block;
+  width: 30px;
+  height: 42px;
+  position: relative;
+}
+
+.wide-arrow:before, .wide-arrow:after {
+  background: #8b8b8b;
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  top: calc(50% - (2px / 2));
+}
+
+.wide-arrow:before {
+  transform: rotate(-70deg);
+}
+
+.wide-arrow:after {
+  transform: rotate(70deg);
+}
+
+.wide-arrow:hover:before, .wide-arrow:hover:after {
+  background: #000;
+}
+
+.wide-arrow.disable:before, .wide-arrow.disable:after {
+  background: #cfcfcf;
+  pointer-events: none;
+}
+
+.wide-arrow.left:before, .wide-arrow.left:after {
+  left: 10px;
+  transform-origin: left 50%;
+}
+
+.wide-arrow.right:before, .wide-arrow.right:after {
+  right: 10px;
+  transform-origin: right 50%;
+}
+
+/* removing blue outline from buttons */
+
+button:focus, button:active {
+  outline: none;
+}
+
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .owl-carousel button.owl-dot {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0 !important;
+  font: inherit;
+  outline: 0;
+}
+
+.item-wrap {
+  width: 900px;
+  height: 505px;
+  border: 1px solid grey;
+}
+
+.item-wrap img {
+  height: 100%;
 }
 
 /* ------------------------------------------- */
