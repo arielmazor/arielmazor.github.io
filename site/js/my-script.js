@@ -48,6 +48,7 @@ function initProjectsCarousel() {
 		margin: 10,
 		nav: true,
 		dots: false,
+		mouseDrag: true,
 		navText: ['<span class="wide-arrow left"></span>', '<span class="wide-arrow right"></span>'],
 	})
 }

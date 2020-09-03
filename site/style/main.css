@@ -1,6 +1,4 @@
-.owl-carousel {
-  max-width: 950px;
-}
+.owl-carousel {}
 
 .owl-item {
   display: flex !important;
@@ -211,16 +209,18 @@ header .main {
   display: flex;
   align-items: center;
   cursor: pointer;
+  padding: 18px;
+  padding-left: 302px;
 }
 
 .pi-icons .splitter {
-  border: 1px solid #f3c332;
+  border: 1px solid #00b1b7;
   margin: 0 10px;
   height: 30px;
 }
 
 .pi-icons .material-icons {
-  font-size: 21px;
+  font-size: 20px;
 }
 
 .menu-panel {
@@ -300,6 +300,7 @@ header .pi-panel {
   flex: 1;
   display: flex;
   flex-direction: column;
+  padding-left: 146px;
 }
 
 .pi-panel .name {
@@ -537,8 +538,8 @@ header .pi-panel {
   margin: 45px 0 70px 0;
   max-width: 750px;
   text-align: center;
-  font-size: 27px;
-  font-weight: border;
+  font-size: 21px;
+  font-weight: 100;
 }
 
 .about-me .img-frame {
@@ -551,7 +552,7 @@ header .pi-panel {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  border-radius: 100%;
+  border-radius: 46%;
 }
 
 /* ------------------------------------------- */
@@ -566,7 +567,7 @@ header .pi-panel {
 }
 
 .code .row {
-  margin-left: 92px;
+  margin-left: 36px;
 }
 
 .col-carousel {
@@ -591,11 +592,11 @@ header .pi-panel {
 }
 
 .owl-next {
-  right: -25px;
+  right: 86px;
 }
 
 .owl-prev {
-  left: -25px;
+  left: 86px;
 }
 
 .wide-arrow {
@@ -659,13 +660,45 @@ button:focus, button:active {
 }
 
 .item-wrap {
-  width: 900px;
-  height: 505px;
+  width: 807px;
+  height: 401px;
   border: 1px solid grey;
 }
 
 .item-wrap img {
-  height: 100%;
+  height: auto;
+  width: auto !important;
+}
+
+.background {
+  width: 808px;
+  height: 16%;
+  top: 401px;
+  position: absolute;
+  transition: 1s;
+  background: #000000;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+}
+
+.item-wrap:hover>.background {
+  top: 336px;
+  transition: 1s;
+}
+
+.date {
+  color: white;
+  width: 53%;
+  display: flex;
+  justify-content: center;
+}
+
+.project-name {
+  color: white;
+  width: 53%;
+  display: flex;
+  justify-content: center;
 }
 
 /* ------------------------------------------- */
@@ -689,10 +722,12 @@ footer.section {
 
 footer h1 {
   color: white;
+  font-weight: 400;
 }
 
 footer h2 {
-  color: #f3c332;
+  color: #00b1b7;
+  font-weight: 400;
 }
 
 footer .contact-icons {
