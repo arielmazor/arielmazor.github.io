@@ -1,114 +1,96 @@
 <html>
 
-  <head>
-    <!-- // ------------------------------------------
+<head>
+  <!-- // ------------------------------------------
   // link
   // ------------------------------------------ -->
-    <link rel="stylesheet" href="../style/main.css">
+  <link rel="stylesheet" href="../style/main.css">
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
-      rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-      <title>register</title>
-      <link rel="icon" href="https://arielmazor.github.io/site/images/favaicon.png">
-  </head>
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Register</title>
+  <link rel="icon" href="https://arielmazor.github.io/site/images/favaicon.png">
+</head>
 
-  <body>
-    <!-- // ------------------------------------------
+<body>
+  <!-- // ------------------------------------------
   // divs
   // ------------------------------------------ -->
-    <div class="container center">
-      <div class="first-title">OCEAN.</div>
-      <div class="wrapper center">
-        <div class="first-page">
-          <div class="register-side">
-            <div class="title">Create an account</div>
-            <div class="c center">
-              <div class="c1">
-                <label for="inp" class="inp">
-                  <input onkeyup="usernameCheck()" type="text"
-                    class="input1" id="inp"
-                    placeholder="&nbsp;">
-                  <span class="label">First name</span>
-                  <span class="focus-bg"></span>
-                </label>
-                <label for="inp" class="inp">
-                  <input onkeyup="usernameCheck()" type="text"
-                    class="input2" id="inp"
-                    placeholder="&nbsp;">
-                  <span class="label">Last name</span>
-                  <span class="focus-bg"></span>
-                </label>
-                <div class="footer">
-                  <div onclick="nextPage()"
-                    class="_btn btn-next disable">next</div></div>
-              </div>
-              <div class="c2">
-                <label for="inp" class="inp">
-                  <input class="input3"
-                    onkeyup="emailAndPasswordCheck()"
-                    type="text" id="inp">
-                  <span class="label">Email</span>
-                  <span class="focus-bg"></span>
-                </label>
-                <label for="inp" class="inp">
-                  <input onkeyup="emailAndPasswordCheck()"
-                    type="text" class="input4" id="inp">
-                  <span class="label">Password</span>
-                  <span class="focus-bg"></span>
-                </label>
-                <div class="footer">
-                  <div onclick="prevPage()" class="btn-back center">back</div>
-                  <div onclick="createPage()"
-                    class="_btn btn-create disable">create</div>
-                </div>
-              </div>
-              <div class="c3 center">
-                <div class="c3-header center">
-                  <div class="c3-title">Done!</div>
-                  <div class="c3-explain">Press Login buttom
-                    to continue</div>
-                </div>
-                <div class="c3-footer center">
-                  <button target="_blank"
-                    onclick="openSite()"
-                    type="button" class="_btn">Login</button>
-                </div>
+  <div class="container center">
+    <div class="first-title">OCEAN.</div>
+    <div class="wrapper center">
+      <div class="first-page">
+        <div class="register-side">
+          <div class="title">Create an account</div>
+          <div class="c center">
+            <div class="c1">
+              <label for="inp" class="inp">
+                <input onkeyup="usernameCheck()" type="text" class="input1" id="inp" placeholder="&nbsp;">
+                <span class="label">First name</span>
+                <span class="focus-bg"></span>
+              </label>
+              <label for="inp" class="inp">
+                <input onkeyup="usernameCheck()" type="text" class="input2" id="inp" placeholder="&nbsp;">
+                <span class="label">Last name</span>
+                <span class="focus-bg"></span>
+              </label>
+              <div class="footer">
+                <div onclick="nextPage()" class="_btn btn-next disable">next</div>
               </div>
             </div>
-
-          </div>
-
-          <div class="img-side center">
-            <img class="img" src="../23.png" alt="">
-            <div class="login-button-wrapper center">
-              <div class="question">Already have an account?</div>
-              <div class="btn btn-link">Login</div>
+            <div class="c2">
+              <label for="inp" class="inp">
+                <input class="input3" onkeyup="emailAndPasswordCheck()" type="text" id="inp">
+                <span class="label">Email</span>
+                <span class="focus-bg"></span>
+              </label>
+              <label for="inp" class="inp">
+                <input onkeyup="emailAndPasswordCheck()" type="text" class="input4" id="inp">
+                <span class="label">Password</span>
+                <span class="focus-bg"></span>
+              </label>
+              <div class="footer">
+                <div onclick="prevPage()" class="btn-back center">back</div>
+                <div onclick="createPage()" class="_btn btn-create disable">create</div>
+              </div>
+            </div>
+            <div class="c3 center">
+              <div class="c3-header center">
+                <div class="c3-title">Done!</div>
+                <div class="c3-explain">Press Login buttom
+                  to continue</div>
+              </div>
+              <div class="c3-footer center">
+                <button target="_blank" onclick="openSite()" type="button" class="_btn">Login</button>
+              </div>
             </div>
           </div>
 
         </div>
+
+        <div class="img-side center">
+          <img class="img" src="../23.png" alt="">
+          <div class="login-button-wrapper center">
+            <div class="question">Already have an account?</div>
+            <div class="btn btn-link">Login</div>
+          </div>
+        </div>
+
       </div>
     </div>
+  </div>
 
 
-    <!-- // ------------------------------------------
+  <!-- // ------------------------------------------
   // script-links
   // ------------------------------------------ -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.1/moment.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
-    <script
-      src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="../JavaScript/register.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.1/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="../JavaScript/register.js"></script>
+</body>
 
 </html>
