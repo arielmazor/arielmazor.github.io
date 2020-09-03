@@ -287,6 +287,7 @@ header .pi-panel {
   width: 100%;
   max-width: 1150px;
   padding: 20px 25px;
+  margin-left: 18%;
 }
 
 .pi-panel .inner {
@@ -566,10 +567,6 @@ header .pi-panel {
   background: #efefef;
 }
 
-.code .row {
-  margin-left: 36px;
-}
-
 .col-carousel {
   margin: 70px 0;
 }
@@ -592,11 +589,11 @@ header .pi-panel {
 }
 
 .owl-next {
-  right: 86px;
+  right: 107px;
 }
 
 .owl-prev {
-  left: 86px;
+  left: 107px;
 }
 
 .wide-arrow {
@@ -722,12 +719,14 @@ footer.section {
 
 footer h1 {
   color: white;
-  font-weight: 400;
+  font-weight: 100;
+  letter-spacing: 1px;
 }
 
 footer h2 {
   color: #00b1b7;
-  font-weight: 400;
+  font-weight: 100;
+  letter-spacing: 0.5px;
 }
 
 footer .contact-icons {
