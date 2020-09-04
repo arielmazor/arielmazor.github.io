@@ -1,0 +1,269 @@
+/* -----------------------------------------------
+header
+----------------------------------------------- */
+
+.C {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+}
+
+.f-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------------------------------------------------
+.new-wrapper
+---------------------------------------------------*/
+
+.new-wrapper {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.new-wrapper .show2 {
+    display: flex;
+}
+
+.book {
+    padding-bottom: 26px;
+}
+
+.error {
+    padding-bottom: 15px;
+}
+
+.new-row-wrapper {
+    left: 76%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    cursor: pointer;
+    padding-top: 20px;
+    margin-top: 5px;
+}
+
+.new-row-wrapper:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    background: rgb(187, 187, 187);
+    cursor: pointer;
+}
+
+.fa-plus {
+    font-size: 26px;
+    padding-bottom: 15px;
+    padding-left: 2px;
+}
+
+/* ---------------------------------------------------
+contact-list
+---------------------------------------------------*/
+
+.contact-list {
+    flex-direction: column;
+    margin-top: 100px;
+    width: 1150px;
+    align-items: center;
+}
+
+.contact-list-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.contact-list-wrapper.show2 {
+    display: flex;
+}
+
+/* ---------------------------------------------------*/
+
+.contact-list .header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.list-wrapper .header .contacts-title {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.contacts-title {
+    flex: 1;
+    font-size: 31px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+}
+
+.btn-icon:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    background: rgb(187, 187, 187);
+    cursor: pointer;
+}
+.btn-plus{
+    position: fixed;
+    bottom: 20;
+    right: 51px;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    display: none;
+}
+.btn-plus.show2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-plus:hover{
+    background: lightgray;
+}
+/* ---------------------------------------------------*/
+
+.list {
+    display: none;
+}
+
+.list.show2 {
+    display: block;
+    height: 100px;
+    flex: 1;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    height: 77%;
+    position: relative;
+    border-bottom: 1px solid lightgray;
+    width: 1150px;
+    cursor: pointer;
+}
+
+.image-wrapper {
+    padding-left: 12px;
+    width: 68px;
+    height: 84px;
+    align-items: center;
+    display: flex;
+}
+
+.plus {
+    display: none;
+}
+
+.plus:hover {
+    background: lightgray;
+}
+
+.img-title {
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.avatar-container {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.show2 {
+    display: flex;
+}
+
+.row:hover {
+    background: rgb(246, 246, 246);
+}
+
+.row:hover>.actions, .actions:hover {
+    display: flex;
+}
+
+.phone-number {
+    font-family: 'Roboto', sans-serif;
+    color: #5f6368;
+    display: table-cell;
+    padding: 17px;
+    width: 25%;
+}
+
+.name-wrapper {
+    padding: 4px;
+    visibility: visible;
+    width: 35%;
+    padding-left: 5px;
+}
+
+.phoneNumber-wrapper {
+    padding: 4px;
+    visibility: visible;
+    width: 35%;
+}
+
+.actions {
+    display: none;
+    width: 100px;
+    position: absolute;
+    left: 1059px;
+
+}
+
+.delete {
+    height: 19px;
+}
+
+.image {
+    border-radius: 50%;
+    vertical-align: middle;
+    width: 53px;
+}
+
+.edit {
+    height: 19px;
+}
+
+.actions-wrapper {
+    display: none;
+}
