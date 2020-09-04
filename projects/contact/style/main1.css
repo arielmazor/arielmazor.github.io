@@ -1,0 +1,76 @@
+/* -----------------------------------------------
+header
+----------------------------------------------- */
+
+.section {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.f-c {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	font-size: 22px;
+	text-transform: uppercase;
+	color: black;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	font-weight: 300;
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 27px;
+}
+
+/* -----------------------------------------------
+first page 
+----------------------------------------------- */
+
+.wrapper {
+	width: auto;
+	height: auto;
+	flex-direction: column;
+}
+
+.image-wrapper {
+	padding-bottom: 21px;
+}
+
+.create-botton {
+	width: 146 px;
+	height: 33px;
+	background: transparent;
+	border-radius: 3px;
+}
+
+.create-botton:hover {
+	background: #f1f3fa;
+}
+
+.image-wrapper::before {
+	content: "";
+	width: 198px;
+	display: block;
+	background-repeat: no-repeat;
+	height: 197px;
+	background-image: url(../Images/book1.png)
+}
+
+.create {
+	color: var(--gm-colortextbutton-ink-color, #1a73e8);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14.6px;
+	padding-left: 9px;
+	font-weight: 900;
+}
+
+svg {
+	fill: var(--gm-colortextbutton-ink-color, #1a73e8);
+}
