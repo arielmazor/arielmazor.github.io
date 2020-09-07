@@ -44,10 +44,11 @@ first page
 }
 
 .create-botton {
-	width: 146 px;
+	width: 146px;
 	height: 33px;
 	background: transparent;
 	border-radius: 3px;
+	cursor: pointer;
 }
 
 .create-botton:hover {
