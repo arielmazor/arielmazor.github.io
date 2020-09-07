@@ -1,65 +1,71 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="../style/main1.css">
-    <link rel="stylesheet" href="../style/modal1.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,300&family=Raleway:ital,wght@0,300;0,400;1,100;1,200&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../style/main1.css">
+	<link rel="stylesheet" href="../style/modal1.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,300&family=Raleway:ital,wght@0,300;0,400;1,100;1,200&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <div class="modal">
-        <div class="modal-wrapper"></div>
-        <div onclick="closeModal()" class="backraund"></div>
-    </div>
-    <div class="section no-value">
-        <div class="f-c wrapper">
-            <div class="image-wrapper">
-            </div>
-            <div class="text-no-value-wrapper">
-                <h1>No contacts yet</h1>
-            </div>
-            <div onclick="buildModal()" class="f-c create-botton">
-                <svg width="20" height="20" viewBox="0 0 24 24" class="NSy2Hd RTiFqe undefined">
-                    <path fill="none" d="M0 0h24v24H0V0z"></path>
-                    <path
-                        d="M12 6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m0 10c2.7 0 5.8 1.29 6 2H6c.23-.72 3.31-2 6-2m0-12C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 10c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z">
-                    </path>
-                </svg>
-                <div class="create">Create contact</div>
-            </div>
-        </div>
-    </div>
+	<div class="modal">
+		<div class="modal-wrapper"></div>
+		<div onclick="closeModal()" class="backraund"></div>
+	</div>
+	<div class="section no-value">
+		<div class="f-c wrapper">
+			<div class="image-wrapper">
+			</div>
+			<div class="text-no-value-wrapper">
+				<h1>No contacts yet</h1>
+			</div>
+			<div onclick="buildModal()" class="f-c create-botton">
+				<svg class="svg1" width="20" height="20" viewBox="0 0 24 24" class="NSy2Hd RTiFqe undefined">
+					<path fill="none" d="M0 0h24v24H0V0z"></path>
+					<path
+						d="M12 6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m0 10c2.7 0 5.8 1.29 6 2H6c.23-.72 3.31-2 6-2m0-12C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 10c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z">
+					</path>
+				</svg>
+				<div class="create">Create contact</div>
+			</div>
+		</div>
+	</div>
 
 
 
-    <script id="template" type="text/x-handlebars-template">
-        <div class="profile-wrapper">
-            <img class="upload-icon" src="../Images/upload.png" alt="">
-        </div>
+	<script id="template" type="text/x-handlebars-template">
+  <div class="header"></div>
+  <div class="body">
+		<div class="row1">
+			<div class="profile-wrapper">
+				<img class="profile-img" src="../Images/first avatar.png " data-iml="15080.979999998817">
+				<svg width="20" height="20" viewBox="0 0 24 24" class="upload-icon"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M14.12 4l1.83 2H20v12H4V6h4.05l1.83-2h4.24M15 2H9L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2zm-3 7c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3m0-2c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"></path></svg>
+			</div>
+			<div class="input">
+				<input type="text" required/>
+				<a>Username</a>
+			</div>
+			<div class="input">
+				<input type="text" required/>
+				<a>Email</a>
+			</div>
 
-    <div class="inps-wrapper">
-    
-    <label for="inp" class="inp">
-        <input class="input3" onkeyup="emailAndPasswordCheck()" type="text" id="inp">
-        <span class="label">Email</span>
-        <span class="focus-bg"></span>
-      </label>
-      <label for="inp" class="inp">
-        <input onkeyup="emailAndPasswordCheck()" type="text" class="input4" id="inp">
-        <span class="label">Password</span>
-        <span class="focus-bg"></span>
-      </label>
-    </div>
+		</div>
+
+	</div>
+	<div class="footer">
+
+	</div>
+
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
-    <script src="../JavaScript/contact.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+	<script src="../JavaScript/contact.js"></script>
 </body>
 
 </html>+

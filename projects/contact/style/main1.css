@@ -72,6 +72,6 @@ first page
 	font-weight: 900;
 }
 
-svg {
+.svg1 {
 	fill: var(--gm-colortextbutton-ink-color, #1a73e8);
 }
