@@ -13,8 +13,76 @@
 
 <body>
 	<div class="modal">
-		<div class="modal-wrapper"></div>
-		<div onclick="closeModal()" class="backraund"></div>
+
+		<div class="modal-wrapper">
+			<div class="image-select-wrapper"></div>
+			<div class="header">
+				<div class="title">create an account</div>
+			</div>
+			<div class="body">
+				<div class="row row1">
+					<div class="profile-wrapper">
+						<img class="profile-img" src="../Images/first avatar.png " data-iml="15080.979999998817">
+						<div onclick="imageSelect()">
+							<svg width="20" height="20" viewBox="0 0 24 24" class="upload-icon">
+								<path fill="none" d="M0 0h24v24H0V0z"></path>
+								<path
+									d="M14.12 4l1.83 2H20v12H4V6h4.05l1.83-2h4.24M15 2H9L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2zm-3 7c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3m0-2c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z">
+								</path>
+							</svg>
+						</div>
+					</div>
+					<div class="input">
+						<input onkeyup="saveData()" class="data-input" type="text" required />
+						<a>First name</a>
+					</div>
+					<div class="input">
+						<input onkeyup="saveData()" class="data-input" type="text" required />
+						<a>Last name</a>
+					</div>
+
+				</div>
+				<div class="row row2">
+					<div class="f-c icon-wrapper">
+						<svg width="20" height="20" viewBox="0 0 24 24" class="email-svg">
+							<path d="M0 0h24v24H0V0z" fill="none"></path>
+							<path
+								d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z">
+							</path>
+						</svg>
+					</div>
+					<div class="input">
+						<input onkeyup="saveData()" class="data-input email-input" type="text" required />
+						<a>Email</a>
+					</div>
+
+				</div>
+				<div class="row row3">
+
+					<div class="f-c icon-wrapper">
+
+						<svg width="20" height="20" viewBox="0 0 24 24" class="NSy2Hd RTiFqe undefined">
+							<path fill="none" d="M0 0h24v24H0V0z"></path>
+							<path
+								d="M6.54 5c.06.89.21 1.76.45 2.59l-1.2 1.2c-.41-1.2-.67-2.47-.76-3.79h1.51m9.86 12.02c.85.24 1.72.39 2.6.45v1.49c-1.32-.09-2.59-.35-3.8-.75l1.2-1.19M7.5 3H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.49c0-.55-.45-1-1-1-1.24 0-2.45-.2-3.57-.57-.1-.04-.21-.05-.31-.05-.26 0-.51.1-.71.29l-2.2 2.2c-2.83-1.45-5.15-3.76-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1z">
+							</path>
+						</svg>
+					</div>
+					<div class="input">
+						<input onkeyup="saveData()" class="data-input email-input" type="text" required />
+						<a>Phone</a>
+					</div>
+
+				</div>
+			</div>
+			<div class=" footer">
+				<div class="buton-wraper">
+					<div class="f-c save-buton disable">save</div>
+					<div onclick="closeModal(1)" class="f-c exit-buton">cancel</div>
+				</div>
+			</div>
+		</div>
+		<div onclick="closeModal(1)" class="backraund"></div>
 	</div>
 	<div class="section no-value">
 		<div class="f-c wrapper">
@@ -38,28 +106,7 @@
 
 
 	<script id="template" type="text/x-handlebars-template">
-  <div class="header"></div>
-  <div class="body">
-		<div class="row1">
-			<div class="profile-wrapper">
-				<img class="profile-img" src="../Images/first avatar.png " data-iml="15080.979999998817">
-				<svg width="20" height="20" viewBox="0 0 24 24" class="upload-icon"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M14.12 4l1.83 2H20v12H4V6h4.05l1.83-2h4.24M15 2H9L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2zm-3 7c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3m0-2c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"></path></svg>
-			</div>
-			<div class="input">
-				<input type="text" required/>
-				<a>Username</a>
-			</div>
-			<div class="input">
-				<input type="text" required/>
-				<a>Email</a>
-			</div>
 
-		</div>
-
-	</div>
-	<div class="footer">
-
-	</div>
 
     </script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
