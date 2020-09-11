@@ -18,7 +18,7 @@ function imageSelect() {
     $(".image-select-wrapper").addClass("image-select-show")
 }
 function closeModal(num) {
-    if (num == 1) {
+    if (num == 0) {
         $(".modal").removeClass("show")
         $(".modal").addClass("hide")
     } else {

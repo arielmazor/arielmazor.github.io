@@ -15,7 +15,28 @@
 	<div class="modal">
 
 		<div class="modal-wrapper">
-			<div class="image-select-wrapper"></div>
+			<div class="image-select-wrapper">
+				<div class="f-c header">
+					<h1 class="image-select-title"> Select an image</h1>
+					<div onclick="closeModal(1)" class="f-c exit-select">
+						<svg style="fill:#383d4c; cursor: pointer; " viewBox="0 0 24 24" height="30px" width="30px">
+							<path class="Ce1Y1c"
+								d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z">
+							</path>
+						</svg>
+					</div>
+				</div>
+				<div class=" f-c wrapper">
+					<div class="line1">
+						<img class="image-select" src="../Images/avatar.png" alt="">
+						<img class="image-select" src="../Images/avatar2.png" alt="">
+					</div>
+					<div class="line2">
+						<img class="image-select" src="../Images/avatar3.png" alt="">
+						<img class="image-select" src="../Images/avatar4.png" alt="">
+					</div>
+				</div>
+			</div>
 			<div class="header">
 				<div class="title">create an account</div>
 			</div>
@@ -78,11 +99,11 @@
 			<div class=" footer">
 				<div class="buton-wraper">
 					<div class="f-c save-buton disable">save</div>
-					<div onclick="closeModal(1)" class="f-c exit-buton">cancel</div>
+					<div onclick="closeModal(0)" class="f-c exit-buton">cancel</div>
 				</div>
 			</div>
 		</div>
-		<div onclick="closeModal(1)" class="backraund"></div>
+		<div onclick="closeModal(0)" class="backraund"></div>
 	</div>
 	<div class="section no-value">
 		<div class="f-c wrapper">

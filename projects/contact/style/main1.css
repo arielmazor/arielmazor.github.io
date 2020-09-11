@@ -26,7 +26,6 @@ h1 {
 	justify-content: center;
 	font-weight: 300;
 	font-family: 'Raleway', sans-serif;
-	margin-bottom: 27px;
 }
 
 /* -----------------------------------------------
@@ -34,13 +33,17 @@ first page
 ----------------------------------------------- */
 
 .wrapper {
-	width: auto;
-	height: auto;
 	flex-direction: column;
+	height: 80%;
+	width: 100%;
 }
 
 .image-wrapper {
 	padding-bottom: 21px;
+}
+
+.text-no-value-wrapper h1 {
+	margin-bottom: 27px;
 }
 
 .create-botton {

@@ -88,6 +88,20 @@
     left: 0%;
 }
 
+.image-select {
+    padding: 4px;
+    cursor: pointer;
+}
+
+.exit-select {
+    height: 100%;
+    width: 83px;
+}
+
+.image-select-title {
+    padding-left: 66px;
+}
+
 /* -----------------------------------------------
 /* modal-body            
 ----------------------------------------------- */
