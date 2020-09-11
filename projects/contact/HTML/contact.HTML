@@ -28,12 +28,12 @@
 				</div>
 				<div class=" f-c wrapper">
 					<div class="line1">
-						<img class="image-select" src="../Images/avatar.png" alt="">
-						<img class="image-select" src="../Images/avatar2.png" alt="">
+						<img onclick="imageSelect(1)" class="image-select" src="../Images/avatar.png" alt="">
+						<img onclick="imageSelect(2)" class="image-select" src="../Images/avatar2.png" alt="">
 					</div>
 					<div class="line2">
-						<img class="image-select" src="../Images/avatar3.png" alt="">
-						<img class="image-select" src="../Images/avatar4.png" alt="">
+						<img onclick="imageSelect(3)" class="image-select" src="../Images/avatar3.png" alt="">
+						<img onclick="imageSelect(4)" class="image-select" src="../Images/avatar4.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -43,15 +43,7 @@
 			<div class="body">
 				<div class="row row1">
 					<div class="profile-wrapper">
-						<img class="profile-img" src="../Images/first avatar.png " data-iml="15080.979999998817">
-						<div onclick="imageSelect()">
-							<svg width="20" height="20" viewBox="0 0 24 24" class="upload-icon">
-								<path fill="none" d="M0 0h24v24H0V0z"></path>
-								<path
-									d="M14.12 4l1.83 2H20v12H4V6h4.05l1.83-2h4.24M15 2H9L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2zm-3 7c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3m0-2c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z">
-								</path>
-							</svg>
-						</div>
+
 					</div>
 					<div class="input">
 						<input onkeyup="saveData()" class="data-input" type="text" required />
@@ -127,8 +119,15 @@
 
 
 	<script id="template" type="text/x-handlebars-template">
-
-
+		<img class="profile-img" src="{{src}}" data-iml="15080.979999998817">
+		<div onclick="imageSelect()">
+			<svg width="20" height="20" viewBox="0 0 24 24" class="upload-icon">
+				<path fill="none" d="M0 0h24v24H0V0z"></path>
+				<path
+					d="M14.12 4l1.83 2H20v12H4V6h4.05l1.83-2h4.24M15 2H9L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2zm-3 7c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3m0-2c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z">
+				</path>
+			</svg>
+		</div>
     </script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
