@@ -1,0 +1,42 @@
+/* -----------------------------------------------
+list
+----------------------------------------------- */
+
+.list {
+	height: 100%;
+	width: 100%;
+	display: none;
+}
+
+.list .row {
+	height: 65px;
+	width: 700px;
+	border-radius: 5px 5px 0 0;
+	border-bottom: 1px solid lightgray;
+	background: transparent;
+}
+
+.list .row:hover {
+	background: #f8f8f8f8;
+}
+
+.list-image-wrapper {
+	height: 100%;
+	width: 95px;
+}
+
+.image {
+	height: 40px;
+	width: 40px;
+	border-radius: 100%;
+}
+
+.phone-wrapper {
+	padding: 0 2px 5px 5px;
+}
+
+.list-title {
+	font-size: 19px;
+	text-transform: none;
+	font-weight: 100;
+}

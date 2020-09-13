@@ -1,4 +1,4 @@
-
+var index = -1;
 var currIndex;
 var userlist = [];
 var src = "../Images/first avatar.png";;
@@ -20,12 +20,12 @@ function buildModal() {
 function buildlist() {
 	var template = document.querySelector('#template-list').innerHTML;
 	var compiled_template = Handlebars.compile(template);
-	var rendered = compiled_template({ src: userlist.src, name: userlist.name, phoneNumber: userlist.phoneNumber });
+	var rendered = compiled_template({ userlist, index });
 	document.querySelector('.list').innerHTML = rendered
 }
 function checkData() {
 	var data = [];
-	data += $(".data-input").val()
+	data += $(".name-input").val()
 
 	if (data == undefined || data == "") {
 		$(".save-buton").addClass("disable")
@@ -35,6 +35,10 @@ function checkData() {
 }
 
 function onSave() {
+	var fullname = "";
+	fullname = $(".firstname").val();
+	fullname += " " + $(".lastname").val();
+	index += 1;
 	let obj =
 		currIndex == -1
 			? {
@@ -44,21 +48,23 @@ function onSave() {
 			}
 			: userlist[currIndex];
 
-	obj.phoneNumber = $(".email-input").val();
-	obj.fullName = $(".name").val();
+	obj.phoneNumber = $(".phone-input").val();
+	obj.email = $(".email-input").val();
+	obj.name = fullname;
 	obj.src = src;
-
+	console.log(fullname)
 	if (currIndex === -1) {
 		userlist.push(obj);
 	}
 	$(".list").addClass("show");
 
 
-	closeModal(0);
+	closeModal(3);
 	buildlist();
 }
 
 function imageSelect(i) {
+
 	$(".image-select-wrapper").addClass("image-select-show")
 	var srcArry = ["../Images/avatar.png", "../Images/avatar2.png", "../Images/avatar3.png", "../Images/avatar4.png"]
 	src = srcArry[i - 1]
@@ -76,12 +82,12 @@ function closeModal(num) {
 		$(".modal").addClass("hide")
 		data = "";
 	}
-	if (3) {
+	if (num == 3) {
 		$(".modal").removeClass("show")
 		$(".modal").addClass("hide")
 		$(".section").addClass("hide")
 	}
-	else {
+	if (num == 1) {
 		$(".image-select-wrapper").removeClass("image-select-show")
 	}
 	num = 0;

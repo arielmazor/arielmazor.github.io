@@ -2,6 +2,7 @@
 
 <head>
 	<link rel="stylesheet" type="text/css" href="../style/main1.css">
+	<link rel="stylesheet" type="text/css" href="../style/list.css">
 	<link rel="stylesheet" href="../style/modal1.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link
@@ -46,11 +47,11 @@
 
 					</div>
 					<div class="input">
-						<input onkeyup="checkData()" class="name data-input" type="text" required />
+						<input onkeyup="checkData()" class="name-input firstname" type="text" required />
 						<a>First name</a>
 					</div>
 					<div class="input">
-						<input onkeyup="checkData()" class="name" type="text" required />
+						<input onkeyup="checkData()" class="name-input lastname" type="text" required />
 						<a>Last name</a>
 					</div>
 
@@ -65,7 +66,7 @@
 						</svg>
 					</div>
 					<div class="input">
-						<input onkeyup="checkData()" class="data-input email-input" type="text" required />
+						<input onkeyup="checkData()" class="data-input email-input" type="email" required />
 						<a>Email</a>
 					</div>
 
@@ -82,7 +83,7 @@
 						</svg>
 					</div>
 					<div class="input">
-						<input onkeyup="checkData()" class="data-input email-input" type="text" required />
+						<input onkeyup="checkData()" class="data-input phone-input" type="number" required />
 						<a>Phone</a>
 					</div>
 
@@ -97,10 +98,10 @@
 		</div>
 		<div onclick="closeModal(0)" class="backraund"></div>
 	</div>
-	<div class="list"></div>
+	<div class="list f-c"></div>
 	<div class="section no-value">
 		<div class="f-c wrapper">
-			<div class="image-wrapper">
+			<div class=" image-wrapper">
 			</div>
 			<div class="text-no-value-wrapper">
 				<h1>No contacts yet</h1>
@@ -131,9 +132,34 @@
 		</div>
 	</script>
 	<script id="template-list" type="text/x-handlebars-template">
-		<div class="list-wrapper">
-			<div class="image-wrapper"><img src="{{userlist.src}}" alt=""></div>
-		</div>
+
+			{{#each userlist}}
+			<div onclick="showModal('{{index}}')" class="row">
+
+				<div class="f-c list-image-wrapper">
+					<img onclick="showModal('{{index}}')" class="image" src="{{src}}">
+				</div>
+				<div class="f-c name-wrapper">
+					<h1 class="list-title">{{name}}</h1>
+				</div>
+				<div class="f-c phoneNumber-wrapper">
+					<h1  class="list-title">{{phoneNumber}}</h1>
+				</div>
+				<div class="email-wrapper f-c">
+					<h1  class="list-title">{{email}}</h1>
+				</div>
+				<!-- <div class="actions">
+					<div class="btn-icon">
+						<img onclick="_remove()" class="delete" src="{{delete}}">
+					</div>
+					<div class="btn-icon">
+						<img onclick="showModal('{{index}}')" class="edit" src="{{edit}}">
+					</div>
+				</div> -->
+			</div>
+			{{/each}}
+		  
+
     </script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -141,4 +167,4 @@
 	<script src="../JavaScript/contact.js"></script>
 </body>
 
-</html>+
+</html>
