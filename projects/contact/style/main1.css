@@ -78,3 +78,14 @@ first page
 .svg1 {
 	fill: var(--gm-colortextbutton-ink-color, #1a73e8);
 }
+
+/* -----------------------------------------------
+List
+----------------------------------------------- */
+
+.list {
+	height: 100px;
+	width: 500px;
+	background: #1a73e8;
+	display: none;
+}

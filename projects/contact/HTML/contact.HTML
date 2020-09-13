@@ -8,7 +8,7 @@
 		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,300&family=Raleway:ital,wght@0,300;0,400;1,100;1,200&display=swap"
 		rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-
+	<link rel="icon" href="https://arielmazor.github.io/site/images/favaicon.png">
 </head>
 
 <body>
@@ -46,11 +46,11 @@
 
 					</div>
 					<div class="input">
-						<input onkeyup="saveData()" class="data-input" type="text" required />
+						<input onkeyup="checkData()" class="name data-input" type="text" required />
 						<a>First name</a>
 					</div>
 					<div class="input">
-						<input onkeyup="saveData()" class="data-input" type="text" required />
+						<input onkeyup="checkData()" class="name" type="text" required />
 						<a>Last name</a>
 					</div>
 
@@ -65,7 +65,7 @@
 						</svg>
 					</div>
 					<div class="input">
-						<input onkeyup="saveData()" class="data-input email-input" type="text" required />
+						<input onkeyup="checkData()" class="data-input email-input" type="text" required />
 						<a>Email</a>
 					</div>
 
@@ -82,7 +82,7 @@
 						</svg>
 					</div>
 					<div class="input">
-						<input onkeyup="saveData()" class="data-input email-input" type="text" required />
+						<input onkeyup="checkData()" class="data-input email-input" type="text" required />
 						<a>Phone</a>
 					</div>
 
@@ -90,13 +90,14 @@
 			</div>
 			<div class=" footer">
 				<div class="buton-wraper">
-					<div class="f-c save-buton disable">save</div>
+					<div onclick="onSave()" class="f-c save-buton disable">save</div>
 					<div onclick="closeModal(0)" class="f-c exit-buton">cancel</div>
 				</div>
 			</div>
 		</div>
 		<div onclick="closeModal(0)" class="backraund"></div>
 	</div>
+	<div class="list"></div>
 	<div class="section no-value">
 		<div class="f-c wrapper">
 			<div class="image-wrapper">
@@ -127,6 +128,11 @@
 					d="M14.12 4l1.83 2H20v12H4V6h4.05l1.83-2h4.24M15 2H9L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2zm-3 7c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3m0-2c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z">
 				</path>
 			</svg>
+		</div>
+	</script>
+	<script id="template-list" type="text/x-handlebars-template">
+		<div class="list-wrapper">
+			<div class="image-wrapper"><img src="{{userlist.src}}" alt=""></div>
 		</div>
     </script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
