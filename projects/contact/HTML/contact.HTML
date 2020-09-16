@@ -1,40 +1,47 @@
 <html>
 
 <head>
-	<link rel="stylesheet" type="text/css" href="../style/main1.css">
-	<link rel="stylesheet" type="text/css" href="../style/list.css">
-	<link rel="stylesheet" href="../style/modal1.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- -----------------------------------------------
+	links
+	-----------------------------------------------  -->
+	<link rel="stylesheet" type="text/css" href="../style/main1.css" />
+	<link rel="stylesheet" type="text/css" href="../style/list.css" />
+	<link rel="stylesheet" href="../style/modal1.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<link
 		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,300&family=Raleway:ital,wght@0,300;0,400;1,100;1,200&display=swap"
-		rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-	<link rel="icon" href="https://arielmazor.github.io/site/images/favaicon.png">
+		rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+	<link rel="icon" href="https://arielmazor.github.io/site/images/favaicon.png" />
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Overpass:wght@200&display=swap"
+		rel="stylesheet" />
 </head>
 
 <body>
+	<!-- -----------------------------------------------
+	modal
+	-----------------------------------------------  -->
 	<div class="modal">
-
 		<div class="modal-wrapper">
 			<div class="image-select-wrapper">
 				<div class="f-c header">
-					<h1 class="image-select-title"> Select an image</h1>
+					<h1 class="image-select-title">Select an image</h1>
 					<div onclick="closeModal(1)" class="f-c exit-select">
-						<svg style="fill:#383d4c; cursor: pointer; " viewBox="0 0 24 24" height="30px" width="30px">
+						<svg style="fill: #383d4c; cursor: pointer" viewBox="0 0 24 24" height="30px" width="30px">
 							<path class="Ce1Y1c"
 								d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z">
 							</path>
 						</svg>
 					</div>
 				</div>
-				<div class=" f-c wrapper">
+				<div class="f-c wrapper">
 					<div class="line1">
-						<img onclick="imageSelect(1)" class="image-select" src="../Images/avatar.png" alt="">
-						<img onclick="imageSelect(2)" class="image-select" src="../Images/avatar2.png" alt="">
+						<img onclick="imageSelect(1)" class="image-select" src="../Images/avatar.png" alt="" />
+						<img onclick="imageSelect(2)" class="image-select" src="../Images/avatar2.png" alt="" />
 					</div>
 					<div class="line2">
-						<img onclick="imageSelect(3)" class="image-select" src="../Images/avatar3.png" alt="">
-						<img onclick="imageSelect(4)" class="image-select" src="../Images/avatar4.png" alt="">
+						<img onclick="imageSelect(3)" class="image-select" src="../Images/avatar3.png" alt="" />
+						<img onclick="imageSelect(4)" class="image-select" src="../Images/avatar4.png" alt="" />
 					</div>
 				</div>
 			</div>
@@ -43,9 +50,7 @@
 			</div>
 			<div class="body">
 				<div class="row row1">
-					<div class="profile-wrapper">
-
-					</div>
+					<div class="profile-wrapper"></div>
 					<div class="input">
 						<input onkeyup="checkData()" class="name-input firstname" type="text" required />
 						<a>First name</a>
@@ -54,7 +59,6 @@
 						<input onkeyup="checkData()" class="name-input lastname" type="text" required />
 						<a>Last name</a>
 					</div>
-
 				</div>
 				<div class="row row2">
 					<div class="f-c icon-wrapper">
@@ -66,15 +70,12 @@
 						</svg>
 					</div>
 					<div class="input">
-						<input onkeyup="checkData()" class="data-input email-input" type="email" required />
+						<input onkeyup="checkData()" class="data-input email-input" type="text" required />
 						<a>Email</a>
 					</div>
-
 				</div>
 				<div class="row row3">
-
 					<div class="f-c icon-wrapper">
-
 						<svg width="20" height="20" viewBox="0 0 24 24" class="NSy2Hd RTiFqe undefined">
 							<path fill="none" d="M0 0h24v24H0V0z"></path>
 							<path
@@ -86,10 +87,9 @@
 						<input onkeyup="checkData()" class="data-input phone-input" type="number" required />
 						<a>Phone</a>
 					</div>
-
 				</div>
 			</div>
-			<div class=" footer">
+			<div class="footer">
 				<div class="buton-wraper">
 					<div onclick="onSave()" class="f-c save-buton disable">save</div>
 					<div onclick="closeModal(0)" class="f-c exit-buton">cancel</div>
@@ -98,11 +98,18 @@
 		</div>
 		<div onclick="closeModal(0)" class="backraund"></div>
 	</div>
+
+	<!-- -----------------------------------------------
+	list
+	-----------------------------------------------  -->
 	<div class="list f-c"></div>
+
+	<!-- -----------------------------------------------
+	no contact page
+	-----------------------------------------------  -->
 	<div class="section no-value">
 		<div class="f-c wrapper">
-			<div class=" image-wrapper">
-			</div>
+			<div class="image-wrapper"></div>
 			<div class="text-no-value-wrapper">
 				<h1>No contacts yet</h1>
 			</div>
@@ -118,10 +125,11 @@
 		</div>
 	</div>
 
-
-
+	<!-- -----------------------------------------------
+	modal Tamplate
+	-----------------------------------------------  -->
 	<script id="template" type="text/x-handlebars-template">
-		<img class="profile-img" src="{{src}}" data-iml="15080.979999998817">
+		<img class="profile-img" src="{{src}}" data-iml="15080.979999998817" />
 		<div onclick="imageSelect()">
 			<svg width="20" height="20" viewBox="0 0 24 24" class="upload-icon">
 				<path fill="none" d="M0 0h24v24H0V0z"></path>
@@ -131,36 +139,83 @@
 			</svg>
 		</div>
 	</script>
+
+	<!-- -----------------------------------------------
+	Row Contacts Tamplate
+	-----------------------------------------------  -->
 	<script id="template-list" type="text/x-handlebars-template">
-
-			{{#each userlist}}
-			<div onclick="showModal('{{index}}')" class="row">
-
-				<div class="f-c list-image-wrapper">
-					<img onclick="showModal('{{index}}')" class="image" src="{{src}}">
-				</div>
-				<div class="f-c name-wrapper">
-					<h1 class="list-title">{{name}}</h1>
-				</div>
-				<div class="f-c phoneNumber-wrapper">
-					<h1  class="list-title">{{phoneNumber}}</h1>
-				</div>
-				<div class="email-wrapper f-c">
-					<h1  class="list-title">{{email}}</h1>
-				</div>
-				<!-- <div class="actions">
-					<div class="btn-icon">
-						<img onclick="_remove()" class="delete" src="{{delete}}">
+		<div class="wrapper">
+			<div class="header">
+				<div class="header-wrapper">
+					<div class="title">
+						My Contacts
 					</div>
-					<div class="btn-icon">
-						<img onclick="showModal('{{index}}')" class="edit" src="{{edit}}">
+					<div onclick="buildModal()" class="f-c header-create-botton">
+
+						<h1 class="header-create">Create contact</h1>
 					</div>
-				</div> -->
+				</div>
+				<div class="titles-wrapper">
+					<div class="name-header">
+						Name
+					</div>
+					<div class="phone-header">
+						Phone Number
+					</div>
+					<div class="email-header">
+						Email
+					</div>
+				</div>
 			</div>
-			{{/each}}
-		  
+			<div class="body">
+				{{#each userlist}}
+				<div class="row">
+					<div class="f-c list-image-wrapper">
+						<img class="image" src="{{src}}" />
+					</div>
+					<div class="name-wrapper">
+						<h1 class="list-title">
+							{{name}}
+						</h1>
+					</div>
+					<div class="phoneNumber-wrapper">
+						<h1 class="list-title">
+							{{phoneNumber}}
+						</h1>
+					</div>
+					<div class="email-wrapper">
+						<h1 class="list-title">
+							{{email}}
+						</h1>
+					</div>
+					<div class="actions">
+						<div class="actions-wrapper  edit-action-wrapper f-c">
+							<svg class="edit-btn" width="20" height="20" viewBox="0 0 24 24" class="NSy2Hd RTiFqe P5kiYb">
+								<path fill="none" d="M0 0h24v24H0V0z"></path>
+								<path
+									d="M14.06 9.02l.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z">
+								</path>
+							</svg>
+						</div>
+						<div onclick="removeRow()" class="actions-wrapper  delete-action-wrapper f-c">
+							<svg class="delete-btn" width="20" height="20" viewBox="0 0 24 24"
+								class="NSy2Hd RTiFqe undefined">
+								<path d="M15 4V3H9v1H4v2h1v13c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V6h1V4h-5zm2 15H7V6h10v13z">
+								</path>
+								<path d="M9 8h2v9H9zm4 0h2v9h-2z"></path>
+							</svg>
+						</div>
+					</div>
+				</div>
+				{{/each}}
+			</div>
+		</div>
 
-    </script>
+	</script>
+
+	<!-- -----------------------------------------------
+	Scripts
+	-----------------------------------------------  -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>

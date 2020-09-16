@@ -3,40 +3,244 @@ list
 ----------------------------------------------- */
 
 .list {
-	height: 100%;
-	width: 100%;
-	display: none;
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: absolute;
+  background: #f0f4f7;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
+/* -----------------------------------------------
+list wrapper
+----------------------------------------------- */
+
+.list .wrapper {
+  flex-direction: column;
+  width: 1591px;
+  border-radius: 8px;
+  background: #ffff;
+}
+
+/* -----------------------------------------------
+wrapper header
+----------------------------------------------- */
+
+.list .wrapper .header {
+  height: 125px;
+  border: transparent;
+  width: 100%;
+}
+
+.header-wrapper {
+  display: flex;
+  height: 88px;
+  align-items: center;
+  width: 1591px;
+  position: relative;
+}
+
+.list .wrapper .header .title {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  font-size: 30px;
+  letter-spacing: 0.7px;
+  height: 81px;
+  width: 84%;
+}
+
+.name-header {
+  padding-left: 27px;
+  width: 728px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.phone-header {
+  width: 278px;
+  height: 100%;
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.5px;
+  align-items: center;
+}
+
+.email-header {
+  display: flex;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.titles-wrapper {
+  height: 36px;
+  width: 100%;
+  background: #daeffe;
+  border-bottom: 1px solid #c1e4fe;
+  border-top: 1px solid #c1e4fe;
+  position: relative;
+  display: flex;
+}
+
+.modal-wrapper .header .title {
+  letter-spacing: 0.01785714em;
+  font-weight: 500;
+}
+
+.header .title-email {
+  display: table-cell;
+  padding: 4px;
+  width: 175px;
+}
+
+.header .title-name {
+  display: table-cell;
+  padding: 4px;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  width: 199px;
+  white-space: nowrap;
+}
+
+.header .title-phone {
+  padding: 4px;
+  width: 295px;
+  padding-left: 16px;
+  padding-top: 11px;
+  display: flex;
+  justify-content: center;
+}
+
+/* -----------------------------------------------
+create new contact
+----------------------------------------------- */
+
+.header-create-botton {
+  border: 1px solid #c1e4fe;
+  height: 37px;
+  width: 152px;
+  border-radius: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.header-create {
+  font-size: 14px;
+}
+
+.header-create-botton:hover {
+  background: #eaf7ff;
+  border: 1px solid #83c8fd;
+}
+
+/* -----------------------------------------------
+wrapper body
+----------------------------------------------- */
+
+.list .wrapper .body {
+  height: 60%;
+  background: #ffff;
+  border-radius: 0 0 14px 14px;
+}
+
+/* -----------------------------------------------
+row
+----------------------------------------------- */
+
 .list .row {
-	height: 65px;
-	width: 700px;
-	border-radius: 5px 5px 0 0;
-	border-bottom: 1px solid lightgray;
-	background: transparent;
+  height: 70px;
+  width: 100%;
+  border-bottom: 1px solid #dfe5eb;
+  background: transparent;
+  display: flex;
+  align-items: center;
 }
 
 .list .row:hover {
-	background: #f8f8f8f8;
+  background: #eaf7ff;
 }
 
+/* -----------------------------------------------
+list image
+----------------------------------------------- */
+
 .list-image-wrapper {
-	height: 100%;
-	width: 95px;
+  height: 100%;
+  width: 93px;
 }
 
 .image {
-	height: 40px;
-	width: 40px;
-	border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
 }
 
+/* -----------------------------------------------
+list text
+----------------------------------------------- */
+
 .phone-wrapper {
-	padding: 0 2px 5px 5px;
+  padding: 0 2px 5px 5px;
+}
+
+.phonenumber-wrapper {
+  display: flex;
+  align-items: center;
+  width: 278px;
 }
 
 .list-title {
-	font-size: 19px;
-	text-transform: none;
-	font-weight: 100;
+  font-size: 19px;
+  text-transform: none;
+  font-weight: 100;
+  width: auto;
+  padding-left: 5px;
+}
+
+.email-wrapper {
+  width: 395px;
+  display: flex;
+  align-items: center;
+}
+
+.name-wrapper {
+  display: flex;
+  align-items: center;
+  width: 660px;
+}
+
+/* -----------------------------------------------
+actions
+----------------------------------------------- */
+
+.actions {
+  display: none;
+}
+
+.actions-wrapper {
+  height: 36px;
+  width: 36px;
+  background: white;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.edit-action-wrapper {
+  margin: 0 8px;
+}
+
+.delete-btn, .edit-btn {
+  fill: #3899ec;
+}
+
+.row:hover>.actions, .actions:hover {
+  display: flex;
 }
