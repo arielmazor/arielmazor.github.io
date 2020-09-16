@@ -1,5 +1,5 @@
 var index = -1;
-var currIndex;
+// var currIndex;
 var _index;
 var userlist = [];
 var src = "../Images/first avatar.png";
@@ -9,7 +9,7 @@ build Modal
 ----------------------------------------------- */
 
 function buildModal() {
-	currIndex = -1;
+	// currIndex = -1;
 	$(".modal").removeClass("hide");
 
 	var template = document.querySelector("#template").innerHTML;
@@ -27,7 +27,7 @@ Build List
 function buildlist() {
 	userlist = JSON.parse(localStorage.getItem("userlist")) || [];
 
-	if (userlist == []) {
+	if (userlist == 0) {
 		$(".no-value").removeClass("hide");
 		$(".no-value").addClass("show");
 		$(".list").removeClass("show");
@@ -46,7 +46,7 @@ function buildlist() {
 if have data
 ----------------------------------------------- */
 
-function checkData() {
+function isDataValid() {
 	var data = $(".name-input").val();
 
 	if (data == undefined || data == "") {

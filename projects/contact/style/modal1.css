@@ -3,33 +3,33 @@
 ----------------------------------------------- */
 
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: #7f7f7f;
-  align-items: center;
-  justify-content: center;
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: #7f7f7f;
+	align-items: center;
+	justify-content: center;
 }
 
 .backraund {
-  width: 100%;
-  height: 100%;
-  position: absolute;
+	width: 100%;
+	height: 100%;
+	position: absolute;
 }
 
 /* -----------------------------------------------*/
 
 .show {
-  display: flex;
+	display: flex;
 }
 
 .hide {
-  display: none;
+	display: none;
 }
 
 /* -----------------------------------------------
@@ -37,34 +37,34 @@
 ----------------------------------------------- */
 
 .header {
-  align-items: center;
-  background-color: #fff;
-  border-bottom: 1px solid #dadce0;
-  height: 65px;
-  width: 700px;
-  border-radius: 14px 14px 0px 0px;
+	align-items: center;
+	background-color: #fff;
+	border-bottom: 1px solid #dadce0;
+	height: 65px;
+	width: 700px;
+	border-radius: 14px 14px 0px 0px;
 }
 
 .title {
-  font-weight: 100;
-  font-family: "Raleway", sans-serif;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding-left: 25px;
-  font-size: 18px;
+	font-weight: 100;
+	font-family: "Raleway", sans-serif;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding-left: 25px;
+	font-size: 18px;
 }
 
 .modal-wrapper {
-  background-color: #ffffff;
-  width: 700px;
-  align-items: center;
-  border-radius: 14px;
-  position: relative;
-  height: 404px;
-  z-index: 2;
-  box-shadow: 2px 4px 39px -1px rgb(68 68 68 / 97%);
-  overflow-x: hidden;
+	background-color: #ffffff;
+	width: 700px;
+	align-items: center;
+	border-radius: 14px;
+	position: relative;
+	height: 404px;
+	z-index: 2;
+	box-shadow: 2px 4px 39px -1px rgb(68 68 68 / 97%);
+	overflow-x: hidden;
 }
 
 /* -----------------------------------------------
@@ -72,34 +72,37 @@
 ----------------------------------------------- */
 
 .image-select-wrapper {
-  background-color: #ffffff;
-  width: 700px;
-  align-items: center;
-  border-radius: 14px;
-  position: absolute;
-  left: -108%;
-  height: 404px;
-  z-index: 2;
-  box-shadow: 2px 4px 39px -1px rgb(68 68 68 / 97%);
-  transition: 0.9s;
+	background-color: #ffffff;
+	width: 700px;
+	align-items: center;
+	border-radius: 14px;
+	position: absolute;
+	left: -108%;
+	height: 404px;
+	z-index: 2;
+	box-shadow: 2px 4px 39px -1px rgb(68 68 68 / 97%);
+	transition: 0.9s;
 }
 
 .image-select-show {
-  left: 0%;
+	left: 0%;
 }
-
+.image-select-wrapper .wrapper {
+	flex-direction: column;
+	height: 77%;
+}
 .image-select {
-  padding: 4px;
-  cursor: pointer;
+	padding: 4px;
+	cursor: pointer;
 }
 
 .exit-select {
-  height: 100%;
-  width: 83px;
+	height: 100%;
+	width: 83px;
 }
 
 .image-select-title {
-  padding-left: 66px;
+	padding-left: 66px;
 }
 
 /* -----------------------------------------------
@@ -107,8 +110,8 @@
 ----------------------------------------------- */
 
 .modal-wrapper .body {
-  height: 72%;
-  width: 700px;
+	height: 72%;
+	width: 700px;
 }
 
 /* -----------------------------------------------
@@ -116,23 +119,23 @@
 ----------------------------------------------- */
 
 .row {
-  display: flex;
+	display: flex;
 }
 
 .row1 {
-  padding-top: 25px;
-  height: 55px;
+	padding-top: 25px;
+	height: 55px;
 }
 
 .icon-wrapper {
-  width: 55px;
-  margin-left: 25px;
-  padding-right: 23px;
-  margin-top: 9px;
+	width: 55px;
+	margin-left: 25px;
+	padding-right: 23px;
+	margin-top: 9px;
 }
 
 .email-svg {
-  fill: #666666;
+	fill: #666666;
 }
 
 /* -----------------------------------------------
@@ -140,32 +143,32 @@
 ----------------------------------------------- */
 
 .profile-wrapper {
-  position: relative;
-  z-index: 1;
-  margin-left: 25px;
-  padding-right: 23px;
-  padding-top: 2px;
+	position: relative;
+	z-index: 1;
+	margin-left: 25px;
+	padding-right: 23px;
+	padding-top: 2px;
 }
 
 .profile-img {
-  width: 55px;
-  height: 55px;
-  border-radius: 100%;
+	width: 55px;
+	height: 55px;
+	border-radius: 100%;
 }
 
 .upload-icon {
-  background: rgba(0, 0, 0, 0.26);
-  border-radius: 50%;
-  fill: white;
-  right: 28px;
-  opacity: 0;
-  padding: 12px;
-  position: absolute;
-  top: 8px;
+	background: rgba(0, 0, 0, 0.26);
+	border-radius: 50%;
+	fill: white;
+	right: 28px;
+	opacity: 0;
+	padding: 12px;
+	position: absolute;
+	top: 8px;
 }
 
 .upload-icon:hover {
-  opacity: 1;
+	opacity: 1;
 }
 
 /* -----------------------------------------------
@@ -173,70 +176,70 @@
 ----------------------------------------------- */
 
 .inps-wrapper {
-  margin: 0 46px;
+	margin: 0 46px;
 }
 
 .input {
-  display: grid;
-  margin: 17px;
-  width: 202px;
+	display: grid;
+	margin: 17px;
+	width: 202px;
 }
 
 .input input {
-  border: 0px;
-  background: transparent;
-  font: inherit;
-  color: inherit;
-  border-radius: 3px;
-  padding: 10px;
-  outline: none;
-  box-shadow: none;
-  -webkit-appearance: none;
-  transition: 0.2s ease;
-  font-weight: 300;
-  font-family: "Raleway", sans-serif;
-  color: #8f8f8f;
-  width: 191px;
-  border: 0px;
-  border-bottom: 1px solid rgb(230, 230, 230);
-  border-radius: 0px;
+	border: 0px;
+	background: transparent;
+	font: inherit;
+	color: inherit;
+	border-radius: 3px;
+	padding: 10px;
+	outline: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	transition: 0.2s ease;
+	font-weight: 300;
+	font-family: "Raleway", sans-serif;
+	color: #8f8f8f;
+	width: 191px;
+	border: 0px;
+	border-bottom: 1px solid rgb(230, 230, 230);
+	border-radius: 0px;
 }
 
 .input input:focus {
-  border-bottom: 1px solid #1a73e8;
-  transition: 0.5s;
+	border-bottom: 1px solid #1a73e8;
+	transition: 0.5s;
 }
 
 .input a {
-  position: relative;
-  margin-top: -25px;
-  padding: 0 4px;
-  left: 2px;
-  color: black;
-  pointer-events: none;
-  user-select: none;
-  width: max-content;
-  height: max-content;
-  background: transparent;
-  transition: 0.2s ease;
-  font-size: 14px;
-  font-weight: 300;
-  font-family: "Raleway", sans-serif;
+	position: relative;
+	margin-top: -25px;
+	padding: 0 4px;
+	left: 2px;
+	color: black;
+	pointer-events: none;
+	user-select: none;
+	width: max-content;
+	height: max-content;
+	background: transparent;
+	transition: 0.2s ease;
+	font-size: 14px;
+	font-weight: 300;
+	font-family: "Raleway", sans-serif;
 }
 
 .input input:focus + a,
 .input input:valid + a {
-  margin-top: -49px;
-  left: -5px;
-  font-size: 13px;
+	margin-top: -49px;
+	left: -5px;
+	font-size: 13px;
 }
 
 .input input:focus + a {
-  color: #1a73e8;
+	color: #1a73e8;
 }
 
 .email-input {
-  width: 428px !important;
+	width: 428px !important;
 }
 
 /* -----------------------------------------------
@@ -244,52 +247,52 @@
 ----------------------------------------------- */
 
 .footer {
-  background-color: #fff;
-  border-top: 1px solid #dadce0;
-  height: 46px;
-  width: 700px;
-  border-radius: 0px 0px 14px 14px;
-  display: flex;
-  align-items: center;
+	background-color: #fff;
+	border-top: 1px solid #dadce0;
+	height: 46px;
+	width: 700px;
+	border-radius: 0px 0px 14px 14px;
+	display: flex;
+	align-items: center;
 }
 
 .buton-wraper {
-  padding-left: 26px;
-  display: flex;
+	padding-left: 26px;
+	display: flex;
 }
 
 .exit-buton {
-  height: 35px;
-  width: 74px;
-  background: transparent;
-  font-weight: 300;
-  font-family: "Raleway", sans-serif;
-  border-radius: 7px;
-  color: #1a73e8;
-  cursor: pointer;
+	height: 35px;
+	width: 74px;
+	background: transparent;
+	font-weight: 300;
+	font-family: "Raleway", sans-serif;
+	border-radius: 7px;
+	color: #1a73e8;
+	cursor: pointer;
 }
 
 .exit-buton:hover {
-  background: #f6fafe;
+	background: #f6fafe;
 }
 
 .save-buton {
-  height: 35px;
-  width: 74px;
-  background: transparent;
-  font-weight: 300;
-  font-family: "Raleway", sans-serif;
-  border-radius: 7px;
-  color: #1a73e8;
-  cursor: pointer;
+	height: 35px;
+	width: 74px;
+	background: transparent;
+	font-weight: 300;
+	font-family: "Raleway", sans-serif;
+	border-radius: 7px;
+	color: #1a73e8;
+	cursor: pointer;
 }
 
 .save-buton:hover {
-  background: #f6fafa;
+	background: #f6fafa;
 }
 
 .disable {
-  background: transparent;
-  color: rgba(60, 64, 67, 0.38);
-  pointer-events: none;
+	background: transparent;
+	color: rgba(60, 64, 67, 0.38);
+	pointer-events: none;
 }

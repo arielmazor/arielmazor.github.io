@@ -3,26 +3,26 @@ header
 ----------------------------------------------- */
 
 .section {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-  height: 100%;
-  width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	height: 100%;
+	width: 100%;
 }
 
 .f-c {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 h1 {
-  font-size: 22px;
-  text-transform: uppercase;
-  color: black;
-  font-weight: 300;
-  font-family: "Raleway", sans-serif;
+	font-size: 22px;
+	text-transform: uppercase;
+	color: black;
+	font-weight: 300;
+	font-family: "Raleway", sans-serif;
 }
 
 /* -----------------------------------------------
@@ -30,48 +30,48 @@ first page
 ----------------------------------------------- */
 
 .no-value .wrapper {
-  flex-direction: column;
-  height: 80%;
-  width: 100%;
+	flex-direction: column;
+	height: 80%;
+	width: 100%;
 }
 
 .image-wrapper {
-  padding-bottom: 21px;
+	padding-bottom: 21px;
 }
 
 .text-no-value-wrapper h1 {
-  margin-bottom: 27px;
+	margin-bottom: 27px;
 }
 
 .create-botton {
-  width: 146px;
-  height: 33px;
-  background: transparent;
-  border-radius: 3px;
-  cursor: pointer;
+	width: 146px;
+	height: 33px;
+	background: transparent;
+	border-radius: 3px;
+	cursor: pointer;
 }
 
 .create-botton:hover {
-  background: #f1f3fa;
+	background: #f1f3fa;
 }
 
 .image-wrapper::before {
-  content: "";
-  width: 198px;
-  display: block;
-  background-repeat: no-repeat;
-  height: 197px;
-  background-image: url(../Images/book1.png);
+	content: "";
+	width: 198px;
+	display: block;
+	background-repeat: no-repeat;
+	height: 197px;
+	background-image: url(../Images/book1.png);
 }
 
 .create {
-  color: var(--gm-colortextbutton-ink-color, #1a73e8);
-  font-family: "Open Sans", sans-serif;
-  font-size: 14.6px;
-  padding-left: 9px;
-  font-weight: 900;
+	color: var(--gm-colortextbutton-ink-color, #1a73e8);
+	font-family: "Open Sans", sans-serif;
+	font-size: 14.6px;
+	padding-left: 9px;
+	font-weight: 900;
 }
 
 .svg1 {
-  fill: var(--gm-colortextbutton-ink-color, #1a73e8);
+	fill: var(--gm-colortextbutton-ink-color, #1a73e8);
 }
