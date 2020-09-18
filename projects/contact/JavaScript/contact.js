@@ -1,23 +1,26 @@
 var index = -1;
-// var currIndex;
 var _index;
 var userlist = [];
 var src = "../Images/first avatar.png";
 
 /* -----------------------------------------------
-build Modal
+build
 ----------------------------------------------- */
 
-function buildModal() {
-	// currIndex = -1;
-	$(".modal").removeClass("hide");
-
+function build() {
 	var template = document.querySelector("#template").innerHTML;
 	var compiled_template = Handlebars.compile(template);
 	var rendered = compiled_template({ src: src });
 	document.querySelector(".profile-wrapper").innerHTML = rendered;
+}
 
+/* -----------------------------------------------
+showModal
+----------------------------------------------- */
+function showModal() {
 	$(".modal").addClass("show");
+	$(".modal").removeClass("hide");
+	build();
 }
 
 /* -----------------------------------------------
@@ -25,9 +28,20 @@ Build List
 ----------------------------------------------- */
 
 function buildlist() {
+	var template = document.querySelector("#template-list").innerHTML;
+	var compiled_template = Handlebars.compile(template);
+	var rendered = compiled_template({ userlist });
+	document.querySelector(".list").innerHTML = rendered;
+}
+
+/* -----------------------------------------------
+localStorage
+----------------------------------------------- */
+
+function _localStorage() {
 	userlist = JSON.parse(localStorage.getItem("userlist")) || [];
 
-	if (userlist == 0) {
+	if (userlist == []) {
 		$(".no-value").removeClass("hide");
 		$(".no-value").addClass("show");
 		$(".list").removeClass("show");
@@ -35,11 +49,8 @@ function buildlist() {
 		$(".no-value").removeClass("show");
 		$(".no-value").addClass("hide");
 		$(".list").addClass("show");
+		buildlist();
 	}
-	var template = document.querySelector("#template-list").innerHTML;
-	var compiled_template = Handlebars.compile(template);
-	var rendered = compiled_template({ userlist, index });
-	document.querySelector(".list").innerHTML = rendered;
 }
 
 /* -----------------------------------------------
@@ -73,17 +84,16 @@ function onSave() {
 
 	$(".list").addClass("show");
 	closeModal(3);
-	buildlist();
+	_localStorage();
 }
 
 /* -----------------------------------------------
 remove Row
 ----------------------------------------------- */
-function removeRow() {
-	userlist.splice(currIndex, 1);
-	$(".modal").addClass("hide");
-	$(".modal").removeClass("show");
-	buildModal();
+function removeRow(index) {
+	userlist.splice(index, 1);
+	localStorage.setItem("userlist", JSON.stringify(userlist));
+	buildlist();
 }
 function imageSelect(i) {
 	$(".image-select-wrapper").addClass("image-select-show");
@@ -122,4 +132,4 @@ function closeModal(num) {
 	num = 0;
 }
 
-buildlist();
+_localStorage();

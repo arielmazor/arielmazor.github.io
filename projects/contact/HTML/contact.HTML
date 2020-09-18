@@ -113,7 +113,7 @@
 			<div class="text-no-value-wrapper">
 				<h1>No contacts yet</h1>
 			</div>
-			<div onclick="buildModal()" class="f-c create-botton">
+			<div onclick="showModal()" class="f-c create-botton">
 				<svg class="svg1" width="20" height="20" viewBox="0 0 24 24" class="NSy2Hd RTiFqe undefined">
 					<path fill="none" d="M0 0h24v24H0V0z"></path>
 					<path
@@ -150,7 +150,7 @@
 					<div class="title">
 						My Contacts
 					</div>
-					<div onclick="buildModal()" class="f-c header-create-botton">
+					<div onclick="showModal()" class="f-c header-create-botton">
 
 						<h1 class="header-create">Create contact</h1>
 					</div>
@@ -197,7 +197,7 @@
 								</path>
 							</svg>
 						</div>
-						<div onclick="removeRow()" class="actions-wrapper  delete-action-wrapper f-c">
+						<div onclick="removeRow('{{@index}}')" class="actions-wrapper  delete-action-wrapper f-c">
 							<svg class="delete-btn" width="20" height="20" viewBox="0 0 24 24"
 								class="NSy2Hd RTiFqe undefined">
 								<path d="M15 4V3H9v1H4v2h1v13c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V6h1V4h-5zm2 15H7V6h10v13z">
