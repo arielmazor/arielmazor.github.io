@@ -565,10 +565,37 @@ header .pi-panel {
 .code {
   width: 100%;
   background: #efefef;
+  display: flex;
+  align-items: center;
 }
 
 .col-carousel {
   margin: 70px 0;
+}
+
+.code .wrapper .container {
+  max-width: 50%;
+}
+
+.code .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 446px;
+  width: 87%;
+}
+
+.protfilio-sub-titles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 10px;
+}
+
+.protfilio-sub-titles .title {
+  padding-right: 735px;
 }
 
 /* owl nav */
@@ -632,12 +659,12 @@ header .pi-panel {
 }
 
 .wide-arrow.left:before, .wide-arrow.left:after {
-  left: 10px;
+  left: -99px;
   transform-origin: left 50%;
 }
 
 .wide-arrow.right:before, .wide-arrow.right:after {
-  right: 10px;
+  right: -99px;
   transform-origin: right 50%;
 }
 
@@ -657,20 +684,19 @@ button:focus, button:active {
 }
 
 .item-wrap {
-  width: 807px;
-  height: 401px;
-  border: 1px solid grey;
+  width: 730px;
+  height: 365px;
 }
 
 .item-wrap img {
   height: auto;
-  width: auto !important;
+  width: 76%;
 }
 
 .background {
-  width: 808px;
+  width: 732px;
   height: 16%;
-  top: 401px;
+  top: 371px;
   position: absolute;
   transition: 1s;
   background: #000000;
@@ -680,7 +706,7 @@ button:focus, button:active {
 }
 
 .item-wrap:hover>.background {
-  top: 336px;
+  top: 317px;
   transition: 1s;
 }
 

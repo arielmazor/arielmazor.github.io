@@ -1,9 +1,7 @@
-
 var priceType;
 
-
 function initHeader() {
-	$('header .pi-icons').click(function () {
+	$("header .pi-icons").click(function () {
 		if ($(this).hasClass("open")) {
 			$(this).removeClass("open");
 			$(".overlay").removeClass("show");
@@ -15,48 +13,56 @@ function initHeader() {
 		}
 	});
 
-	$('.overlay').click(function () {
-		if ($('header .menu-btn').hasClass("open")) {
-			$('header .menu-btn').click();
+	$(".overlay").click(function () {
+		if ($("header .menu-btn").hasClass("open")) {
+			$("header .menu-btn").click();
 		}
-		if ($('header .pi-icons').hasClass("open")) {
-			$('header .pi-icons').click();
+		if ($("header .pi-icons").hasClass("open")) {
+			$("header .pi-icons").click();
 		}
 	});
-};
+}
 function href(num) {
 	if (num == 1) {
-		window.open("https://arielmazor.github.io/projects/register/HTML/register.HTML")
+		window.open(
+			"https://arielmazor.github.io/projects/register/HTML/register.HTML"
+		);
 	}
 	if (num == 2) {
-		window.open("https://arielmazor.github.io/projects/contacts/HTML/contacts.HTML")
+		window.open(
+			"https://arielmazor.github.io/projects/contacts/HTML/contacts.HTML"
+		);
 	}
 	if (num == 3) {
-		window.open("https://arielmazor.github.io/projects/indexes/HTML/indexes.HTML")
-	} if (num == 4) {
-		window.open("https://arielmazor.github.io/projects/Friends%20Num%20List/FriendsNumList.HTML")
+		window.open(
+			"https://arielmazor.github.io/projects/indexes/HTML/indexes.HTML"
+		);
 	}
-
+	if (num == 4) {
+		window.open(
+			"https://arielmazor.github.io/projects/Friends%20Num%20List/FriendsNumList.HTML"
+		);
+	}
 }
 
 function initProjectsCarousel() {
-	$('.carousel-main').owlCarousel({
+	$(".carousel-main").owlCarousel({
 		items: 1,
 		loop: true,
-		autoplay: false,
-		autoplayTimeout: 1500,
+		autoplay: true,
+		autoplayTimeout: 2500,
 		margin: 10,
-		nav: true,
+		nav: false,
 		dots: false,
-		mouseDrag: true,
-		navText: ['<span class="wide-arrow left"></span>', '<span class="wide-arrow right"></span>'],
-	})
+		mouseDrag: false,
+		navText: [
+			'<span class="wide-arrow left"></span>',
+			'<span class="wide-arrow right"></span>',
+		],
+	});
 }
-
-
 
 $(document).ready(function () {
 	initHeader();
 	initProjectsCarousel();
 });
-
