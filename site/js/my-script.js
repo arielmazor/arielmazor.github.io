@@ -22,37 +22,30 @@ function initHeader() {
 		}
 	});
 }
-function href(num) {
-	if (num == 1) {
-		window.open(
-			"https://arielmazor.github.io/projects/register/HTML/register.HTML"
-		);
-	}
-	if (num == 2) {
-		window.open(
-			"https://arielmazor.github.io/projects/contacts/HTML/contacts.HTML"
-		);
-	}
-	if (num == 3) {
-		window.open(
-			"https://arielmazor.github.io/projects/indexes/HTML/indexes.HTML"
-		);
-	}
-	if (num == 4) {
-		window.open(
-			"https://arielmazor.github.io/projects/Friends%20Num%20List/FriendsNumList.HTML"
-		);
+
+function showCarusal(carusalName) {
+	$(".title").removeClass("active");
+	$(".container").removeClass("show");
+
+	if (carusalName == "art") {
+		$(".title.art").addClass("active");
+		$(".container.art").addClass("show");
+		initProjectsCarousel("art");
+	} else if (carusalName == "apps") {
+		$(".title.apps").addClass("active");
+		$(".container.apps").addClass("show");
+		initProjectsCarousel("apps");
 	}
 }
 
-function initProjectsCarousel() {
-	$(".carousel-main").owlCarousel({
+function initProjectsCarousel(carouselName) {
+	$(".carousel-" + carouselName).owlCarousel({
 		items: 1,
 		loop: true,
-		autoplay: true,
-		autoplayTimeout: 2500,
+		autoplay: false,
+		autoplayTimeout: 2900,
 		margin: 10,
-		nav: false,
+		nav: true,
 		dots: false,
 		mouseDrag: false,
 		navText: [
@@ -64,5 +57,5 @@ function initProjectsCarousel() {
 
 $(document).ready(function () {
 	initHeader();
-	initProjectsCarousel();
+	showCarusal("art");
 });

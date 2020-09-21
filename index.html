@@ -4,23 +4,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="generator" content="TYPO3 CMS">
-	<meta name="author" content="Shaul Mazor">
+	<meta name="author" content="Ariel Mazor">
 	<meta name="robots" content="index,follow">
 
-	<!-- http://www.imitam.co.il/ -->
-	<!-- https://www.anodot.com/ -->
-	<!-- https://kissflow.com/ -->
-	<!-- https://tonkean.com/ -->
-	<!-- https://www.apprentus.com/ -->
-	<!-- https://botson.ai/ -->
-	<!-- https://www.parity-software.com/lager-und-logistik/nve-mde/ -->
-	<!-- https://avtan.co.il/?gclid=EAIaIQobChMI_vzjv6KL6QIVY4LtCh03rA7JEAEYASAAEgIYfvD_BwE -->
 	<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400&display=swap" rel="stylesheet">
-	<!-- <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> -->
 	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
 
 	<link rel="stylesheet" type="text/css" href="site/style/main.css" media="all">
 
@@ -125,8 +115,7 @@
 					Kfar Yona,Israel. I really liked coding in javascript
 					and designing images in Photoshop. I do it in my spare
 					time. On this site I decided to post some
-					of the projects I did to give ideas to others and also
-					if to admit the truth a little to show off.</p>
+					of the projects I did to give ideas to others.</p>
 				<div class="img-frame">
 					<img src="site/images/my self.png">
 				</div>
@@ -137,52 +126,36 @@
 
 		<div id="Code" class="code section seb">
 			<h1>Protfilio</h1>
-			<div class="protfilio-sub-titles">
-				<h1 class="title">art</h1>
-				<h1>code</h1>
+			<div class="menu">
+				<h1 onclick="showCarusal('art')" class="title art">art</h1>
+				<span>|</span>
+				<h1 onclick="showCarusal('apps')" class="title apps">code</h1>
 			</div>
 			<div class="wrapper">
-				<div class="container">
+				<div class="container art show">
 					<div class="row align-items-center">
 						<div class="col-12 col-carousel">
-							<div class="owl-carousel carousel-main">
-								<a href="https://arielmazor.github.io/projects/register/HTML/register.HTML"
-									target="_blank" class="item-wrap f-c"><img src="site/images/Register.png">
+							<div class="owl-carousel carousel-art">
+								<a target="_blank" class="item-wrap f-c"><img src="site/images/Paint-2d.png">
 									<div class="background">
-										<div class="project-name">Register</div>
+										<div class="project-name">Paint 2D</div>
 										<div class="date"> 11/7/20</div>
 									</div>
 								</a>
-								<a href="https://arielmazor.github.io/projects/indexes/HTML/indexes.HTML"
-									target="_blank" class="item-wrap f-c"><img src="site/images/indexes.png">
+								<a target="_blank" class="item-wrap f-c"><img src="site/images/Logo.png">
 									<div class="background">
-										<div class="project-name">indexes</div>
+										<div class="project-name">My logo</div>
 										<div class="date"> 1/7/20</div>
-									</div>
-								</a>
-								<a href="https://arielmazor.github.io/projects/contacts/HTML/contacts.HTML"
-									target="_blank" class="item-wrap f-c"><img src="site/images/Contacts.png">
-									<div class="background">
-										<div class="project-name"> Contacts</div>
-										<div class="date"> 11/2/20</div>
-									</div>
-								</a>
-								<a href="https://arielmazor.github.io/projects/Friends%20Num%20List/FriendsNumList.HTML"
-									target="_blank" class="item-wrap f-c"><img src="site/images/friend-num-list.png"
-										alt="">
-									<div class="background">
-										<div class="project-name">Friends Numbers</div>
-										<div class="date"> 3/2/20</div>
 									</div>
 								</a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="container">
+				<div class="container apps">
 					<div class="row align-items-center">
 						<div class="col-12 col-carousel">
-							<div class="owl-carousel carousel-main">
+							<div class="owl-carousel carousel-apps">
 								<a href="https://arielmazor.github.io/projects/register/HTML/register.HTML"
 									target="_blank" class="item-wrap f-c"><img src="site/images/Register.png">
 									<div class="background">
@@ -221,7 +194,7 @@
 		<footer class="section">
 			<h1>Any question?
 				</div>
-				<h2 class="question">I'm here for you!</div>
+				<h2 class="question">Write a message!</div>
 		</footer>
 
 		<div class="copyright">
@@ -230,15 +203,6 @@
 				</div>
 			</div>
 	</main>
-
-	<script>
-		lessonNum = 10;
-		lessonPrice = 25;
-		chatTime = 90;
-		chatPrice = 20 / 60;
-		offlineTime = 60;
-		offlinePrice = 15 / 60;
-	</script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
