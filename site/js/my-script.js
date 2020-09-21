@@ -42,8 +42,8 @@ function initProjectsCarousel(carouselName) {
 	$(".carousel-" + carouselName).owlCarousel({
 		items: 1,
 		loop: true,
-		autoplay: false,
-		autoplayTimeout: 2900,
+		autoplay: true,
+		autoplayTimeout: 4000,
 		margin: 10,
 		nav: true,
 		dots: false,
