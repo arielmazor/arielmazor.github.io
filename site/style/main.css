@@ -615,14 +615,14 @@ header .pi-panel {
 
 .title {
   cursor: pointer;
-  font-size: 25px;
+  font-size: 22px;
   width: auto;
   color: rgb(197 197 197);
 }
 
 .active {
   color: black;
-  font-size: 25.5px;
+  font-size: 22.5px;
 }
 
 .disable {
