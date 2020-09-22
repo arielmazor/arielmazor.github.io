@@ -305,16 +305,39 @@ header .pi-panel {
 }
 
 .pi-panel .name {
-  padding: 10px 0 35px 0;
+  padding: 10px 0 25px 0;
   text-transform: capitalize;
   font-family: 'Oswald', sans-serif;
-  font-size: 28px;
+  font-size: 41px;
+}
+
+.backraund-behance {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 298px;
+}
+
+.backraund-github {
+  padding-left: 84px;
+}
+
+.backraund-title {
+  width: auto;
+  font-size: 15px;
+  font-weight: bold;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 9px;
+  padding-left: 10px;
 }
 
 .pi-panel .line {
   display: flex;
   /* align-items: center; */
   padding: 12px 0;
+  cursor: pointer;
 }
 
 .pi-panel .line .icon {
@@ -336,6 +359,8 @@ header .pi-panel {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 530px;
+  text-decoration: none;
+  color: black;
 }
 
 .pi-panel .address-line {
@@ -418,7 +443,15 @@ header .pi-panel {
   flex: 1;
   display: flex;
   justify-content: flex-end;
-  bottom: 14px;
+  bottom: 10px;
+}
+
+.github-icon {
+  height: 21px;
+}
+
+.behance-icon {
+  height: 20px;
 }
 
 .home .img-container .img {
@@ -432,6 +465,18 @@ header .pi-panel {
   display: flex;
   flex-direction: column;
   margin-top: -35px;
+}
+
+._shape::before {
+  top: 0px;
+  transform: translateY(-100%);
+  background-image: url(../images/background-top-grey-big.png);
+  content: '';
+  position: absolute;
+  left: 0px;
+  height: 100px;
+  width: 100%;
+  background-size: 100vw 100%;
 }
 
 .home .subjects {
@@ -540,6 +585,7 @@ header .pi-panel {
   max-width: 750px;
   text-align: center;
   font-size: 21px;
+  color: black;
   font-weight: 100;
 }
 
@@ -733,7 +779,7 @@ button:focus, button:active {
 }
 
 .item-wrap:hover>.background {
-  top: 317px;
+  top: 305px;
   transition: 1s;
 }
 
@@ -780,6 +826,7 @@ footer h2 {
   color: #00b1b7;
   font-weight: 100;
   letter-spacing: 0.5px;
+  font-size: 23px;
 }
 
 footer .contact-icons {
@@ -802,6 +849,10 @@ footer .contact-icons .icon {
   display: flex;
   justify-content: center;
   display: flex;
+}
+
+footer.section {
+  margin: 0;
 }
 
 .copyright .wrapper {
