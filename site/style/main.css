@@ -554,6 +554,11 @@ header .pi-panel {
   height: auto;
   margin: 0 auto;
   border-radius: 46%;
+  filter: grayscale(100%);
+}
+
+.about-me .img-frame img:hover {
+  filter: grayscale(0%);
 }
 
 /* ------------------------------------------- */
