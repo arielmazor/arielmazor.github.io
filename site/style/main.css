@@ -315,11 +315,12 @@ header .pi-panel {
   height: 100%;
   display: flex;
   align-items: center;
-  padding-left: 298px;
+  cursor: pointer;
 }
 
 .backraund-github {
-  padding-left: 84px;
+  padding-left: 30px;
+  cursor: pointer;
 }
 
 .backraund-title {
@@ -361,6 +362,10 @@ header .pi-panel {
   max-width: 530px;
   text-decoration: none;
   color: black;
+}
+
+.pi-panel .line .txt:hover {
+  text-decoration: none;
 }
 
 .pi-panel .address-line {
@@ -775,6 +780,8 @@ button:focus, button:active {
   background: #000000;
   opacity: 0.5;
   display: flex;
+  justify-content: center;
+  cursor: default;
   align-items: center;
 }
 
@@ -853,6 +860,7 @@ footer .contact-icons .icon {
 
 footer.section {
   margin: 0;
+  padding: 80px 0 50px 0;
 }
 
 .copyright .wrapper {
