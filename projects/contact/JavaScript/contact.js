@@ -1,26 +1,34 @@
 var index = -1;
 var _index;
 var userlist = [];
+var currUserId = -1;
 var src = "../Images/first avatar.png";
 
-/* -----------------------------------------------
-build
------------------------------------------------ */
-
-function build() {
-	var template = document.querySelector("#template").innerHTML;
-	var compiled_template = Handlebars.compile(template);
-	var rendered = compiled_template({ src: src });
-	document.querySelector(".profile-wrapper").innerHTML = rendered;
-}
-
-/* -----------------------------------------------
+/* ----------
+-------------------------------------
 showModal
 ----------------------------------------------- */
-function showModal() {
+
+function showModal(id) {
+	currUserId = id;
+	if (id) {
+		$(".phone-input").val(userlist[id].phoneNumber);
+		$(".firstname").val(" ");
+		$(".lastname").val(" ");
+		$(".email-input").val(" ");
+	}
 	$(".modal").addClass("show");
 	$(".modal").removeClass("hide");
-	build();
+	renderSrcPannel();
+}
+
+//-----------------------------------------------
+
+function renderSrcPannel() {
+	var template = document.querySelector("#template").innerHTML;
+	var compiled_template = Handlebars.compile(template);
+	var rendered = compiled_template({ src });
+	document.querySelector(".profile-wrapper").innerHTML = rendered;
 }
 
 /* -----------------------------------------------
@@ -30,7 +38,7 @@ Build List
 function buildlist() {
 	var template = document.querySelector("#template-list").innerHTML;
 	var compiled_template = Handlebars.compile(template);
-	var rendered = compiled_template({ userlist });
+	var rendered = compiled_template({ userlist, src });
 	document.querySelector(".list").innerHTML = rendered;
 }
 
@@ -41,10 +49,11 @@ localStorage
 function _localStorage() {
 	userlist = JSON.parse(localStorage.getItem("userlist")) || [];
 
-	if (userlist == []) {
+	if (userlist == +[]) {
 		$(".no-value").removeClass("hide");
 		$(".no-value").addClass("show");
 		$(".list").removeClass("show");
+		return;
 	} else {
 		$(".no-value").removeClass("show");
 		$(".no-value").addClass("hide");
@@ -79,13 +88,23 @@ function onSave() {
 		src: src,
 	};
 
-	userlist.push(obj);
-	localStorage.setItem("userlist", JSON.stringify(userlist));
+	if (currUserId) {
+		userlist[currUserId] = obj;
+	} else {
+		userlist.push(obj);
+	}
 
+	localStorage.setItem("userlist", JSON.stringify(userlist));
 	$(".list").addClass("show");
+
 	closeModal(3);
 	_localStorage();
 }
+
+/* -----------------------------------------------
+Edit Row
+----------------------------------------------- */
+function editRow() {}
 
 /* -----------------------------------------------
 remove Row
@@ -93,7 +112,7 @@ remove Row
 function removeRow(index) {
 	userlist.splice(index, 1);
 	localStorage.setItem("userlist", JSON.stringify(userlist));
-	buildlist();
+	_localStorage();
 }
 function imageSelect(i) {
 	$(".image-select-wrapper").addClass("image-select-show");
@@ -107,7 +126,7 @@ function imageSelect(i) {
 
 	if (i == undefined) {
 	} else {
-		buildModal();
+		renderSrcPannel();
 		closeModal(1);
 	}
 }

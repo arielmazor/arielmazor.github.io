@@ -140,6 +140,21 @@
 		</div>
 	</script>
 
+
+	<!-- -----------------------------------------------
+	modal Edit Tamplate
+	-----------------------------------------------  -->
+	<script id="template" type="text/x-handlebars-template">
+		<img class="profile-img" src="{{src}}" data-iml="15080.979999998817" />
+		<div onclick="imageSelect()">
+			<svg width="20" height="20" viewBox="0 0 24 24" class="upload-icon">
+				<path fill="none" d="M0 0h24v24H0V0z"></path>
+				<path
+					d="M14.12 4l1.83 2H20v12H4V6h4.05l1.83-2h4.24M15 2H9L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2zm-3 7c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3m0-2c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z">
+				</path>
+			</svg>
+		</div>
+	</script>
 	<!-- -----------------------------------------------
 	Row Contacts Tamplate
 	-----------------------------------------------  -->
@@ -168,7 +183,7 @@
 				</div>
 			</div>
 			<div class="body">
-				{{#each userlist}}
+				{{#each userlist }}
 				<div class="row">
 					<div class="f-c list-image-wrapper">
 						<img class="image" src="{{src}}" />
@@ -190,7 +205,7 @@
 					</div>
 					<div class="actions">
 						<div class="actions-wrapper  edit-action-wrapper f-c">
-							<svg class="edit-btn" width="20" height="20" viewBox="0 0 24 24" class="NSy2Hd RTiFqe P5kiYb">
+							<svg onclick="showModal('{{@index}}')"  class="edit-btn" width="20" height="20" viewBox="0 0 24 24" class="NSy2Hd RTiFqe P5kiYb">
 								<path fill="none" d="M0 0h24v24H0V0z"></path>
 								<path
 									d="M14.06 9.02l.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z">
