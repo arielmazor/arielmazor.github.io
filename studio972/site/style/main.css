@@ -1,12 +1,18 @@
 /* -----------------------------------------------
- home
+Header
 ----------------------------------------------- */
+
+header {
+  height: 89px;
+}
 
 nav {
   height: 89px;
   background: #40243E;
   justify-content: space-between;
   display: flex;
+  position: fixed;
+  width: 100%;
 }
 
 .pi-pannels {

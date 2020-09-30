@@ -42,3 +42,28 @@ h2 {
   left: 0;
   flex-direction: column;
 }
+
+
+/*----------------------------------------------- */
+
+.title-wrapper {
+  width: 100%;
+  height: 260px;
+  position: relative;
+}
+
+.title-wrapper .text {
+  color: #32102e;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.behind-text {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 175px;
+  color: #F0F0F0;
+  position: absolute;
+  z-index: -2;
+  height: 100%;
+}
