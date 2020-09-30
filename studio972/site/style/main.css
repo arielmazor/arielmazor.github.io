@@ -1,111 +1,125 @@
 /* -----------------------------------------------
- commom
+ home
 ----------------------------------------------- */
 
-.f-c {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+nav {
+  height: 89px;
+  background: #40243E;
+  justify-content: space-between;
+  display: flex;
 }
 
-h1 {
-    color: #d4265e;
-    font-family: "Montserrat", Sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 1.3em;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+.pi-pannels {
+  height: 100%;
+  width: 235px;
+  padding-left: 119px;
 }
 
-.circle {
-    height: 437px;
-    width: 437px;
-    border-radius: 100%;
+
+/*----------------------------------------------- */
+
+.link-wrapper {
+  height: 37px;
+  width: 37px;
+  border-radius: 50%;
+  background: #664C63;
+  margin-right: 12px;
 }
 
-.img-wrapper {
-    width: auto;
-    height: 380px;
+.icons {
+  height: 24px;
 }
 
-.protfilio-btn {
-    font-family: "Rubik", Sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: .1px;
-    color: #fff;
-    background-color: #d4265e;
-    border-radius: 100px;
-    width: 227px;
-    height: 64px;
+
+/*----------------------------------------------- */
+
+.logo-wrapper {
+  height: 100%;
+  width: 262px;
 }
 
-.img-wrapper .img {
-    height: 400px;
+.logo {
+  font-family: 'Assistant', sans-serif;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 23px;
+  cursor: pointer;
 }
 
-h1,
-h2 {
-    margin: 0;
-}
 
-h2 {
-    color: #fff;
-    font-family: "Montserrat", Sans-serif;
-    font-size: 50px;
-    font-weight: 800;
-    line-height: 1.2em;
-    margin-bottom: 80px;
-}
-
-.section {
-    width: 100%;
-    flex-direction: column;
-}
+/* -----------------------------------------------
+ home
+----------------------------------------------- */
 
 .home {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 864px;
 }
 
 .home .wrapper {
-    width: 1170px;
-    height: 893px;
-    display: flex;
-    align-items: center;
+  width: 1170px;
+  display: flex;
+  align-items: center;
 }
 
-.circle .img {
-    height: 400px;
+
+/*----------------------------------------------- */
+
+.txt-wrapper {
+  height: 317px;
+  width: 585px;
 }
+
+
+/*----------------------------------------------- */
+
+.protfilio-btn {
+  cursor: pointer;
+  font-family: "Rubik", Sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: .1px;
+  color: #fff;
+  background-color: #d4265e;
+  border-radius: 100px;
+  width: 227px;
+  height: 64px;
+  transition: cubic-bezier(0, 0, 0.1, -0.17) 0.5s;
+}
+
+.protfilio-btn:hover {
+  border: 2px solid white;
+  background: transparent;
+  transition-duration: 0.3s;
+  transform: scale(1.015)
+}
+
+
+/* -----------------------------------------------
+background
+----------------------------------------------- */
 
 .background-wrapper {
-    height: 100%;
-    position: absolute;
-    z-index: -2;
-    width: 100%;
+  height: 864px;
+  position: absolute;
+  z-index: -2;
+  width: 100%;
 }
 
 .background {
-    background-image: radial-gradient(at center center, #60425e 0%, #30142d 100%);
-    height: 100%;
-    width: 100%;
-    z-index: -2;
-    position: absolute;
+  background-image: radial-gradient(at center center, #60425e 0%, #30142d 100%);
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  position: absolute;
 }
 
-.background-wrapper .text {
-    z-index: -1;
-    color: rgba(255, 255, 255, .05);
-    font-family: "Montserrat", Sans-serif;
-    font-size: 15rem;
-    font-weight: 900;
-    padding-bottom: 285px;
-    text-transform: uppercase;
-    position: absolute;
-}
 
-.txt-wrapper {
-    height: 317px;
-    width: 585px;
+/* -----------------------------------------------
+about
+----------------------------------------------- */
+
+.about {
+  height: 954px;
+  width: 100%;
 }
