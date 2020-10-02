@@ -13,11 +13,12 @@ nav {
   display: flex;
   position: fixed;
   width: 100%;
+  z-index: 2;
 }
 
 .pi-pannels {
   height: 100%;
-  width: 235px;
+  width: auto;
   padding-left: 119px;
 }
 
@@ -33,7 +34,7 @@ nav {
 }
 
 .icons {
-  height: 24px;
+  height: 20px;
 }
 
 
@@ -41,7 +42,8 @@ nav {
 
 .logo-wrapper {
   height: 100%;
-  width: 262px;
+  width: auto;
+  padding-right: 119px;
 }
 
 .logo {
@@ -65,15 +67,28 @@ nav {
 .home .wrapper {
   width: 1170px;
   display: flex;
-  align-items: center;
 }
 
 
 /*----------------------------------------------- */
 
 .txt-wrapper {
-  height: 317px;
   width: 585px;
+}
+
+.txt-wrapper h1 {
+  padding-bottom: 43px;
+}
+
+.txt-wrapper h2 {
+  margin-bottom: 73px;
+}
+
+
+/*----------------------------------------------- */
+
+.home .wrapper .img {
+  height: 400px;
 }
 
 
