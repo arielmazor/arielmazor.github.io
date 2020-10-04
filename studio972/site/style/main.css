@@ -12,7 +12,7 @@ nav {
   display: flex;
   position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 20;
   align-items: center;
 }
 
@@ -181,11 +181,11 @@ about
 ----------------------------------------------- */
 
 .about {
-  height: 954px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: white;
 }
 
 .about .txt-wrapper {
@@ -195,10 +195,10 @@ about
   color: #6f6f6f;
   padding-top: 5px;
   margin: 0 15px;
-  font-size: 18px;
-  line-height: 24.5px;
-  font-family: 'Assistant', sans-serif;
-  padding: 36px;
+  font-size: 20px;
+  line-height: 31.5px;
+  font-family: 'Alef', sans-serif;
+  padding: 57px;
 }
 
 .about h1 {
@@ -215,6 +215,7 @@ about
 
 .img-frame {
   padding-top: 48px;
+  margin-bottom: 200px;
 }
 
 .img-frame img {
@@ -247,4 +248,43 @@ Protfolio
 
 .protfilio {
   padding-top: 26px;
+}
+
+
+/* -----------------------------------------------
+Footer
+----------------------------------------------- */
+
+footer .wrapper {
+  height: 189px;
+  width: 100%;
+  background: #32102e;
+  flex-direction: column;
+}
+
+footer .wrapper h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 34px;
+}
+
+footer .wrapper h2 {
+  color: white;
+  font-weight: 100;
+  letter-spacing: 2;
+  font-size: 23px;
+  margin-top: 32px;
+  text-transform: uppercase;
+}
+
+footer .copyright .wrapper {
+  height: 34px;
+  width: 100%;
+}
+
+footer .copyright .wrapper .ocean-template {
+  text-decoration: underline;
+  color: gray;
+  padding: 0 20px;
+  cursor: pointer;
 }
