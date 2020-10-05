@@ -17,7 +17,6 @@ body {
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
   color: #331d35;
-  background-color: #e7e7e7;
 }
 
 a {
@@ -135,9 +134,6 @@ xtab-filter
   .cd-tab-filter li {
     display: inline-block;
   }
-  .cd-tab-filter li.placeholder {
-    display: none !important;
-  }
   .cd-tab-filter a {
     letter-spacing: 0.2px;
     display: inline-block;
@@ -199,6 +195,7 @@ xgallery
 .cd-gallery img {
   display: block;
   width: 100%;
+  cursor: pointer;
 }
 
 .cd-gallery .cd-fail-message {
@@ -568,4 +565,9 @@ xcustom form elements
   .cd-filter-block .cd-select::after {
     display: none;
   }
+}
+
+.cd-filters {
+  padding: 0!important;
+  width: 100%;
 }

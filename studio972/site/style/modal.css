@@ -1,0 +1,17 @@
+/* -----------------------------------------------
+Header
+----------------------------------------------- */
+
+.modal {
+  height: 100%;
+  width: 100%;
+  background: rgb(0 0 0 / 55%);
+  z-index: 20;
+  display: none;
+  position: fixed;
+  overflow: auto;
+}
+
+.modal.show {
+  display: block;
+}

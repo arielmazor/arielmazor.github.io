@@ -2,15 +2,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@600&family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="site/style/main.css" media="all">
   <link rel="stylesheet" type="text/css" href="site/style/_common.css" media="all ">
   <link rel="stylesheet" type="text/css" href="site/style/gallery.css" media="all ">
+  <link rel="stylesheet" type="text/css" href="site/style/modal.css" media="all ">
 </head>
 
 <body>
+  <div class="modal"></div>
   <header>
-    <nav>
+    <nav class="nav">
       <div class="pi-pannels f-c ">
         <a class="link-wrapper f-c " href="# ">
           <img class="icons " src="site/images/behance-logo.svg " alt=" ">
@@ -29,8 +32,8 @@
         </a>
       </div>
       <div class=" menu-wrapper">
-        <div class="title">About Me</div>
-        <div class="title">Protfolio</div>
+        <div class="title f-c">About Me</div>
+        <div class="title f-c">Protfolio</div>
       </div>
       <div class="logo-wrapper f-c ">
         <div class="logo ">Ocean</div>
@@ -38,7 +41,6 @@
     </nav>
   </header>
   <main class="container">
-
     <div class="home f-c ">
       <div class="wrapper ">
         <div class="txt-wrapper ">
@@ -62,13 +64,9 @@
         <div class="text f-c">Abuot Me</div>
         <div class="behind-text f-c">About</div>
       </div>
-
-      </h1>
       <div class="wrapper">
-        <p class="txt-wrapper f-c">sdasdasdasdsadasdasdasdasdasdasdsadadsadadasdasdsadasdasdadasdasdasdasd
-          <br> sdasdasdsadasdasdasdasdasdasdsadadsadadasdasdsadasdasdadasdasda
-          <br> sdsadasdasdasdasdasdasdsadadsadadasdasdsadasdasdadas
-          <br> asdsadasdasdasdasdasdasdsadadsadadasdasds
+        <p class="txt-wrapper f-c">“My name is Lucas Martin, and I enjoy meeting new people and finding ways to help them have an uplifting experience. I have had a variety of customer service opportunities, through which I was able to have fewer returned products and increased
+          repeat customers, when compared with co-workers. I am dedicated, outgoing, and a team player. Who could I speak with in your customer service department about your organization’s customer service needs?”
         </p>
         <div class="img-frame f-c">
           <img src="site/images/my self.png">
@@ -76,6 +74,7 @@
       </div>
     </div>
     <div class="protfolio">
+
       <div class="title-wrapper f-c">
         <div class="text f-c">Protfolio</div>
         <div class="behind-text f-c">protfolio</div>
@@ -83,12 +82,7 @@
       <main class="gallery-main-content">
         <div class="cd-tab-filter-wrapper">
           <div class="cd-tab-filter">
-            <ul class="cd-filters">
-              <li class="placeholder">
-                <a data-type="all" href="#0">All</a>
-                <!-- selected option on mobile -->
-              </li>
-
+            <ul class="cd-filters f-c">
               <li class="filter" data-filter=".group-1"><a href="#0" data-type="group-1">Design</a></li>
               <li class="filter" data-filter=".group-2"><a href="#0" data-type="group-2">Apps</a></li>
             </ul>
@@ -100,17 +94,17 @@
 
         <section class="cd-gallery">
           <ul>
-            <li class="mix group-1 check1 radio2 option3"><img src="https://s3.amazonaws.com/plloyd/photography/flex-gallery1.jpg" alt="Image 1"></li>
+            <li onclick="showModal(1)" class="mix group-1 check1 radio2 option3"><img src="https://s3.amazonaws.com/plloyd/photography/flex-gallery1.jpg" alt="Image 1"></li>
             <li class="mix group-2 check2 radio2 option2"><img src="https://s3.amazonaws.com/plloyd/photography/flex-gallery2.jpg" alt="Image 2"></li>
-            <li class="mix group-1 check3 radio3 option1"><img src="https://s3.amazonaws.com/plloyd/photography/flex-gallery3.jpg" alt="Image 3"></li>
-            <li class="mix group-1 check3 radio2 option4"><img src="https://s3.amazonaws.com/plloyd/photography/flex-gallery4.jpg" alt="Image 4"></li>
-            <li class="mix group-1 check1 radio3 option2"><img src="https://s3.amazonaws.com/plloyd/photography/flex-gallery5.jpg" alt="Image 5"></li>
+            <li onclick="showModal(1)" class="mix group-1 check3 radio3 option1"><img src="https://s3.amazonaws.com/plloyd/photography/flex-gallery3.jpg" alt="Image 3"></li>
+            <li onclick="showModal(1)" class="mix group-1 check3 radio2 option4"><img src="https://s3.amazonaws.com/plloyd/photography/flex-gallery4.jpg" alt="Image 4"></li>
+            <li onclick="showModal(1)" class="mix group-1 check1 radio3 option2"><img src="https://s3.amazonaws.com/plloyd/photography/flex-gallery5.jpg" alt="Image 5"></li>
             <li class="mix group-2 check2 radio3 option3"><img src="https://s3.amazonaws.com/plloyd/photography/flex-gallery6.jpg" alt="Image 6"></li>
             <li class="mix group-2 check2 radio2 option1"><img src="https://s3.amazonaws.com/plloyd/photography/flex-gallery7.jpg" alt="Image 7"></li>
-            <li class="mix group-1 check1 radio3 option4"><img src="https://s3.amazonaws.com/plloyd/photography/flex-gallery8.jpg" alt="Image 8"></li>
-            <li class="mix group-2 check1 radio2 option3"><img src="https://s3.amazonaws.com/plloyd/photography/flex-gallery9.jpg" alt="Image 9"></li>
-            <li class="mix group-1 check3 radio2 option4"><img src="https://s3.amazonaws.com/plloyd/photography/flex-gallery10.jpg" alt="Image 10"></li>
-            <li class="mix group-1 check3 radio3 option2"><img src="https://s3.amazonaws.com/plloyd/photography/flex-gallery11.jpg" alt="Image 11"></li>
+            <li onclick="showModal(1)" class="mix group-1 check1 radio3 option4"><img src="https://s3.amazonaws.com/plloyd/photography/flex-gallery8.jpg" alt="Image 8"></li>
+            <li onclick="showModal(1)" class="mix group-2 check1 radio2 option3"><img src="https://s3.amazonaws.com/plloyd/photography/flex-gallery9.jpg" alt="Image 9"></li>
+            <li onclick="showModal(1)" class="mix group-1 check3 radio2 option4"><img src="https://s3.amazonaws.com/plloyd/photography/flex-gallery10.jpg" alt="Image 10"></li>
+            <li onclick="showModal(1)" class="mix group-1 check3 radio3 option2"><img src="https://s3.amazonaws.com/plloyd/photography/flex-gallery11.jpg" alt="Image 11"></li>
             <li class="mix group-2 check1 radio3 option1"><img src="https://s3.amazonaws.com/plloyd/photography/flex-gallery12.jpg" alt="Image 12"></li>
             <li class="gap"></li>
             <li class="gap"></li>
@@ -119,102 +113,23 @@
           <div class="cd-fail-message">No results found</div>
         </section>
         <!-- cd-gallery -->
-        <div class="cd-filter">
-          <form>
-            <div class="cd-filter-block">
-              <h4>Search</h4>
-
-              <div class="cd-filter-content">
-                <input type="search" placeholder="Try color-1...">
-              </div>
-              <!-- cd-filter-content -->
-            </div>
-            <!-- cd-filter-block -->
-
-            <div class="cd-filter-block">
-              <h4>Check boxes</h4>
-
-              <ul class="cd-filter-content cd-filters list">
-                <li>
-                  <input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
-                  <label class="checkbox-label" for="checkbox1">Option 1</label>
-                </li>
-
-                <li>
-                  <input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
-                  <label class="checkbox-label" for="checkbox2">Option 2</label>
-                </li>
-
-                <li>
-                  <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
-                  <label class="checkbox-label" for="checkbox3">Option 3</label>
-                </li>
-              </ul>
-              <!-- cd-filter-content -->
-            </div>
-            <!-- cd-filter-block -->
-
-            <div class="cd-filter-block">
-              <h4>Select</h4>
-
-              <div class="cd-filter-content">
-                <div class="cd-select cd-filters">
-                  <select class="filter" name="selectThis" id="selectThis">
-                    <option value="">Choose an option</option>
-                    <option value=".option1">Option 1</option>
-                    <option value=".option2">Option 2</option>
-                    <option value=".option3">Option 3</option>
-                    <option value=".option4">Option 4</option>
-                  </select>
-                </div>
-                <!-- cd-select -->
-              </div>
-              <!-- cd-filter-content -->
-            </div>
-            <!-- cd-filter-block -->
-
-            <div class="cd-filter-block">
-              <h4>Radio buttons</h4>
-
-              <ul class="cd-filter-content cd-filters list">
-                <li>
-                  <input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
-                  <label class="radio-label" for="radio1">All</label>
-                </li>
-
-                <li>
-                  <input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
-                  <label class="radio-label" for="radio2">Choice 2</label>
-                </li>
-
-                <li>
-                  <input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">
-                  <label class="radio-label" for="radio3">Choice 3</label>
-                </li>
-              </ul>
-              <!-- cd-filter-content -->
-            </div>
-            <!-- cd-filter-block -->
-          </form>
-
-          <a href="#0" class="cd-close">Close</a>
-        </div>
       </main>
-      <!-- cd-main-content -->
+
     </div>
   </main>
   <footer>
     <div class="wrapper f-c">
       <h1>any question?</h1>
-      <h2> asdadasdasd</h2>
+      <h2>write message</h2>
     </div>
     <div class="copyright">
       <div class="wrapper f-c">
         <div class="f-c">©2020 Made with <a class="ocean-template">Ocean</a></p>
         </div>
       </div>
+    </div>
   </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
   <script src="site/js/my-script.js "></script>
   <script src="site/js/Gallery.js "></script>
