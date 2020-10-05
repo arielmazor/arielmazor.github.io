@@ -90,6 +90,7 @@ nav {
   font-weight: bold;
   height: auto;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 

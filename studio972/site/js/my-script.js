@@ -3,6 +3,10 @@ function showModal() {
   $("body").addClass("no-scroll");
 }
 
+function closeModal() {
+  $(".modal").removeClass("show");
+  $("body").removeClass("no-scroll");
+}
 
 $('.protfilio-btn ').click(function() {
   $('html, body').animate({
