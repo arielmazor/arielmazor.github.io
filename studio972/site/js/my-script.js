@@ -1,29 +1,44 @@
 var arry = [];
 
 function showModal(filter, id) {
-  if ($(".cd-filters .filter a").hasClass("selected")) {
-    if (filter == 1) {
-      $(".modal").addClass("design");
-      $(".modal").removeClass("apps");
+  var height = 0;
+  var _arry;
 
-    } else if (filter == 2) {
-      $(".modal").addClass("apps");
-      $(".modal").removeClass("design");
-    }
-  } else {
-    $(".modal").addClass("show");
-    $(".modal").removeClass("apps");
-    $(".modal").removeClass("design");
-    $(".modal .wrapper .image-wrapper").addClass("all");
+  if (filter == 1) {
+    $(".modal").removeClass("apps").addClass("design");
+    _arry = $(".modal .image-wrapper.design");
+  } else if (filter == 2) {
+    $(".modal").removeClass("design").addClass("apps");
+    _arry = $(".modal .image-wrapper.design");
   }
+
+  for (var i = 0; i < _arry.length; i++) {
+    if (_arry[i].id == id) {
+      break;
+    } else {
+      height += $(`#${_arry[i].id}`).height();
+      console.log(height);
+
+    }
+  }
+  console.log(height);
+  // } else {
+  //   $(".modal").addClass("show");
+  //   $(".modal").removeClass("apps");
+  //   $(".modal").removeClass("design");
+  //   $(".modal .wrapper .image-wrapper").addClass("all");
+  // }
   $(".modal").addClass("show");
   $("body").addClass("no-scroll");
 
+
+
   setTimeout(function() {
     $('.modal').animate({
-      scrollTop: $(`#${id}`).position().top
+      scrollTop: height
     }, 500);
   }, 50);
+
 
 }
 $('.btn-p').click(function() {
