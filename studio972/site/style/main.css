@@ -1,11 +1,9 @@
 /* -----------------------------------------------
 Header
 ----------------------------------------------- */
-
 header {
   height: 89px;
 }
-
 nav {
   height: 89px;
   background: #40243E;
@@ -15,27 +13,20 @@ nav {
   z-index: 5;
   align-items: center;
 }
-
-
 /*----------------------------------------------- */
-
 .pi-pannels {
   height: 100%;
   width: auto;
   padding-left: 119px;
   margin-right: 527px;
 }
-
-
 /*----------------------------------------------- */
-
 .menu-wrapper {
   width: 948px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-
 .menu-wrapper .title {
   letter-spacing: 1px;
   width: 100px;
@@ -50,16 +41,12 @@ nav {
   cursor: pointer;
   margin: 0 15px;
 }
-
 .menu-wrapper .title:hover,
 .menu-wrapper .title:active {
   box-shadow: inset 0 -2px 0 #d4265e;
   color: #d4265e;
 }
-
-
 /*----------------------------------------------- */
-
 .link-wrapper {
   height: 37px;
   width: 37px;
@@ -67,14 +54,10 @@ nav {
   background: #33122F;
   margin-right: 12px;
 }
-
 .icons {
   height: 20px;
 }
-
-
 /*----------------------------------------------- */
-
 .logo-wrapper {
   height: 100%;
   width: auto;
@@ -82,7 +65,6 @@ nav {
   padding-right: 119px;
   margin-left: 38px;
 }
-
 .logo {
   font-family: 'Montserrat';
   color: white;
@@ -92,64 +74,44 @@ nav {
   cursor: pointer;
   transition: 0.5s;
 }
-
-
 /* -----------------------------------------------
  header white
 ----------------------------------------------- */
-
 nav.white {
   background: white;
 }
-
 .white .menu-wrapper .title {
   color: black;
 }
-
 .white .logo-wrapper .logo {
   color: black;
 }
-
-
 /* -----------------------------------------------
  home
 ----------------------------------------------- */
-
 .home {
   width: 100%;
   height: 864px;
 }
-
 .home .wrapper {
   width: 1170px;
   display: flex;
 }
-
-
 /*----------------------------------------------- */
-
 .txt-wrapper {
   width: 585px;
 }
-
 .txt-wrapper h1 {
   padding-bottom: 43px;
 }
-
 .txt-wrapper h2 {
   margin-bottom: 73px;
 }
-
-
 /*----------------------------------------------- */
-
 .home .wrapper .img {
   height: 400px;
 }
-
-
 /*----------------------------------------------- */
-
 .protfilio-btn {
   cursor: pointer;
   font-family: "Rubik", Sans-serif;
@@ -163,26 +125,21 @@ nav.white {
   height: 64px;
   transition: cubic-bezier(0, 0, 0.1, -0.17) 0.5s;
 }
-
 .protfilio-btn:hover {
   border: 2px solid white;
   background: transparent;
   transition-duration: 0.3s;
   transform: scale(1.015)
 }
-
-
 /* -----------------------------------------------
 background
 ----------------------------------------------- */
-
 .background-wrapper {
   height: 864px;
   position: absolute;
   z-index: -2;
   width: 100%;
 }
-
 .background {
   background-image: radial-gradient(at center center, #60425e 0%, #30142d 100%);
   height: 100%;
@@ -190,12 +147,9 @@ background
   z-index: -2;
   position: absolute;
 }
-
-
 /* -----------------------------------------------
 about
 ----------------------------------------------- */
-
 .about {
   width: 100%;
   display: flex;
@@ -203,7 +157,6 @@ about
   align-items: center;
   background-color: #e7e7e7;
 }
-
 .about .txt-wrapper {
   text-align: center;
   width: 1000px;
@@ -216,7 +169,6 @@ about
   font-family: 'Raleway', sans-serif;
   padding: 57px;
 }
-
 .about h1 {
   color: #664c63;
   font-family: "Montserrat", Sans-serif;
@@ -225,66 +177,38 @@ about
   text-shadow: 0px 0px 10px rgb(0 0 0 / 12%);
   padding: 28px;
 }
-
-
 /*----------------------------------------------- */
-
 .img-frame {
   padding-top: 48px;
   margin-bottom: 200px;
 }
-
 .img-frame img {
   filter: grayscale(1);
 }
-
 .img-frame img:hover {
   filter: grayscale(0);
 }
-
-
-/* .img-frame::before {
-  content: "";
-  display: block;
-  height: 800px;
-  width: 800px;
-  background-image: url(../images/NO-SMILE.jpg);
-  filter: grayscale(1);
-}
-
-.img-frame:hover.img-frame::before {
-  background-image: url(../images/SMILE.jpg);
-  filter: grayscale(0);
-} */
-
-
 /* -----------------------------------------------
 Protfolio
 ----------------------------------------------- */
-
 .protfilio {
   padding-top: 26px;
 }
-
-
 /* -----------------------------------------------
 Footer
 ----------------------------------------------- */
-
 footer .wrapper {
   height: 189px;
   width: 100%;
   background: #32102e;
   flex-direction: column;
 }
-
 footer .wrapper h1 {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 34px;
   font-family: 'Raleway', sans-serif;
 }
-
 footer .wrapper h2 {
   color: white;
   font-weight: 100;
@@ -293,14 +217,13 @@ footer .wrapper h2 {
   font-family: 'Raleway', sans-serif;
   margin-top: 22px;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
-
 footer .copyright .wrapper {
-  height: 40px;
+  height: 60px;
   width: 100%;
   background: white;
 }
-
 footer .copyright .wrapper .ocean-template {
   text-decoration: underline;
   color: gray;
