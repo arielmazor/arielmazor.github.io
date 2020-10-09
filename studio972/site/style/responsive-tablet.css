@@ -34,12 +34,16 @@
   font-weight: 800;
   line-height: 1.2em;
 }
+.logo-wrapper,.menu-wrapper{
+  display: none;
 }
-@media screen and (max-width:1000px){
-  .hamburger-wrapper{
-    display: flex;
-  }
-  .menu-wrapper,.logo-wrapper{
-    display: none;
-  }
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pi-pannels{
+  margin: 0;
+  padding: 0;
+}
 }
