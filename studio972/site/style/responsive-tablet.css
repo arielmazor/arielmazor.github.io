@@ -1,0 +1,45 @@
+
+
+@media screen and (max-width: 1550px) {
+  .txt-wrapper h1 {
+    font-size: 30px;
+  }
+  .txt-wrapper h2 {
+    font-size: 45px;
+  }
+  .home .wrapper .img {
+   width: 490px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .home .wrapper {
+
+    flex-direction: column-reverse;
+}
+.txt-wrapper{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.txt-wrapper h1 {
+  font-size: 30px;
+  padding: 9px;
+}
+.txt-wrapper h2 {
+  margin-bottom: 57px;
+  color: #fff;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 1.2em;
+}
+}
+@media screen and (max-width:1000px){
+  .hamburger-wrapper{
+    display: flex;
+  }
+  .menu-wrapper,.logo-wrapper{
+    display: none;
+  }
+}
