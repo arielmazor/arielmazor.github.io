@@ -54,6 +54,11 @@ $('.btn-a ').click(function() {
     scrollTop: $('.about').position().top
   }, 700);
 })
+$('.logo').click(function() {
+  $('html, body').animate({
+    scrollTop: $('header').position().top
+  }, 700);
+})
 $('.protfilio-btn ').click(function() {
   $('html, body').animate({
     scrollTop: $('.protfolio').position().top
