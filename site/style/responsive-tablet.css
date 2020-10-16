@@ -69,17 +69,39 @@ nav{
   .txt-wrapper h2 {
     font-size: 35px;
   }
+  .about .txt-wrapper{
+    font-size: 17px;
+  }
   .home .wrapper .img {
    width: 470px;
   }
+  .behind-text {
+    font-size: 160px;
+    }
+    .title-wrapper {
+      height: 220px;
+  }
+.behind-text{
+  font-size: 96;
+}
+.title-text .title{
+  font-size: 40px;
+}
 }
 @media screen and (max-width: 550px) {
 .home .wrapper .img-wrapper .img{
   width: 100%;
 }
+.behind-text{
+  font-size: 86;
+}
+.title-text .title{
+  font-size: 30px;
+}
 }
 
-@media screen and (max-width: 344px) {
+
+@media screen and (max-width: 384px) {
   .txt-wrapper h2 {
     font-size: 25px;
 }
@@ -87,6 +109,15 @@ nav{
   height: 50;
   font-size: 16px;
   width: 180px;
+}
+.title-wrapper {
+  height: 195px;
+}
+.behind-text{
+font-size: 73px;
+}
+.title-text .title{
+font-size: 22px;
 }
   }
 

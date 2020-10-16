@@ -205,6 +205,7 @@ about
 }
 .img-frame img {
   filter: grayscale(1);
+  width: 100%;
 }
 .img-frame img:hover {
   filter: grayscale(0);
