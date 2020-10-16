@@ -1,8 +1,0 @@
-  16/10/2020 9:14:25: Starting composition “Comp 1”.
-
-  Output To: C:\Users\97252\arielmazor.github.io\Paint\GIF.mov    16/10/2020 9:14:31: Finished composition “Comp 1”.
-
-
-  Total Time Elapsed: 5 Seconds
-Log closed on 16/10/2020 at 9:14:31
-

@@ -1,0 +1,8 @@
+  16/10/2020 10:59:56: Starting composition “Comp 1”.
+
+  Output To: C:\Users\97252\arielmazor.github.io\studio972\site\images\Comp 1.avi    16/10/2020 11:00:09: Finished composition “Comp 1”.
+
+
+  Total Time Elapsed: 13 Seconds
+Log closed on 16/10/2020 at 11:00:09
+

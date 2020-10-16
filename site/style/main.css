@@ -105,9 +105,8 @@ nav.white {
   display: flex;
 }
 /*----------------------------------------------- */
-.txt-wrapper {
-  width: 585px;
-}
+
+
 .txt-wrapper h1 {
   padding-bottom: 43px;
   color: #d4265e;
@@ -127,7 +126,7 @@ nav.white {
 }
 /*----------------------------------------------- */
 .home .wrapper .img {
-  width: 550px;
+  width: 600px;
 }
 /*----------------------------------------------- */
 .protfilio-btn {
@@ -175,9 +174,12 @@ about
   align-items: center;
   background-color: #e7e7e7;
 }
+.about .wrapper{
+  flex-direction: column;
+}
 .about .txt-wrapper {
   text-align: center;
-  width: 1000px;
+  width: 50%;
   letter-spacing: 1px;
   color: #6f6f6f;
   padding-top: 5px;
@@ -195,6 +197,7 @@ about
   text-shadow: 0px 0px 10px rgb(0 0 0 / 12%);
   padding: 28px;
 }
+
 /*----------------------------------------------- */
 .img-frame {
   padding-top: 48px;
