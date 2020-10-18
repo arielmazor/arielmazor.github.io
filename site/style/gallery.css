@@ -116,7 +116,20 @@ xtab-filter
 .cd-tab-filter.is-open .placeholder a {
   opacity: .4;
 }
-
+.cd-tab-filter a {
+  letter-spacing: 0.2px;
+  display: inline-block;
+  padding: 0 1em;
+  width: auto;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.MixItUp2A9DD8{
+  padding: 0;
+}
 @media only screen and (min-width: 768px) {
   .cd-tab-filter {
     width: auto;
@@ -134,17 +147,7 @@ xtab-filter
   .cd-tab-filter li {
     display: inline-block;
   }
-  .cd-tab-filter a {
-    letter-spacing: 0.2px;
-    display: inline-block;
-    padding: 0 1em;
-    width: auto;
-    color: #000000;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-family: sans-serif;
-    font-size: 15px;
-  }
+
   .no-touch .cd-tab-filter a:hover {
     color: #41307c;
   }
@@ -158,13 +161,13 @@ xtab-filter
   }
 }
 
-@media only screen and (min-width: 768px) {
+
   .cd-tab-filter a.selected {
     background: transparent;
     color: #d4265e;
     box-shadow: inset 0 -2px 0 #d4265e;
   }
-}
+
 
 .cd-tab-filter.filter-is-visible {
   width: 80%;
@@ -570,4 +573,7 @@ xcustom form elements
 .cd-filters {
   padding: 0!important;
   width: 100%;
+}
+.cd-tab-filter ul{
+  box-shadow: none;
 }
