@@ -1,51 +1,37 @@
 /* -----------------------------------------------
  commom
 ----------------------------------------------- */
-body {
-  margin: 0;
-}
-body.no-scroll {
-  overflow: hidden;
+body{
+margin: 0;
 }
 .f-c {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-h1,
-h2 {
-  margin: 0;
-}
-h1 {
-  font-family: "Montserrat", Sans-serif;
 
-}
-h2 {
-  font-family: "Montserrat", Sans-serif;
-}
 /*----------------------------------------------- */
 .container {
   width: 100%;
   flex-direction: column;
 }
 /*----------------------------------------------- */
-.title-wrapper {
-  width: 100%;
-  height: 260px;
-  position: relative;
+.step-title{
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid rgba(10,10,10,.1);
+  color: #4a4a4a;
+  display: block;
+  padding: 1.25rem;
+  width: 550px;
+  height: 36px;
+  font-family: 'Rubik', sans-serif;
+  line-height: 36px;
+  font-weight: 500;
+  font-size: 27px;
+  letter-spacing: 0.5px;
+
 }
-.title-wrapper .text {
-  color: #32102e;
-  font-family: "Montserrat", Sans-serif;
-  font-size: 40px;
-  font-weight: 800;
-  z-index: 2;
-}
-.behind-text {
-  font-family: "Montserrat", Sans-serif;
-  font-size: 175px;
-  color: #F0F0F0;
-  position: absolute;
-  z-index: 1;
-  height: 100%;
+.step {
+  margin-bottom: 25px;
 }
