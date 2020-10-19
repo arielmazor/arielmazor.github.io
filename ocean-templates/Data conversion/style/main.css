@@ -1,0 +1,256 @@
+/* -----------------------------------------------
+Header
+----------------------------------------------- */
+header {
+  height: 89px;
+}
+nav {
+  height: 89px;
+  background: #40243E;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  align-items: center;
+}
+
+/*----------------------------------------------- */
+.pi-pannels {
+  height: 100%;
+  width: auto;
+  padding-left: 6%;
+  margin-right: 30%;
+}
+/*----------------------------------------------- */
+.hamburger-wrapper{
+  display: none;
+  position: absolute;
+}
+/*----------------------------------------------- */
+
+.menu-wrapper {
+  width: 948px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.menu-wrapper .title {
+  letter-spacing: 1px;
+  width: 100px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.5s;
+  height: 46px;
+  padding-top: 5px;
+  cursor: pointer;
+  margin: 0 15px;
+}
+.menu-wrapper .title:hover,
+.menu-wrapper .title:active {
+  box-shadow: inset 0 -2px 0 #d4265e;
+  color: #d4265e;
+}
+/*----------------------------------------------- */
+.link-wrapper {
+  height: 37px;
+  width: 37px;
+  border-radius: 50%;
+  background: #33122F;
+  margin-right: 12px;
+}
+.icons {
+  height: 20px;
+}
+/*----------------------------------------------- */
+.logo-wrapper {
+  height: 100%;
+  width: auto;
+  height: 100%;
+  padding-right: 6%;
+  margin-left: 38px;
+}
+.logo {
+  font-family: 'Montserrat';
+  color: white;
+  font-size: 33px;
+  font-weight: bold;
+  height: auto;
+  cursor: pointer;
+  transition: 0.5s;
+}
+/* -----------------------------------------------
+ header white
+----------------------------------------------- */
+nav.white {
+  background: white;
+}
+.white .menu-wrapper .title {
+  color: black;
+}
+.white .logo-wrapper .logo {
+  color: black;
+}
+/* -----------------------------------------------
+ home
+----------------------------------------------- */
+.home {
+  width: 100%;
+  height: 864px;
+}
+.home .wrapper {
+  width: auto;
+  display: flex;
+}
+/*----------------------------------------------- */
+
+
+.txt-wrapper h1 {
+  padding-bottom: 43px;
+  color: #d4265e;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.3em;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+}
+.txt-wrapper h2 {
+  margin-bottom: 73px;
+  color: #fff;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1.2em;
+}
+/*----------------------------------------------- */
+.home .wrapper .img {
+  width: 600px;
+}
+/*----------------------------------------------- */
+.protfilio-btn {
+  cursor: pointer;
+  font-family: "Rubik", Sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: .1px;
+  color: #fff;
+  background-color: #d4265e;
+  border-radius: 100px;
+  width: 227px;
+  height: 64px;
+  transition: cubic-bezier(0, 0, 0.1, -0.17) 0.5s;
+}
+.protfilio-btn:hover {
+  border: 2px solid white;
+  background: transparent;
+  transition-duration: 0.3s;
+  transform: scale(1.015)
+}
+/* -----------------------------------------------
+background
+----------------------------------------------- */
+.background-wrapper {
+  height: 864px;
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+}
+.background {
+  background-image: radial-gradient(at center center, #60425e 0%, #30142d 100%);
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  position: absolute;
+}
+/* -----------------------------------------------
+about
+----------------------------------------------- */
+.about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e7e7e7;
+}
+.about .wrapper{
+  flex-direction: column;
+}
+.about .txt-wrapper {
+  text-align: center;
+  width: 50%;
+  letter-spacing: 1px;
+  color: #6f6f6f;
+  padding-top: 5px;
+  margin: 0 15px;
+  font-size: 20px;
+  line-height: 31.5px;
+  font-family: 'Raleway', sans-serif;
+  padding: 57px;
+}
+.about h1 {
+  color: #664c63;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-shadow: 0px 0px 10px rgb(0 0 0 / 12%);
+  padding: 28px;
+}
+
+/*----------------------------------------------- */
+.img-frame {
+  padding-top: 48px;
+  margin-bottom: 200px;
+}
+.img-frame img {
+  filter: grayscale(1);
+  width: 100%;
+}
+.img-frame img:hover {
+  filter: grayscale(0);
+}
+/* -----------------------------------------------
+Protfolio
+----------------------------------------------- */
+.protfilio {
+  padding-top: 26px;
+}
+/* -----------------------------------------------
+Footer
+----------------------------------------------- */
+footer .wrapper {
+  height: 189px;
+  width: 100%;
+  background: #32102e;
+  flex-direction: column;
+}
+footer .wrapper h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 34px;
+  font-family: 'Raleway', sans-serif;
+  color: #d4265e;
+}
+footer .wrapper h2 {
+  color: white;
+  font-weight: 100;
+  letter-spacing: 2;
+  font-size: 22px;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 22px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+footer .copyright .wrapper {
+  height: 60px;
+  width: 100%;
+  background: white;
+}
+footer .copyright .wrapper .ocean-template {
+  text-decoration: underline;
+  color: gray;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
