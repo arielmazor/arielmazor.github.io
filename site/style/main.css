@@ -22,11 +22,6 @@ nav {
   margin-right: 30%;
 }
 /*----------------------------------------------- */
-.hamburger-wrapper{
-  display: none;
-  position: absolute;
-}
-/*----------------------------------------------- */
 
 .menu-wrapper {
   width: 948px;
