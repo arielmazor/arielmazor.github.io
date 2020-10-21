@@ -3,43 +3,49 @@
 ----------------------------------------------- */
 
 body {
-    margin: 0;
-    font-family: "Open Sans", sans-serif;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 .f-c {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
 /*----------------------------------------------- */
 
 .container {
-    width: 100%;
-    flex-direction: column;
+  width: 100%;
+  flex-direction: column;
 }
 
 
 /*----------------------------------------------- */
 
-.step-title {
-    background-color: #fff;
-    border-radius: 6px;
-    border: 1px solid rgba(10, 10, 10, .1);
-    color: #6f6e6e;
-    display: block;
-    padding: 1.25rem;
-    width: 550px;
-    height: 36px;
-    font-family: 'Rubik', sans-serif;
-    line-height: 36px;
-    font-weight: 500;
-    font-size: 27px;
-    letter-spacing: 0.5px;
+.step {
+  margin-bottom: 25px;
 }
 
-.step {
-    margin-bottom: 25px;
+.step-title {
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #f0f0f0;
+  color: #6f6e6e;
+  display: block;
+  padding: 1.25rem;
+  width: 550px;
+  height: 36px;
+  font-family: 'Rubik', sans-serif;
+  line-height: 36px;
+  font-weight: 500;
+  font-size: 27px;
+  letter-spacing: 0.5px;
+}
+
+.step-title.active {
+  border-bottom: none;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
