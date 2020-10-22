@@ -126,6 +126,42 @@ registration-container
   height: 378px;
 }
 
+.ask-icon-wrapper {
+  position: absolute;
+  width: 29px;
+  right: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.ask-icon-wrapper:hover {
+  background: #f7f7f7;
+}
+
+.arrow-icon-wrapper {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 12px;
+}
+
+.arrow-icon-wrapper .img {
+  width: 93%;
+}
+
+.arrow-icon-wrapper .img:hover {
+  width: 100%;
+}
+
+.step .wrapper h1 {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  transition: all 0.2s ease;
+  pointer-events: none;
+  font-size: 16px;
+}
+
 
 /* -----------------------------------------------
 inputs       
@@ -139,6 +175,8 @@ inputs
   height: 46px;
   margin-bottom: 36re;
   margin-bottom: .75rem;
+  display: flex;
+  align-items: center;
 }
 
 .inp .label {
