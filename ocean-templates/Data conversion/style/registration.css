@@ -77,11 +77,12 @@ home page title
 }
 
 .step .wrapper h1 {
-  color: rgba(0, 0, 0, 0.5);
+  color: #6f6e6e;
+  font-family: 'Rubik', sans-serif;
+  line-height: 36px;
   font-weight: 500;
-  transition: all 0.2s ease;
-  pointer-events: none;
-  font-size: 16px;
+  font-size: 19px;
+  letter-spacing: 0.5px;
 }
 
 
@@ -94,7 +95,7 @@ inputs
   border-radius: 3px;
   width: 300px;
   overflow: hidden;
-  height: 46px;
+  height: 60px;
   margin-bottom: 36re;
   margin-bottom: .75rem;
   display: flex;
@@ -103,11 +104,21 @@ inputs
 
 .input-wrapper .label {
   position: absolute;
+  width: auto;
   left: 12px;
+  font-size: 16px;
   color: rgba(0, 0, 0, 0.5);
   font-weight: 500;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   pointer-events: none;
+  background: white;
+  padding: 0 5px;
+  font-family: 'rubik';
 }
 
 .input-wrapper .focus-bg {
@@ -125,15 +136,17 @@ inputs
 }
 
 .input-wrapper input {
+  appearance: none;
   width: 300px;
   height: 36px;
-  font-family: inherit;
+  font-family: 'Raleway';
   font-size: 16px;
   border-radius: 4px;
   font-weight: 400;
-  border: 1px solid rgba(0, 0, 0, 0.3);
   color: #000;
+  -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .input-wrapper input:hover {
@@ -142,8 +155,20 @@ inputs
 
 .input-wrapper input:not(:placeholder-shown)+.label {
   color: rgba(0, 0, 0, 0.5);
-  -webkit-transform: translate3d(0, -12px, 0) scale(0.75);
-  transform: translate3d(0, -12px, 0) scale(0.75);
+  transform: translate3d(0, -22px, 0) scale(0.85);
+}
+
+.link-input {
+  padding-left: 49px;
+}
+
+.icon-social {
+  position: absolute;
+  z-index: 3;
+  height: 36px;
+  background: black;
+  width: 40px;
+  left: 0;
 }
 
 .input-wrapper input:focus {
@@ -154,25 +179,12 @@ inputs
 
 .input-wrapper input:focus+.label {
   color: cadetblue;
-  left: 0px;
-  background: white;
-  top: 8px;
-  transform: translate3d(0, -12px, 0) scale(0.75);
-  width: auto;
-  padding: 0 3px 0 3px;
+  transform: translate3d(0, -22px, 0) scale(0.85);
 }
 
 .input-wrapper input:focus+.label+.focus-bg {
+  -webkit-transform: scaleX(1);
   transform: scaleX(1);
+  -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
-}
-
-.input-wrapper .help-wrapper {
-  opacity: 0;
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  transition: all 0.65s ease;
-  width: 0%;
 }
