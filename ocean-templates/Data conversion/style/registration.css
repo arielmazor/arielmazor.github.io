@@ -45,7 +45,7 @@ home page title
 
 .step .wrapper.active {
   display: flex;
-  height: 378px;
+  height: 430px;
 }
 
 .ask-icon-wrapper {
@@ -186,4 +186,8 @@ inputs
   transform: scaleX(1);
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
+}
+
+.icon-input-wrapper {
+  margin-bottom: -0.35rem;
 }
