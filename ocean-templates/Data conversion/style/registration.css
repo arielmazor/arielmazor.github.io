@@ -159,14 +159,13 @@ inputs
 }
 
 .link-input {
-  padding-left: 49px;
+  padding-left: 37px;
 }
 
 .icon-social {
   position: absolute;
   z-index: 3;
   height: 36px;
-  background: black;
   width: 40px;
   left: 0;
 }
