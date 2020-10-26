@@ -12,7 +12,15 @@ function nextStep(stepNum) {
 }
 
 
-
+function valueCheck() {
+  if (!$("#input1").val() == "") {
+    if (!$("#input2").val() == "") {
+      $("._btn").removeClass("disable")
+    }
+  } else {
+    $("._btn").addClass("disable")
+  }
+}
 
 jQuery(document).ready(function() {
   nextStep(1);

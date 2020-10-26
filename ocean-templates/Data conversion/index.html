@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Krona+One&family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="">
 
 </head>
 
@@ -53,12 +54,12 @@
         </div>
         <div class="wrapper ">
           <label for="inp" class="input-wrapper f-c">
-            <input type="text" class="input1" id="input1" placeholder="&nbsp;">
+            <input onkeyup="valueCheck()" type="text" class="input1" id="input1" placeholder="&nbsp;">
             <span class="label input1-label f-c">Name</span>
             <span class="focus-bg"></span>
           </label>
           <label for="inp" class="width input-wrapper f-c">
-            <input type="text" class="width" id="input2" placeholder="&nbsp;">
+            <input onkeyup="valueCheck()" type="text" class="width" id="input2" placeholder="&nbsp;">
             <span class="label input2-label none f-c">Title</span>
             <span class="focus-bg"></span>
           </label>
@@ -79,10 +80,8 @@
                 <img class="icons"
                   src="https://arielmazor.github.io/ocean-templates/Data%20conversion/images/instagram-logo1.svg"
                   alt=" ">
-
               </div>
-              <input type="text" class="link-input" id="input2" placeholder="&nbsp;">
-
+              <input onkeyup="usernameCheck()" type="text" class="link-input" id="input2" placeholder="&nbsp;">
               <span class="focus-bg"></span>
             </label>
             <label for="inp" class="icon-input-wrapper input-wrapper f-c">
@@ -91,13 +90,16 @@
                   src="https://arielmazor.github.io/ocean-templates/Data%20conversion/images/discord1.png" alt=" ">
 
               </div>
-              <input type="text" class="link-input" id="input2" placeholder="&nbsp;">
-
+              <input onkeyup="usernameCheck()" type="text" class="link-input" id="input2" placeholder="&nbsp;">
               <span class="focus-bg"></span>
             </label>
           </div>
+          <div class="footer">
+            <div class="f-c preview ">preview
+            </div>
 
-
+            <div onclick="nextStep(2)" class="f-c _btn disable">next</div>
+          </div>
         </div>
       </div>
       <div id="step2" class="step about">

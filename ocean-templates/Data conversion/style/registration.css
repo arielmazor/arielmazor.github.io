@@ -45,7 +45,7 @@ home page title
 
 .step .wrapper.active {
   display: flex;
-  height: 430px;
+  height: 440px;
 }
 
 .ask-icon-wrapper {
@@ -83,6 +83,7 @@ home page title
   font-weight: 500;
   font-size: 19px;
   letter-spacing: 0.5px;
+  margin: 0;
 }
 
 
@@ -190,4 +191,64 @@ inputs
 
 .icon-input-wrapper {
   margin-bottom: -0.35rem;
+}
+
+
+/* -----------------------------------------------
+btn       
+----------------------------------------------- */
+
+.footer {
+  margin-top: 30px;
+  display: flex;
+}
+
+.preview {
+  border: 0;
+  background: transparent;
+  color: cadetblue;
+  transition: 1s;
+  cursor: pointer;
+  font-family: "rubik";
+  margin-right: 20px;
+}
+
+.preview:hover {
+  transform: scale(1.1, 1.1);
+}
+
+._btn {
+  border-radius: 42px;
+  border: 1px solid cadetblue;
+  color: cadetblue;
+  font-family: "rubik";
+  font-size: 15px;
+  font-weight: bold;
+  width: 100;
+  padding: 5px 0 5px;
+  transition: 1s;
+  cursor: pointer;
+  transition: 1s;
+}
+
+._btn:hover {
+  background: cadetblue;
+  color: white;
+  transition: 7ms;
+}
+
+._btn.disable {
+  background: transparent;
+  color: #e0e0e0;
+  border-color: #e0e0e0;
+  pointer-events: none;
+}
+
+.btn-back {
+  border: none;
+  color: #6d6d6d;
+  font-weight: 600;
+  padding: 0 20px;
+  height: 32px;
+  font-size: 13px;
 }
