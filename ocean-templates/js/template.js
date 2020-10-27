@@ -5,11 +5,11 @@ window.templateStr = `
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Assistant&:wght@700&family=Montserrat:wght@200;400;700;900&family=Raleway:wght@400;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./site/style/main.css" media="all">
-  <link rel="stylesheet" type="text/css" href="./site/style/Common.css" media="all ">
-  <link rel="stylesheet" type="text/css" href="./site/style/gallery.css" media="all ">
-  <link rel="stylesheet" type="text/css" href="./site/style/modal.css" media="all ">
-  <link rel="stylesheet" type="text/css" href="./site/style/responsive-tablet.css" media="all ">
+  <link rel="stylesheet" type="text/css" href="https://arielmazor.github.io/site/style/main.css" media="all">
+  <link rel="stylesheet" type="text/css" href="https://arielmazor.github.io/site/style/Common.css" media="all ">
+  <link rel="stylesheet" type="text/css" href="https://arielmazor.github.io/site/style/gallery.css" media="all ">
+  <link rel="stylesheet" type="text/css" href="https://arielmazor.github.io/site/style/modal.css" media="all ">
+  <link rel="stylesheet" type="text/css" href="https://arielmazor.github.io/site/style/responsive-tablet.css" media="all ">
   <title>ocean</title>
   <link rel="shortcut icon" href="./site/images/favicon-32x32.png" type="image/x-icon">
 </head>
