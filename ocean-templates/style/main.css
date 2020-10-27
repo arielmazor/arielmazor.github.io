@@ -82,6 +82,7 @@ nav {
   height: auto;
   cursor: pointer;
   transition: 0.5s;
+  width: 226px;
 }
 
 
@@ -177,4 +178,19 @@ footer .copyright .wrapper .ocean-template {
   padding: 0 15px;
   cursor: pointer;
   font-family: "Open Sans", sans-serif;
+}
+
+
+/* -----------------------------------------------
+iframe
+----------------------------------------------- */
+
+#template-iframe {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
 }

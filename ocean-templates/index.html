@@ -39,9 +39,8 @@
 
       </div>
       <div class="logo-wrapper f-c ">
-        <div class="logo ">OceanTEM</div>
+        <img class="logo" src="./images/LOGO.png" alt="">
       </div>
-
     </nav>
   </header>
   <div class="registration-container f-c">
@@ -53,12 +52,13 @@
         </div>
         <div class="wrapper ">
           <label for="inp" class="input-wrapper f-c">
-            <input onkeyup="valueCheck()" type="text" class="input1" id="input1" placeholder="&nbsp;">
+            <input onkeyup="valueCheck()" value="Ocean" type="text" class="input1" id="input1" placeholder="&nbsp;">
             <span class="label input1-label f-c">Name</span>
             <span class="focus-bg"></span>
           </label>
           <label for="inp" class="width input-wrapper f-c">
-            <input onkeyup="valueCheck()" type="text" class="width" id="input2" placeholder="&nbsp;">
+            <input onkeyup="valueCheck()" value="Web developer and Graphic Designer" type="text" class="width"
+              id="input2" placeholder="&nbsp;">
             <span class="label input2-label none f-c">Title</span>
             <span class="focus-bg"></span>
           </label>
@@ -94,7 +94,7 @@
             </label>
           </div>
           <div class="footer">
-            <div class="f-c preview ">preview
+            <div onclick="showPreview()" class="f-c preview ">preview
             </div>
 
             <div onclick="nextStep(2)" class="f-c _btn disable">next</div>
@@ -145,8 +145,12 @@
       </div>
     </div>
   </footer>
+
+  <iframe id="template-iframe"></iframe>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+  <script src="./js/template.js"></script>
   <script src="./js/my-script.js "></script>
 </body>
 

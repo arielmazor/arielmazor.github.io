@@ -1,3 +1,8 @@
+var _templateData = {
+  name: "ariel1",
+  title: "ariel2",
+};
+
 /* -----------------------------------------------
 nextStep
 ----------------------------------------------- */
@@ -10,6 +15,22 @@ function nextStep(stepNum) {
   console.log(_id)
 
 }
+
+function showPreview() {
+  _templateData.name = $("#input1").val();
+  _templateData.title = $("#input2").val();
+
+  var compiled_template = Handlebars.compile(templateStr);
+  var html = compiled_template(_templateData);
+
+  var ifrm = document.querySelector("#template-iframe")
+  let doc = ifrm.contentDocument ? ifrm.contentDocument : ifrm.contentWindow.document;
+
+  doc.open();
+  doc.write(html);
+  doc.close();
+}
+
 
 
 function valueCheck() {
