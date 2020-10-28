@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 // Client handling
 //------------------------------------
 
-app.use(express.static(path.join(__dirname, '../mocean-templates')));
+app.use(express.static(path.join(__dirname, '../ocean-templates')));
 
 app.get('*', function(request, response) {
   response.sendFile(path.join(__dirname, '../ocean-templates/index.html'));
