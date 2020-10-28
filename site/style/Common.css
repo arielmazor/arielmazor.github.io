@@ -1,39 +1,51 @@
 /* -----------------------------------------------
  commom
 ----------------------------------------------- */
+
 body {
   margin: 0;
 }
+
 body.no-scroll {
   overflow: hidden;
 }
+
 .f-c {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 h1,
 h2 {
   margin: 0;
 }
+
 h1 {
   font-family: "Montserrat", Sans-serif;
-
 }
+
 h2 {
   font-family: "Montserrat", Sans-serif;
 }
+
+
 /*----------------------------------------------- */
+
 .container {
   width: 100%;
   flex-direction: column;
 }
+
+
 /*----------------------------------------------- */
+
 .title-wrapper {
   width: 100%;
   height: 260px;
   position: relative;
 }
+
 .title-wrapper .text {
   color: #32102e;
   font-family: "Montserrat", Sans-serif;
@@ -41,6 +53,7 @@ h2 {
   font-weight: 800;
   z-index: 2;
 }
+
 .behind-text {
   font-family: "Montserrat", Sans-serif;
   font-size: 175px;

@@ -29,6 +29,10 @@ function showPreview() {
   doc.open();
   doc.write(html);
   doc.close();
+  $(".iframe-wrapper").addClass("show")
+  $("body").css("overflow", "hidden")
+  $("#template-iframe").css("border", "none")
+  $(".iframe-body ").css("background", "#E7E7E7")
 }
 
 

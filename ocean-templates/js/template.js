@@ -14,8 +14,7 @@ window.templateStr = `
   <link rel="shortcut icon" href="./site/images/favicon-32x32.png" type="image/x-icon">
 </head>
 
-<body>
-<script id="template" type="text/x-handlebars-template">
+<body class="iframe-body">
   <div class="modal f-c">
     <div class="cancel-wrapper">
       <div onclick="closeModal()" class="cancel-icon">
@@ -191,11 +190,10 @@ window.templateStr = `
       </div>
     </div>
   </footer>
-	</script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
-  <script src="./site/js/my-script.js "></script>
-  <script src="./site/js/Gallery.js "></script>
+  <script src="https://arielmazor.github.io/site/js/my-script.js "></script>
+  <script src="https://arielmazor.github.io/site/js/Gallery.js "></script>
 </body>
 
 </html>`
