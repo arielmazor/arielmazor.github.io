@@ -1,0 +1,140 @@
+/* -----------------------------------------------
+header       
+----------------------------------------------- */
+
+.input-wrapper {
+  position: relative;
+  border-radius: 3px;
+  width: 450px;
+  overflow: hidden;
+  height: 60px;
+  margin-bottom: 36re;
+  margin-bottom: .75rem;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper .label,
+.link-input::placeholder {
+  position: absolute;
+  width: auto;
+  left: 12px;
+  font-size: 16px;
+  color: #504a4a;
+  font-weight: 500;
+  transform-origin: 0 0;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+  pointer-events: none;
+  background: white;
+  padding: 0 5px;
+  font-family: 'rubik';
+}
+
+
+/* -----------------------------------------------
+inputs       
+----------------------------------------------- */
+
+.input-wrapper .focus-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.05);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.input-wrapper input {
+  appearance: none;
+  width: 450px;
+  height: 36px;
+  font-family: 'Raleway';
+  font-size: 16px;
+  border-radius: 4px;
+  font-weight: 400;
+  color: #000;
+  transition: all 0.15s ease;
+  border: 1px solid #e3e3e3;
+  padding: 10px;
+}
+
+.input-wrapper input:hover {
+  border-color: #B5B5B5;
+}
+
+.input-wrapper input:not(:placeholder-shown)+.label {
+  color: #B5B5B5;
+  transform: translate3d(0, -22px, 0) scale(0.85);
+}
+
+.link-input {
+  padding-left: 40px !important;
+}
+
+.icon-social {
+  position: absolute;
+  z-index: 3;
+  height: 36px;
+  width: 40px;
+  left: 0;
+}
+
+.input-wrapper input:focus {
+  background: white;
+  outline: none;
+  border-color: #FCCF3E;
+}
+
+.input-wrapper input:focus+.label {
+  color: #ffc300;
+  transform: translate3d(0, -22px, 0) scale(0.85);
+}
+
+.input-wrapper input:focus+.label+.focus-bg {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.icon-input-wrapper {
+  margin-bottom: -0.35rem;
+}
+
+
+/* -----------------------------------------------
+textarea       
+----------------------------------------------- */
+
+.textarea {
+  height: 227px;
+  width: 300px;
+  border: 1px solid #f3f3f3;
+  font-family: 'Raleway';
+  font-size: 16px;
+  border-radius: 4px;
+  color: #000;
+  transition: all 0.15s ease;
+  border: 1px solid #e3e3e3;
+  padding: 10px;
+  outline: none;
+  letter-spacing: 1px;
+  resize: none;
+  transition: all .5s linear;
+}
+
+.textarea:focus {
+  border-color: #F38900;
+}
+
+.textarea:focus::placeholder {
+  color: #F38900;
+}
+
+.label-social {
+  left: 35 !important;
+}

@@ -6,7 +6,6 @@ registration-container
   width: 100%;
   height: auto;
   min-height: 450px;
-  margin-top: 497px;
   background: #F7F7F7;
 }
 
@@ -24,7 +23,7 @@ home page title
 
 .step-title .num {
   font-size: 31px;
-  color: cadetblue;
+  color: #d4265e;
   padding: 5px;
 }
 
@@ -36,8 +35,7 @@ home page title
   background-color: #fff;
   border-radius: 0 0 6px;
   flex-direction: column;
-  padding: 0 0 0 53px;
-  width: 537.1px;
+  width: 750px;
   display: none;
   border: 1px solid #f0f0f0;
   border-top: 0px solid #f0f0f0;
@@ -46,6 +44,11 @@ home page title
 .step .wrapper.active {
   display: flex;
   height: 440px;
+}
+
+.about .wrapper.active {
+  display: flex;
+  height: 564px;
 }
 
 .ask-icon-wrapper {
@@ -108,7 +111,7 @@ inputs
   width: auto;
   left: 12px;
   font-size: 16px;
-  color: rgba(0, 0, 0, 0.5);
+  color: #504a4a;
   font-weight: 500;
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
@@ -147,16 +150,16 @@ inputs
   color: #000;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid #e3e3e3;
   padding: 10px;
 }
 
 .input-wrapper input:hover {
-  border-color: rgba(0, 0, 0, 0.5);
+  border-color: #504a4a;
 }
 
 .input-wrapper input:not(:placeholder-shown)+.label {
-  color: rgba(0, 0, 0, 0.5);
+  color: #504a4a;
   transform: translate3d(0, -22px, 0) scale(0.85);
 }
 
@@ -179,7 +182,7 @@ inputs
 }
 
 .input-wrapper input:focus+.label {
-  color: cadetblue;
+  color: #F38900;
   transform: translate3d(0, -22px, 0) scale(0.85);
 }
 
@@ -207,7 +210,7 @@ btn
 .preview {
   border: 0;
   background: transparent;
-  color: cadetblue;
+  color: #F38900;
   transition: 1s;
   cursor: pointer;
   font-family: "rubik";
@@ -220,8 +223,8 @@ btn
 
 ._btn {
   border-radius: 42px;
-  border: 1px solid cadetblue;
-  color: cadetblue;
+  border: 1px solid #F38900;
+  color: #F38900;
   font-family: "rubik";
   font-size: 15px;
   font-weight: bold;
@@ -233,7 +236,7 @@ btn
 }
 
 ._btn:hover {
-  background: cadetblue;
+  background: #F38900;
   color: white;
   transition: 7ms;
 }
@@ -252,4 +255,64 @@ btn
   padding: 0 20px;
   height: 32px;
   font-size: 13px;
+}
+
+
+/* -----------------------------------------------
+about step
+----------------------------------------------- */
+
+.field {
+  margin-bottom: 30px;
+  flex-direction: column;
+}
+
+.upload {
+  position: relative;
+  height: 140px;
+  width: 300px;
+  border-radius: 4px;
+  border: 1px solid #c1c1c1;
+  transition: all .5s;
+}
+
+.uplod-wrapper span {
+  margin-top: 10px;
+}
+
+.upload:hover {
+  border-color: #F38900;
+  transform: scale(1.005);
+}
+
+.upload:hover>.uplod-wrapper span {
+  color: #F38900;
+}
+
+.upload:hover>.uplod-wrapper svg {
+  fill: #F38900;
+}
+
+.uplod-wrapper {
+  width: auto;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.upload input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.help {
+  font-size: .75rem;
+  font-family: "rubik";
+  font-weight: 400px;
+  width: 300px;
 }

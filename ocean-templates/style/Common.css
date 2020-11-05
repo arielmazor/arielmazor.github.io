@@ -33,14 +33,14 @@ body {
   background-color: #fff;
   border-radius: 6px;
   border: 1px solid #f0f0f0;
-  color: #6f6e6e;
+  color: #504a4a;
   display: block;
   padding: 1.25rem;
-  width: 550px;
+  width: 710px;
   height: 36px;
   font-family: 'Rubik', sans-serif;
   line-height: 36px;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 27px;
   letter-spacing: 0.5px;
 }
