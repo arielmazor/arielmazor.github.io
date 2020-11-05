@@ -77,5 +77,5 @@ function valueCheck() {
 }
 
 jQuery(document).ready(function() {
-  nextStep(2);
+  nextStep(1);
 })

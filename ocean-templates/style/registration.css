@@ -210,10 +210,11 @@ btn
 .preview {
   border: 0;
   background: transparent;
-  color: #F38900;
+  color: #32102E;
   transition: 1s;
   cursor: pointer;
   font-family: "rubik";
+  font-weight: bold;
   margin-right: 20px;
 }
 
