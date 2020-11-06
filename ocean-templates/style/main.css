@@ -8,7 +8,7 @@ header {
 
 nav {
   height: 69px;
-  background: #ffffff;
+  background: #40243E;
   display: flex;
   position: fixed;
   width: 100%;
@@ -120,6 +120,7 @@ nav {
   font-weight: 800;
   line-height: 1.2em;
   max-width: 531px;
+  text-align: center;
 }
 
 

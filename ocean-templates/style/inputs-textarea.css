@@ -58,7 +58,7 @@ inputs
   font-weight: 400;
   color: #000;
   transition: all 0.15s ease;
-  border: 1px solid #e3e3e3;
+  border: 1px solid #45284257;
   padding: 10px;
 }
 
@@ -86,11 +86,11 @@ inputs
 .input-wrapper input:focus {
   background: white;
   outline: none;
-  border-color: #FCCF3E;
+  border-color: #ba255e;
 }
 
 .input-wrapper input:focus+.label {
-  color: #ffc300;
+  color: #b43163;
   transform: translate3d(0, -22px, 0) scale(0.85);
 }
 
@@ -112,7 +112,7 @@ textarea
 
 .textarea {
   height: 227px;
-  width: 300px;
+  width: 450px;
   border: 1px solid #f3f3f3;
   font-family: 'Raleway';
   font-size: 16px;

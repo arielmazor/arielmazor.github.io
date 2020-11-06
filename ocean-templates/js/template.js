@@ -118,8 +118,7 @@ window.templateStr = `
         <div class="behind-text f-c">About</div>
       </div>
       <div class="f-c wrapper">
-        <p class="txt-wrapper f-c">“My name is Lucas Martin, and I enjoy meeting new people and finding ways to help them have an uplifting experience. I have had a variety of customer service opportunities, through which I was able to have fewer returned products and increased
-          repeat customers, when compared with co-workers. I am dedicated, outgoing, and a team player. Who could I speak with in your customer service department about your organization’s customer service needs?”
+        <p class="txt-wrapper f-c">{{about}}
         </p>
         <div class="img-frame f-c">
           <img src="./site/images/my self.png">

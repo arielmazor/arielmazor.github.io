@@ -21,15 +21,6 @@ home page title
 
 /*-----------------------------------------------*/
 
-.step-title .num {
-  font-size: 31px;
-  color: #d4265e;
-  padding: 5px;
-}
-
-
-/*-----------------------------------------------*/
-
 .step .wrapper {
   transition: all .5s linear;
   background-color: #fff;
@@ -113,11 +104,8 @@ inputs
   font-size: 16px;
   color: #504a4a;
   font-weight: 500;
-  -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
-  -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   pointer-events: none;
   background: white;
@@ -224,8 +212,8 @@ btn
 
 ._btn {
   border-radius: 42px;
-  border: 1px solid #F38900;
-  color: #F38900;
+  border: 1px solid #ba255e;
+  color: #801c42;
   font-family: "rubik";
   font-size: 15px;
   font-weight: bold;
@@ -237,7 +225,7 @@ btn
 }
 
 ._btn:hover {
-  background: #F38900;
+  background: #8d1b47;
   color: white;
   transition: 7ms;
 }
@@ -271,7 +259,7 @@ about step
 .upload {
   position: relative;
   height: 140px;
-  width: 300px;
+  width: 450px;
   border-radius: 4px;
   border: 1px solid #c1c1c1;
   transition: all .5s;
@@ -283,7 +271,6 @@ about step
 
 .upload:hover {
   border-color: #F38900;
-  transform: scale(1.005);
 }
 
 .upload:hover>.uplod-wrapper span {
@@ -315,5 +302,5 @@ about step
   font-size: .75rem;
   font-family: "rubik";
   font-weight: 400px;
-  width: 300px;
+  width: 450px;
 }

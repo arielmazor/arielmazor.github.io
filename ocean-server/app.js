@@ -18,6 +18,12 @@ app.get('*', function(request, response) {
   response.sendFile(path.join(__dirname, '../ocean-templates/index.html'));
 });
 
+app.post("/api/test", function(req, res) {
+  res.send({
+    hello: 'world'
+  });
+});
+
 
 //------------------------------------
 // 404 handling

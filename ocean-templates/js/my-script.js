@@ -4,6 +4,7 @@ var templateData = {
   discordLink: null,
   instagramLink: null,
   behanceLink: null,
+  about: "ariel2",
 };
 
 /* -----------------------------------------------
@@ -19,13 +20,35 @@ function nextStep(stepNum) {
 
 }
 
+function ajaxPost() {
+
+  $.ajax({
+    type: "POST",
+    contentType: "application/json",
+    url: "http://localhost:9393/api/test",
+    data: JSON.stringify({}),
+    dataType: 'json',
+    success: function(data) {
+      debugger
+      alert("success!")
+    },
+    error: function(e) {
+      alert("Error!")
+      console.log("ERROR: ", e);
+    }
+  });
+
+
+}
+
+
 function showPreview() {
   templateData.name = $("#input1").val();
   templateData.title = $("#input2").val();
   templateData.discordLink = $("#discord-link-input").val();
   templateData.instagramLink = $("#instagram-link-input").val();
   templateData.behanceLink = $("#behance-link-input").val();
-
+  templateData.about = $(".field .textarea").val();
 
 
   var compiled_template = Handlebars.compile(templateStr);
@@ -69,11 +92,23 @@ function showPreview() {
 function valueCheck() {
   if (!$("#input1").val() == "") {
     if (!$("#input2").val() == "") {
-      $("._btn").removeClass("disable")
+      $("#step1 ._btn").removeClass("disable")
+      $("#step2 .step-title").removeClass("_disable")
     }
   } else {
-    $("._btn").addClass("disable")
+    $("#step1 ._btn").addClass("disable")
+    $("#step2 .step-title").addClass("_disable")
   }
+  if (!$(".textarea").val() == "") {
+    $("#step2 ._btn").removeClass("disable")
+    $("#step3 .step-title").removeClass("_disable")
+
+  } else {
+    $("#step2 ._btn").addClass("disable")
+    $("#step3 .step-title").addClass("_disable")
+  }
+
+
 }
 
 jQuery(document).ready(function() {

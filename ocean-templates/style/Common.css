@@ -34,7 +34,7 @@ body {
   border-radius: 6px;
   border: 1px solid #f0f0f0;
   color: #504a4a;
-  display: block;
+  display: flex;
   padding: 1.25rem;
   width: 710px;
   height: 36px;
@@ -43,10 +43,22 @@ body {
   font-weight: bold;
   font-size: 27px;
   letter-spacing: 0.5px;
+  cursor: pointer;
 }
 
 .step-title.active {
   border-bottom: none;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+  color: #D4265E;
+  pointer-events: none;
+}
+
+.step-title span {
+  pointer-events: none;
+}
+
+._disable {
+  color: #eaeaea !important;
+  pointer-events: none !important;
 }
