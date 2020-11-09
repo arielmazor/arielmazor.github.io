@@ -24,6 +24,14 @@ app.post("/api/test", function(req, res) {
   });
 });
 
+//------------------------------------
+// upload image
+//------------------------------------
+app.post("/api/uploadProfileImg", function(req, res) {
+  res.send({
+    res: 1
+  });
+});
 
 //------------------------------------
 // 404 handling

@@ -1,0 +1,55 @@
+/* -----------------------------------------------
+header       
+----------------------------------------------- */
+
+.input-wrapper {
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+  height: 50px;
+  margin-bottom: 36re;
+  margin-bottom: .75rem;
+  display: flex;
+  align-items: center;
+}
+
+
+/* -----------------------------------------------
+inputs       
+----------------------------------------------- */
+
+.input-wrapper input {
+  appearance: none;
+  width: 275px;
+  height: 36px;
+  font-family: 'Raleway';
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: 400;
+  color: #000;
+  transition: all 0.15s ease;
+  border: 0px solid #45284257;
+  padding: 10px;
+  background: #E9EEF4;
+  padding-left: 44px;
+}
+
+.input-wrapper input::placeholder {
+  opacity: 0.7;
+}
+
+.link-input {
+  padding-left: 40px !important;
+}
+
+.icon-social {
+  position: absolute;
+  z-index: 3;
+  height: 36px;
+  width: 40px;
+  left: 0;
+}
+
+.input-wrapper input:focus {
+  outline: none;
+}

@@ -19,7 +19,6 @@
 <body>
   <header>
     <nav class="nav">
-      <div style="padding: 20px;border: 1px solid black;" onclick="ajaxPost()"></div>
 
       <div class="pi-pannels f-c ">
         <a class="link-wrapper f-c " href="# ">
@@ -66,7 +65,7 @@
   </div>
   <div class="registration-container f-c">
     <div class="registration-wrapper">
-      <div id="step1" style="margin-top: -77;" class="step home-page">
+      <div id="step1" class="step home-page">
         <div onclick="nextStep(1)" class="step-title f-c">
           <span>Home Page</span>
         </div>
@@ -137,7 +136,8 @@
                 <span>Add a photo of yourself or your logo</span>
               </div>
 
-              <input type="file" accept="image/png, image/jpeg ,image/jpg" class="file-draggable">
+              <input type="file" accept="image/png, image/jpeg ,image/jpg" class="file-draggable"
+                onchange="onInputChanged(event)">
             </label>
             <p class="help">
               Maximum size: 2 MB<br> Allowed file types: png jpg jpeg

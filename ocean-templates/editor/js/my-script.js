@@ -19,6 +19,35 @@ function nextStep(stepNum) {
   console.log(_id)
 
 }
+//-------------------------------------------------
+
+function onInputChanged(e) {
+  if (e.target.files.length > 0) {
+    let file = e.target.files[0];
+
+    var fd = new FormData();
+    fd.append('file', file);
+
+    $.ajax({
+
+      url: "http://localhost:9393/api/uploadProfileImg",
+      type: 'post',
+      data: fd,
+      contentType: false,
+      processData: false,
+      success: function(data) {
+        debugger
+        alert("success!")
+      },
+      error: function(e) {
+        alert("Error!")
+        console.log("ERROR: ", e);
+      }
+    });
+  }
+}
+
+//-------------------------------------------------*/
 
 function ajaxPost() {
 
@@ -29,7 +58,6 @@ function ajaxPost() {
     data: JSON.stringify({}),
     dataType: 'json',
     success: function(data) {
-      debugger
       alert("success!")
     },
     error: function(e) {
