@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../ocean-templates')));
 
 app.get('*', function(request, response) {
-  response.sendFile(path.join(__dirname, '../ocean-templates/index.html'));
+  response.sendFile(path.join(__dirname, '../ocean-templates/editor/index.html'));
 });
 
 app.post("/api/test", function(req, res) {
