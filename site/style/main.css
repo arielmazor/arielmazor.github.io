@@ -68,8 +68,13 @@ nav {
   margin-right: 12px;
 }
 
+.fab::before {
+  color: white;
+  font-size: 22px;
+}
+
 .icons {
-  height: 20px;
+  height: 22px;
 }
 
 

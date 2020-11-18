@@ -59,8 +59,9 @@ nav {
   margin-right: 12px;
 }
 
-.icons {
-  height: 18px;
+.fab::before {
+  color: white;
+  font-size: 22px;
 }
 
 
