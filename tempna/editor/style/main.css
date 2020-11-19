@@ -59,9 +59,8 @@ nav {
   margin-right: 12px;
 }
 
-.fab::before {
-  color: white;
-  font-size: 22px;
+.icons {
+  height: 18px;
 }
 
 
@@ -83,7 +82,7 @@ nav {
   height: auto;
   cursor: pointer;
   transition: 0.5s;
-  width: 175px;
+  width: 192px;
 }
 
 
