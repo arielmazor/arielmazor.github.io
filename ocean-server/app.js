@@ -12,10 +12,10 @@ app.use(bodyParser.json());
 // Client handling
 //------------------------------------
 
-app.use(express.static(path.join(__dirname, '../ocean-templates')));
+app.use(express.static(path.join(__dirname, '../tempna')));
 
 app.get('*', function(request, response) {
-  response.sendFile(path.join(__dirname, '../ocean-templates/editor/index.html'));
+  response.sendFile(path.join(__dirname, '../tempna/editor/index.html'));
 });
 
 app.post("/api/test", function(req, res) {
