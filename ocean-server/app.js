@@ -15,7 +15,8 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../tempna')));
 
 app.get('*', function(request, response) {
-  response.sendFile(path.join(__dirname, '../tempna/editor/index.html'));
+  response.sendFile(path.join(__dirname, '../tempna/index.html'));
+
 });
 
 app.post("/api/test", function(req, res) {
