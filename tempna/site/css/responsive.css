@@ -1,3 +1,10 @@
+@media screen and (max-height: 739px) {
+  .gradiant,
+  .home-page {
+    height: 700px;
+  }
+}
+
 @media screen and (max-width: 1675px) {
   .home-page .wrapper .img-wrapper img {
     width: auto;
@@ -18,7 +25,7 @@
   }
 }
 
-@media screen and (max-width: 1248px) {
+@media screen and (max-width: 1403px) {
   .home-page {
     height: 776px;
     width: 100%;
@@ -28,7 +35,7 @@
   }
   .home-page .wrapper .img-wrapper img {
     width: auto;
-    height: 380px;
+    height: 339px;
   }
   .home-page .wrapper {
     width: auto;
@@ -36,11 +43,82 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-left: 0;
   }
   .home-page .wrapper .title {
-    width: 60%;
+    width: 75%;
     padding-top: 0;
     text-align: center;
     padding-bottom: 25px;
+    font-size: 35px;
+  }
+  .home-page .wrapper .img-wrapper {
+    padding-right: 103px;
+  }
+  .logo {
+    display: none;
+  }
+  .widget-wrap {
+    width: 100%;
+    padding: 0;
+  }
+  .widget-wrap .title {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .home-page .wrapper .img-wrapper img {
+    height: 288px;
+  }
+  .home-page .wrapper .title {
+    line-height: 41px;
+    font-size: 31px;
+    width: 350px;
+  }
+  .home-page .wrapper .img-wrapper {
+    padding-top: 65px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .home-page .wrapper .img-wrapper {
+    padding-right: 0;
+  }
+}
+
+@media SCREEN AND (max-width: 488px) {
+  .widget-wrap .title {
+    width: 125px;
+  }
+  .home-page .wrapper .img-wrapper img {
+    height: 264px;
+  }
+}
+
+@media SCREEN AND (max-width: 420px) {
+  .home-page .wrapper .title {
+    font-size: 25px;
+  }
+  .home-page .wrapper .img-wrapper img {
+    height: 235px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .widget-wrap .title {
+    width: 125px;
+  }
+  .home-page .wrapper .img-wrapper img {
+    height: 235px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .home-page .wrapper .title {
+    width: 300px;
+  }
+  .home-page .wrapper .img-wrapper img {
+    height: 200px;
   }
 }
