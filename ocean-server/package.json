@@ -27,11 +27,12 @@
     "@google-cloud/storage": "1.6.0",
     "body-parser": "1.18.2",
     "express": "4.16.2",
-    "lodash": "4.17.5",
-    "nconf": "0.10.0",
-    "prompt": "1.0.0",
+    "gulp": "^4.0.2",
     "jsonwebtoken": "8.3.0",
-    "module-alias": "2.1.0"
+    "lodash": "4.17.5",
+    "module-alias": "2.1.0",
+    "nconf": "0.10.0",
+    "prompt": "1.0.0"
   },
   "devDependencies": {
     "gulp-sass": "^4.1.0",
