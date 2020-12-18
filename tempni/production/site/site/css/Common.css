@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  background: #EAF0FA;
+}
+
+.f-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.background {
+  z-index: -2;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}

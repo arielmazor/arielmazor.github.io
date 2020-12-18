@@ -33,7 +33,10 @@
     "jsonwebtoken": "8.3.0",
     "module-alias": "2.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  },
   "engines": {
     "node": "8.x.x"
   },
