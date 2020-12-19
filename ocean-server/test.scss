@@ -1,0 +1,9 @@
+.test {
+  width: 100px;
+  .yosi {
+    display: none;
+    &.kuku {
+      display: block;
+    }
+  }
+}

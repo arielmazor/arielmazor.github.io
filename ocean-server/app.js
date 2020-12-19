@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../tempni')));
 
 app.get('*', function(request, response) {
-  response.sendFile(path.join(__dirname, '../tempni/production/index.html'));
+  response.sendFile(path.join(__dirname, '../tempni/dev/index.html'));
 
 });
 
