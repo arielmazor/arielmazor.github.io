@@ -2,9 +2,14 @@
   "name": "ocean-project",
   "version": "1.0.0",
   "description": "The next gen of eLearning",
-  "repository": "https://github.com/GoogleCloudPlatform/nodejs-getting-started",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoogleCloudPlatform/nodejs-getting-started.git"
+  },
   "private": true,
   "scripts": {
+    "gulp": "gulp",
+    "minify": "gulp minify",
     "start": "node app.js",
     "test": "repo-tools test app && ava -t 30s --tap test/*.test.js",
     "e2e": "repo-tools test deploy && E2E_TESTS=True ava -t 30s --tap test/*.test.js",
@@ -27,7 +32,6 @@
     "@google-cloud/storage": "1.6.0",
     "body-parser": "1.18.2",
     "express": "4.16.2",
-    "gulp": "^4.0.2",
     "jsonwebtoken": "8.3.0",
     "lodash": "4.17.5",
     "module-alias": "2.1.0",
@@ -35,6 +39,8 @@
     "prompt": "1.0.0"
   },
   "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0",
     "node-sass": "^5.0.0"
   },
@@ -43,5 +49,10 @@
   },
   "_moduleAliases": {
     "@auth-service": "."
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/GoogleCloudPlatform/nodejs-getting-started/issues"
+  },
+  "homepage": "https://github.com/GoogleCloudPlatform/nodejs-getting-started#readme",
+  "main": "app.js"
 }
