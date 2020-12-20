@@ -31,11 +31,20 @@
       .on('end', cb)
   };
 
-  function watch() {
-    gulp.watch('../tempni/dev');
+
+  function watch(cb) {
+    gulp.watch('../tempni/dev/site/**/*.scss', style)
+    gulp.watch('../tempni/dev/**/*.html').on('change', () => {
+      clean(cb);
+      copyFiles(cb);
+    });
+    gulp.watch('../tempni/dev/site/**/*.js').on('change', () => {
+      clean(cb);
+      copyFiles(cb);
+    });
   }
 
   exports.default = gulp.task('default', gulp.series(clean, copyFiles, style));
   //exports._default = gulp.task('_default', gulp.series(clean, copyFiles, style));
 
-  //exports.watch = watch;
+  exports.watch = watch;
