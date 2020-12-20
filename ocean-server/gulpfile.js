@@ -6,29 +6,36 @@
   const gulp = require('gulp');
   const sass = require('gulp-sass');
   const del = require('del');
+  const {} = require('gulp');
 
-  gulp.task('clean', function clean(cb) {
-    return del('./tempni/prodution', {
+  function clean(cb) {
+    del(['../tempni/production'], {
       force: true
-    })
-  });
+    });
+    cb();
+  }
 
-  gulp.task('style', function style() {
-    return gulp.src('../tempni/dev/site/**/*.scss')
+  function style(cb) {
+    gulp.src('../tempni/dev/site/**/*.scss')
       .pipe(sass())
-      .pipe(gulp.dest('../tempni/production/site/css'))
-  })
-  gulp.task('copyFiles', function copyFiles(cb) {
-    gulp
-      .src(['../tempni/dev/**/*.*'])
-      .pipe(gulp.dest('../tempni/prodution'))
+      .pipe(gulp.dest('../tempni/prod/site'))
       .on('error', cb)
       .on('end', cb)
-  });
+  }
+
+  function copyFiles(cb) {
+    gulp
+      .src(['../tempni/dev/**/*.*', '!../tempni/dev/**/*.scss'])
+      .pipe(gulp.dest('../tempni/prod'))
+      .on('error', cb)
+      .on('end', cb)
+  };
 
   function watch() {
     gulp.watch('../tempni/dev');
   }
 
-  exports._default = gulp.task('_default', gulp.series('clean', 'style', 'copyFiles'));
-  exports.watch = watch;
+  exports.default = gulp.task('default', gulp.series(clean, copyFiles, style));
+  //exports._default = gulp.task('_default', gulp.series(clean, copyFiles, style));
+
+  //exports.watch = watch;
