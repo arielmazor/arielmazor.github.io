@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "The next gen of eLearning",
   "repository": {
-    "type": "git",
+    "type": "git, module",
     "url": "git+https://github.com/GoogleCloudPlatform/nodejs-getting-started.git"
   },
   "private": true,
@@ -40,7 +40,9 @@
   },
   "devDependencies": {
     "browser-sync": "^2.26.13",
+    "del": "^6.0.0",
     "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
     "gulp-sass": "^4.1.0",
     "node-sass": "^5.0.0"
   },

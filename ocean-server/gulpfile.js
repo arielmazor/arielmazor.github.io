@@ -1,50 +1,34 @@
-//------------------------------------
-// sass
-//------------------------------------
+  //------------------------------------
+  // sass
+  //------------------------------------
 
 
-const browserSync = require('browser-sync').create();
-import {
-  src,
-  dest,
-  watch as __watch
-} from 'gulp';
-import sass, {
-  compiler
-} from 'gulp-sass';
+  const gulp = require('gulp');
+  const sass = require('gulp-sass');
+  const del = require('del');
 
-compiler = require('node-sass');
+  gulp.task('clean', function clean(cb) {
+    return del('./tempni/prodution', {
+      force: true
+    })
+  });
 
-
-function _export() {
-
-  function style() {
-    return src('../tempni/dev/site/**/*.scss')
+  gulp.task('style', function style() {
+    return gulp.src('../tempni/dev/site/**/*.scss')
       .pipe(sass())
-      .pipe(dest('../tempni/production/site/css'))
-      .pipe(browserSync.stream());
-  }
-
-  function html() {
-    return src('../tempni/dev/site/*.html')
-      .pipe(sass())
-      .pipe(dest('../tempni/production/site'))
-      .pipe(browserSync.stream());
-  }
-
-  function js() {
-    return src('../tempni/dev/site/**/*.js')
-      .pipe(sass())
-      .pipe(dest('../tempni/production/site/js'))
-      .pipe(browserSync.stream());
-  }
+      .pipe(gulp.dest('../tempni/production/site/css'))
+  })
+  gulp.task('copyFiles', function copyFiles(cb) {
+    gulp
+      .src(['../tempni/dev/**/*.*'])
+      .pipe(gulp.dest('../tempni/prodution'))
+      .on('error', cb)
+      .on('end', cb)
+  });
 
   function watch() {
-    __watch('../tempni/dev/site/**/*.scss', style);
-    __watch('../tempni/dev/site/**/*.js', js);
-    __watch('../tempni/dev/site/*.html', html);
+    gulp.watch('../tempni/dev');
   }
 
-}
-exports.all = _export;
-export const _all = _export;
+  exports._default = gulp.task('_default', gulp.series('clean', 'style', 'copyFiles'));
+  exports.watch = watch;
