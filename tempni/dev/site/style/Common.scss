@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: #EAF0FA;
+  background: white;
 }
 
 .f-c {
@@ -10,13 +10,49 @@ body {
 }
 
 .container {
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.title-wrap {
+  height: 400px;
+  display: flex;
+  padding-top: 110px;
+  flex-direction: column;
+}
+
+.title-wrap .title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 68px;
+  color: #35A9E3;
+  //   display: flex;
+  // align-items: flex-end;
+}
+
+.line {
+  width: 319px;
+  height: 6px;
+  background: #22A3F3;
+  border-radius: 4px;
+}
+
+.title-wrap .title-small {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 48px;
+  word-spacing: 2px;
+  color: #3C3C3C;
+  width: 560px;
 }
 
 .background {
-  z-index: -2;
-  position: absolute;
   width: 100%;
   top: 0;
+  z-index: -1;
+  height: 100%;
 }

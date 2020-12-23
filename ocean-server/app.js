@@ -12,10 +12,10 @@ app.use(bodyParser.json());
 // Client handling
 //------------------------------------
 
-app.use(express.static(path.join(__dirname, '../tempni')));
+app.use(express.static(path.join(__dirname, '../tempni/prod')));
 
 app.get('*', function(request, response) {
-  response.sendFile(path.join(__dirname, '../tempni/dev/index.html'));
+  response.sendFile(path.join(__dirname, '../tempni/prod/index.html'));
 
 });
 
