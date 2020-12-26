@@ -7,6 +7,9 @@ body {
   align-items: center;
   justify-content: center; }
 
+.totorial .wrapper .videos-container .show {
+  display: block; }
+
 .container {
   height: auto;
   width: auto; }
@@ -23,12 +26,12 @@ body {
   font-weight: normal;
   font-size: 32px;
   line-height: 68px;
-  color: #35A9E3; }
+  color: #35a9e3; }
 
 .line {
   width: 319px;
   height: 6px;
-  background: #22A3F3;
+  background: #22a3f3;
   border-radius: 4px; }
 
 .title-wrap .title-small {
@@ -38,7 +41,7 @@ body {
   font-size: 19px;
   line-height: 48px;
   word-spacing: 2px;
-  color: #3C3C3C;
+  color: #3c3c3c;
   width: 560px; }
 
 .background {
