@@ -14,8 +14,8 @@ function playVideo(i) {
 
   $(".video-interaction-wrap").removeClass("selected");
   $(`.video-interaction-wrap.i-${i}`).addClass('selected');
-  $(`.video-wrapper`).removeClass('show');
-  $(`.video-wrapper.wrap-${i}`).addClass('show');
+  $(`.video-wrapper ,.video-interaction-wrap`).removeClass('show');
+  $(`.video-wrapper.wrap-${i},.video-interaction-wrap.i${i}`).addClass('show');
   $(`.video-wrapper.wrap-${i} .vid`).get(0).play();
 
 
@@ -36,16 +36,15 @@ function runPlayVideo(i) {
 }
 
 $(document).on('scroll', function () {
-  console.log($(window).scrollTop())
-  if ($(window).scrollTop() >= 700) {
+
+  if ($(window).scrollTop() >= $('.totorial').position().top - 1000) {
     runPlayVideo(0);
   }
 })
 
 $(document).ready(function () {
-  if (playTimeOut)
 
-    if ($(window).scrollTop() >= 700) {
-      runPlayVideo(0)
-    }
+  if ($(window).scrollTop() >= $('.totorial').position().top - 1000) {
+    runPlayVideo(0)
+  }
 });
