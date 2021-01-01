@@ -8,19 +8,38 @@
   const {} = require('gulp');
 
   function clean(cb) {
-    del(['../tempni/production'], {
+    del(['../tempni/prod'], {
       force: true
     });
     cb();
   }
 
-  function style(cb) {
+  function styleSite(cb) {
     gulp.src('../tempni/dev/site/**/*.scss')
       .pipe(sass())
       .pipe(gulp.dest('../tempni/prod/site'))
       .on('error', cb)
       .on('end', cb)
   }
+
+  function styleAbout(cb) {
+    gulp.src('../tempni/dev/about/**/*.scss')
+      .pipe(sass())
+      .pipe(gulp.dest('../tempni/prod/about/site'))
+      .on('error', cb)
+      .on('end', cb)
+  }
+
+  function styleTutorial(cb) {
+    gulp.src('../tempni/totorial/dev/**/*.scss')
+      .pipe(sass())
+      .pipe(gulp.dest('../tempni/prod/totorial/site'))
+      .on('error', cb)
+      .on('end', cb)
+  }
+
+
+
 
   function copyFiles(cb) {
     gulp
@@ -32,8 +51,11 @@
 
 
   function watch(cb) {
-    gulp.watch('../tempni/dev/site/**/*.scss', style)
-    gulp.watch('../tempni/dev/**/*.html').on('change', () => {
+    gulp.watch('../tempni/dev/site/**/*.scss', styleSite)
+    gulp.watch('../tempni/site/dev/about/**/*.scss', styleAbout)
+    gulp.watch('../tempni/dev/tutorial/**/*.scss', styleTutorial)
+    //------------------------------------------------------------
+    gulp.watch('../tempni/dev/site/**/*.html').on('change', () => {
       clean(cb);
       copyFiles(cb);
     });
@@ -41,9 +63,27 @@
       clean(cb);
       copyFiles(cb);
     });
+
+    //------------------------------------------------------------
+
+    gulp.watch('../tempni/site/dev/about/**/*.html').on('change', () => {
+      clean(cb);
+      copyFiles(cb);
+    });
+    gulp.watch('../tempni/site/dev/about/**/*.js').on('change', () => {
+      clean(cb);
+      copyFiles(cb);
+    });
+    //------------------------------------------------------------
+    gulp.watch('../tempni/site/dev/totorial/**/*.html').on('change', () => {
+      clean(cb);
+      copyFiles(cb);
+    });
+    gulp.watch('../tempni/site/dev/totorial/**/*.js').on('change', () => {
+      clean(cb);
+      copyFiles(cb);
+    });
   }
 
-  exports.default = gulp.task('default', gulp.series(clean, copyFiles, style));
-  //exports._default = gulp.task('_default', gulp.series(clean, copyFiles, style));
-
+  exports.default = gulp.task('default', gulp.series(clean, copyFiles, styleSite, styleAbout, styleTutorial));
   exports.watch = watch;

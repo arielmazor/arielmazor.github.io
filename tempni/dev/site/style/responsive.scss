@@ -25,14 +25,6 @@
     }
   }
 
-  .about {
-    .wrapper {
-      svg {
-        height: 450px;
-        width: auto;
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 1485px) {
@@ -50,49 +42,9 @@
       }
     }
   }
-
-  .about {
-    .wrapper {
-      svg {
-        height: 400px;
-        width: auto;
-      }
-    }
-
-    .title-wrap {
-      .title-small {
-        font-size: 19px;
-        width: 500px;
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 1441px) {
-  .about {
-    height: 933px;
-
-    .wrapper {
-      flex-direction: column;
-      padding-top: 89px;
-      height: 94%;
-
-      .about-img {
-        img {
-          height: 445px;
-          width: auto;
-          padding-bottom: 55px;
-        }
-      }
-    }
-
-    .title-wrap {
-      .title-small {
-        text-align: center;
-      }
-    }
-  }
-
   .title-wrap {
     align-items: center;
   }
@@ -129,15 +81,6 @@
     }
   }
 
-  .about {
-    .wrapper {
-      svg {
-        height: 364px;
-        width: auto;
-      }
-    }
-  }
-
   .logo {
     display: none;
   }
@@ -150,49 +93,6 @@
       justify-content: center;
     }
   }
-}
-
-@media screen and (max-width: 1200px) {
-  .totorial {
-    .wrapper {
-      position: relative;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-
-      .videos-interactions {
-        display: none;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .video-wrapper {
-    background: #f2f2fc;
-    height: auto !important;
-
-    video {
-      height: auto !important;
-      width: 100% !important;
-    }
-  }
-
-  .totorial {
-    height: auto;
-    padding: 59px 20px;
-    width: auto;
-
-    .wrapper {
-      height: auto;
-
-      .videos-container {
-        width: 90%;
-        background: transparent;
-      }
-    }
-  }
-
 }
 
 @media screen and (max-width: 678px) {
@@ -210,20 +110,6 @@
         line-height: 41px;
         font-size: 31px;
         width: 445px;
-      }
-    }
-  }
-
-  .about {
-    .wrapper {
-      .about-img {
-        height: auto;
-        width: auto;
-
-        img {
-          height: auto;
-          width: 105%;
-        }
       }
     }
   }
@@ -293,43 +179,5 @@
     .title {
       font-size: 14px;
     }
-  }
-}
-
-@media screen and (max-width: 1329px) {
-  .about {
-    .title-wrap {
-      .title-small {
-        font-size: 19px;
-        width: 470px;
-        font-size: 19px;
-        width: 470px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 561px) {
-  .about {
-    .title-wrap {
-      .title-small {
-        width: 400px;
-        width: 300px;
-      }
-    }
-
-    .wrapper {
-      svg {
-        height: 344px;
-        padding: 0;
-      }
-    }
-  }
-
-  .title-wrap {
-    height: 400px;
-    display: flex;
-    padding-top: 70px;
-    flex-direction: column;
   }
 }

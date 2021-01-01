@@ -34,7 +34,7 @@ nav .wrapper {
     font-weight: 800;
     font-size: 48px;
     line-height: 72px;
-    color: $headcolor;
+    color: white;
   }
 }
 
@@ -189,10 +189,10 @@ About
 }
 
 /* -----------------------------------------------
-Totorial
+tutorial
 ----------------------------------------------- */
 
-.totorial {
+.tutorial {
   display: flex;
   align-items: center;
   width: 100%;
@@ -202,10 +202,10 @@ Totorial
 }
 
 /* -----------------------------------------------
-Totorial Video
+tutorial Video
 ----------------------------------------------- */
 
-.totorial {
+.tutorial {
   .wrapper {
     height: 557px;
     width: 1120px;
@@ -216,7 +216,7 @@ Totorial Video
 
 /*----------------------------------------------- */
 
-.totorial {
+.tutorial {
   .wrapper {
     .videos-container {
       height: 100%;
@@ -229,7 +229,7 @@ Totorial Video
   }
 }
 
-.totorial {
+.tutorial {
   .wrapper {
     .videos-container {
       .video-wrapper {
@@ -240,7 +240,7 @@ Totorial Video
   }
 }
 
-.totorial {
+.tutorial {
   .wrapper {
     .videos-container {
       .show {
@@ -251,7 +251,7 @@ Totorial Video
   }
 }
 
-.totorial {
+.tutorial {
   .wrapper {
     .videos-container {
       .video-wrapper {

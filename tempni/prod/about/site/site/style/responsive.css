@@ -10,16 +10,37 @@
     height: 400px; }
   .home-page .wrapper .title {
     width: 532px;
-    font-size: 37px; } }
+    font-size: 37px; }
+  .about .wrapper svg {
+    height: 450px;
+    width: auto; } }
 
 @media screen and (max-width: 1485px) {
   .home-page .wrapper .img-wrapper img {
     width: auto;
     height: 380px; }
   .home-page .wrapper .title {
-    width: 48%; } }
+    width: 48%; }
+  .about .wrapper svg {
+    height: 400px;
+    width: auto; }
+  .about .title-wrap .title-small {
+    font-size: 19px;
+    width: 500px; } }
 
 @media screen and (max-width: 1441px) {
+  .about {
+    height: 933px; }
+    .about .wrapper {
+      flex-direction: column;
+      padding-top: 89px;
+      height: 94%; }
+      .about .wrapper .about-img img {
+        height: 445px;
+        width: auto;
+        padding-bottom: 55px; }
+    .about .title-wrap .title-small {
+      text-align: center; }
   .title-wrap {
     align-items: center; }
   .home-page {
@@ -44,6 +65,9 @@
         text-align: center;
         padding-bottom: 25px;
         font-size: 35px; }
+  .about .wrapper svg {
+    height: 364px;
+    width: auto; }
   .logo {
     display: none; }
   .widget-wrap {
@@ -51,6 +75,32 @@
     padding: 0; }
     .widget-wrap .title {
       justify-content: center; } }
+
+@media screen and (max-width: 1200px) {
+  .totorial .wrapper {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; }
+    .totorial .wrapper .videos-interactions {
+      display: none; } }
+
+@media screen and (max-width: 800px) {
+  .video-wrapper {
+    background: #f2f2fc;
+    height: auto !important; }
+    .video-wrapper video {
+      height: auto !important;
+      width: 100% !important; }
+  .totorial {
+    height: auto;
+    padding: 59px 20px;
+    width: auto; }
+    .totorial .wrapper {
+      height: auto; }
+      .totorial .wrapper .videos-container {
+        width: 90%;
+        background: transparent; } }
 
 @media screen and (max-width: 678px) {
   .home-page .wrapper .img-wrapper {
@@ -60,7 +110,13 @@
   .home-page .wrapper .title {
     line-height: 41px;
     font-size: 31px;
-    width: 445px; } }
+    width: 445px; }
+  .about .wrapper .about-img {
+    height: auto;
+    width: auto; }
+    .about .wrapper .about-img img {
+      height: auto;
+      width: 105%; } }
 
 @media screen and (max-width: 568px) {
   .home-page .wrapper .img-wrapper {
@@ -90,3 +146,23 @@
 @media screen and (max-width: 350px) {
   .widget-wrap .title {
     font-size: 14px; } }
+
+@media screen and (max-width: 1329px) {
+  .about .title-wrap .title-small {
+    font-size: 19px;
+    width: 470px;
+    font-size: 19px;
+    width: 470px; } }
+
+@media screen and (max-width: 561px) {
+  .about .title-wrap .title-small {
+    width: 400px;
+    width: 300px; }
+  .about .wrapper svg {
+    height: 344px;
+    padding: 0; }
+  .title-wrap {
+    height: 400px;
+    display: flex;
+    padding-top: 70px;
+    flex-direction: column; } }
