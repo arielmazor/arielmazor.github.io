@@ -11,30 +11,33 @@
     del(['../tempni/prod'], {
       force: true
     });
+    console.log("1111111")
     cb();
   }
 
   function style(cb) {
+
+
     gulp.src('../tempni/dev/site/**/*.scss')
       .pipe(sass())
       .pipe(gulp.dest('../tempni/prod/site'))
       .on('error', cb)
-      .on('end', cb)
+      .on('end', () => {
+        // console.log("3333333333")
+        cb();
+      });
   }
 
-
-
-
-
   function copyFiles(cb) {
-    gulp
-      .src(['../tempni/dev/**/*.*', '!../tempni/dev/**/*.scss'])
-
-      .pipe(gulp.dest('../tempni/prod'))
-      .on('error', cb)
-      .on('end', cb)
+    setTimeout(() => {
+      gulp.src(['../tempni/dev/**/*.*', '!../tempni/dev/**/*.scss'])
+        .pipe(gulp.dest('../tempni/prod'))
+        .on('end', () => {
+          // console.log("22222222222")
+          cb();
+        })
+    }, 500);
   };
-
 
   function watch(cb) {
     gulp.watch('../tempni/dev/site/**/*.scss', style)
@@ -50,4 +53,5 @@
   }
 
   exports.default = gulp.task('default', gulp.series(clean, copyFiles, style));
+
   exports.watch = watch;
