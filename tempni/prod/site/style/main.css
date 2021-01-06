@@ -1,0 +1,94 @@
+/* -----------------------------------------------
+Header
+----------------------------------------------- */
+nav {
+  height: 110px;
+  position: absolute;
+  width: 100%;
+  display: flex; }
+
+nav .wrapper {
+  width: 81%;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  max-width: 1400px; }
+
+/*----------------------------------------------- */
+.logo {
+  width: 230px;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center; }
+
+.logo div {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 72px;
+  color: white; }
+
+/*----------------------------------------------- */
+.widget-wrap {
+  width: 474px;
+  height: 100%; }
+
+/* -----------------------------------------------
+Home Page
+----------------------------------------------- */
+.home-page {
+  height: 776px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+
+.home-page .wrapper {
+  width: 81%;
+  height: 400px;
+  justify-content: space-between;
+  display: flex;
+  max-width: 1400px; }
+
+/*----------------------------------------------- */
+.home-page .wrapper .title {
+  font-family: Poppins;
+  font-size: 40px;
+  line-height: 60px;
+  color: #ffffff;
+  width: 585px;
+  padding-top: 111px; }
+
+/*----------------------------------------------- */
+.widget-wrap .title {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  width: 154px;
+  justify-content: flex-end;
+  display: flex;
+  color: white; }
+
+/*----------------------------------------------- */
+.home-page .background {
+  position: absolute;
+  height: 100%; }
+
+.home-page .wrapper .img-wrapper {
+  display: flex;
+  justify-content: flex-end; }
+
+.gradiant {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(283.96deg, #4c9cf9 10.95%, #5a83ec 81.98%, #4c9cf9 81.98%, #5a83ec 81.98%); }
+
+.shape {
+  position: absolute;
+  width: 100%;
+  bottom: 0px; }
