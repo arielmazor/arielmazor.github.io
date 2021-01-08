@@ -12,6 +12,7 @@
     .img-wrapper {
       width: 75%;
       margin: 0 auto;
+      transition: 1s ease-in-out;
     }
   }
 }
@@ -35,7 +36,13 @@
   li {
     display: flex;
     justify-content: center;
-
+    .phone-img{
+      width: auto;
+      height: auto;
+      right: 2px;
+      position: absolute;
+      padding-top: 36px;
+    }
     img {
       display: block;
       width: 80%;
