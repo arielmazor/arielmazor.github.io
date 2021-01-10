@@ -10,7 +10,7 @@
 .gallery {
   .wrapper {
     .img-wrapper {
-      width: 75%;
+      width: 100%;
       margin: 0 auto;
       transition: 1s ease-in-out;
     }
@@ -39,13 +39,13 @@
     .phone-img{
       width: auto;
       height: auto;
-      right: 2px;
+      right: 276px;
       position: absolute;
-      padding-top: 36px;
+      padding-top: 39px;
+  
     }
     img {
       display: block;
-      width: 80%;
       height: auto;
     }
   }

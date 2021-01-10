@@ -14,12 +14,12 @@ app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, '../tempni/prod')));
 
-app.get('*', function(request, response) {
+app.get('*', function (request, response) {
   response.sendFile(path.join(__dirname, '../tempni/prod/index.html'));
 
 });
 
-app.post("/api/test", function(req, res) {
+app.post("/api/test", function (req, res) {
   res.send({
     hello: 'world'
   });
@@ -28,7 +28,7 @@ app.post("/api/test", function(req, res) {
 //------------------------------------
 // upload image
 //------------------------------------
-app.post("/api/uploadProfileImg", function(req, res) {
+app.post("/api/uploadProfileImg", function (req, res) {
   res.send({
     res: 1
   });
