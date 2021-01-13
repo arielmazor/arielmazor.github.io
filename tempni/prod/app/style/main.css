@@ -5,20 +5,20 @@ nav {
   height: 110px;
   position: absolute;
   width: 100%;
-  display: flex; }
+  display: flex;
+  top: 0; }
 
 nav .wrapper {
   width: 81%;
   display: flex;
   height: 100%;
-  justify-content: space-between;
+  align-items: center;
   max-width: 1400px; }
 
 /*----------------------------------------------- */
 .logo {
   width: 230px;
   height: 100%;
-  flex: 1;
   display: flex;
   align-items: center; }
 
@@ -28,12 +28,53 @@ nav .wrapper {
   font-weight: 800;
   font-size: 48px;
   line-height: 72px;
-  color: white; }
+  color: white;
+  cursor: pointer; }
 
 /*----------------------------------------------- */
 .widget-wrap {
-  width: 474px;
-  height: 100%; }
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center; }
+
+/*----------------------------------------------- */
+.widget-wrap div {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0 34px;
+  justify-content: flex-end;
+  display: flex;
+  color: white;
+  cursor: pointer; }
+
+/*----------------------------------------------- */
+.sign-wrapper {
+  height: auto;
+  cursor: pointer; }
+  .sign-wrapper .Sign-In {
+    font-family: Poppins;
+    font-size: 17px;
+    line-height: 27px;
+    padding: 5px;
+    width: 100px;
+    display: flex;
+    color: white;
+    font-weight: 100;
+    border: 1px solid;
+    border-radius: 25px;
+    transition: ease 0.2s; }
+
+.sign-wrapper:hover {
+  height: auto;
+  cursor: pointer; }
+  .sign-wrapper:hover .Sign-In {
+    color: #324a88;
+    border-color: white;
+    background: white;
+    font-weight: 600; }
 
 /* -----------------------------------------------
 Home Page
@@ -46,7 +87,7 @@ Home Page
   align-items: center;
   position: relative; }
 
-.home-page .wrapper {
+.home-page .wrap {
   width: 81%;
   height: 400px;
   justify-content: space-between;
@@ -54,7 +95,7 @@ Home Page
   max-width: 1400px; }
 
 /*----------------------------------------------- */
-.home-page .wrapper .title {
+.home-page .wrap .title {
   font-family: Poppins;
   font-size: 40px;
   line-height: 60px;
@@ -63,22 +104,11 @@ Home Page
   padding-top: 111px; }
 
 /*----------------------------------------------- */
-.widget-wrap .title {
-  font-family: Poppins;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
-  width: 154px;
-  justify-content: flex-end;
-  display: flex;
-  color: white; }
-
-/*----------------------------------------------- */
 .home-page .background {
   position: absolute;
   height: 100%; }
 
-.home-page .wrapper .img-wrapper {
+.home-page .wrap .img-wrapper {
   display: flex;
   justify-content: flex-end; }
 
@@ -218,3 +248,15 @@ Totorial
   margin-left: 13px;
   color: #262b33;
   max-width: 300px; }
+
+.copyright h1 {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: normal;
+  margin: 0px;
+  font-family: "Poppins";
+  margin-left: 13px;
+  padding: 6px 0;
+  align-items: center;
+  display: flex;
+  cursor: default; }
