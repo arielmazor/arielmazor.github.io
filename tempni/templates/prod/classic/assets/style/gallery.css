@@ -1,0 +1,33 @@
+/* -----------------------------------------------
+  Gallery
+----------------------------------------------- */
+.gallery {
+  padding: 100px;
+  background: #F2F5FA; }
+
+.gallery .wrapper .img-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  transition: 1s ease-in-out; }
+
+.owl-controls.clickable {
+  margin-top: 20px; }
+  .owl-controls.clickable .owl-page span {
+    background: #374446; }
+
+.owl-carousel {
+  list-style: none;
+  padding: 0; }
+
+.owl-item li {
+  display: flex;
+  justify-content: center; }
+  .owl-item li .phone-img {
+    width: auto;
+    height: auto;
+    right: 276px;
+    position: absolute;
+    padding-top: 39px; }
+  .owl-item li img {
+    display: block;
+    height: auto; }

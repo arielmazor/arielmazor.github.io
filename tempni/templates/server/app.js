@@ -62,7 +62,7 @@ app.use((err, req, res, next) => {
 //------------------------------------
 
 if (module === require.main) {
-  const server = app.listen(5000, () => {
+  const server = app.listen(9000, () => {
     const port = server.address().port;
     console.log(`App listening on port ${port}`);
   });

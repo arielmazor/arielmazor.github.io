@@ -17,7 +17,7 @@ function clean(cb) {
 function style(cb) {
   gulp.src('../client/**/*.scss')
     .pipe(sass())
-    .pipe(gulp.dest('../prod/site'))
+    .pipe(gulp.dest('../prod'))
     .on('error', cb)
     .on('end', () => {
       cb();
@@ -35,7 +35,7 @@ function copyFiles(cb) {
 }
 
 function watch(cb) {
-  gulp.watch('../client/**/**.scss', Style);
+  gulp.watch('../client/**/**.scss', style);
   gulp.watch('../client/**/**.html', gulp.series(clean, copyFiles, style));
   gulp.watch('../client/**/**.js', gulp.series(clean, copyFiles, style));
   gulp.watch('../client/assets/**.**', gulp.series(clean, copyFiles, style));
