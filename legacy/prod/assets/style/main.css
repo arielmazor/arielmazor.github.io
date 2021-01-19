@@ -1,0 +1,262 @@
+/* -----------------------------------------------
+Header
+----------------------------------------------- */
+nav {
+  height: 110px;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  top: 0; }
+
+nav .wrapper {
+  width: 81%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  max-width: 1400px; }
+
+/*----------------------------------------------- */
+.logo {
+  width: 230px;
+  height: 100%;
+  display: flex;
+  align-items: center; }
+
+.logo div {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 72px;
+  color: white;
+  cursor: pointer; }
+
+/*----------------------------------------------- */
+.widget-wrap {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center; }
+
+/*----------------------------------------------- */
+.widget-wrap div {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0 34px;
+  justify-content: flex-end;
+  display: flex;
+  color: white;
+  cursor: pointer; }
+
+/*----------------------------------------------- */
+.sign-wrapper {
+  height: auto;
+  cursor: pointer; }
+  .sign-wrapper .Sign-In {
+    font-family: Poppins;
+    font-size: 17px;
+    line-height: 27px;
+    padding: 5px;
+    width: 100px;
+    display: flex;
+    color: white;
+    font-weight: 100;
+    border: 1px solid;
+    border-radius: 25px;
+    transition: ease 0.2s; }
+
+.sign-wrapper:hover {
+  height: auto;
+  cursor: pointer; }
+  .sign-wrapper:hover .Sign-In {
+    color: #324a88;
+    border-color: white;
+    background: white;
+    font-weight: 600; }
+
+/* -----------------------------------------------
+Home Page
+----------------------------------------------- */
+.home-page {
+  height: 776px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+
+.home-page .wrap {
+  width: 81%;
+  height: 400px;
+  justify-content: space-between;
+  display: flex;
+  max-width: 1400px; }
+
+/*----------------------------------------------- */
+.home-page .wrap .title {
+  font-family: Poppins;
+  font-size: 40px;
+  line-height: 60px;
+  color: #ffffff;
+  width: 585px;
+  padding-top: 111px; }
+
+/*----------------------------------------------- */
+.home-page .background {
+  position: absolute;
+  height: 100%; }
+
+.home-page .wrap .img-wrapper {
+  display: flex;
+  justify-content: flex-end; }
+
+.gradiant {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(283.96deg, #4c9cf9 10.95%, #5a83ec 81.98%, #4c9cf9 81.98%, #5a83ec 81.98%); }
+
+.shape {
+  position: absolute;
+  width: 100%;
+  bottom: 0px; }
+
+/* -----------------------------------------------
+Totorial
+----------------------------------------------- */
+.totorial {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 900px;
+  position: relative;
+  flex-direction: column; }
+
+/* -----------------------------------------------
+ Totorial Video
+ ----------------------------------------------- */
+.totorial .wrapper {
+  height: 557px;
+  width: 1120px;
+  position: relative;
+  display: flex; }
+
+/*----------------------------------------------- */
+.totorial .wrapper .videos-container {
+  height: 100%;
+  width: 736px;
+  border-radius: 6px;
+  background: #f5f5fb;
+  position: relative;
+  overflow: hidden; }
+
+.videos-container .video-wrapper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  display: none; }
+
+.videos-container .video-wrapper video {
+  height: 100%;
+  width: 100%; }
+
+.videos-container .video-wrapper.show {
+  display: block; }
+
+/* -----------------------------------------------
+  Video interactions
+ ----------------------------------------------- */
+.wrapper .videos-interactions {
+  height: 100%;
+  flex: 1;
+  width: 400px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+.videos-interactions .video-interaction-wrap {
+  height: 62px;
+  width: 352px;
+  margin-bottom: 11px;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 6px;
+  display: flex;
+  overflow: hidden;
+  align-items: center; }
+
+.videos-interactions .video-interaction-wrap.selected {
+  background: #f2f5fa;
+  transition: 0.5s ease;
+  height: 127px; }
+
+.videos-interactions .video-interaction-wrap:hover {
+  background: #f2f5fa; }
+
+.videos-interactions .video-interaction-wrap .line {
+  height: 80%;
+  width: 3px;
+  background: #cfd6e6;
+  margin-left: 9px;
+  border-radius: 18%; }
+
+.video-interaction-wrap .line .line-fill {
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0);
+  background-color: #2196f3;
+  transform-origin: center top;
+  transition: none 0s ease 0s;
+  border-radius: 18%; }
+
+.video-interaction-wrap.selected .line .line-fill {
+  width: 100%;
+  height: 100%;
+  transition: transform 7020ms linear 0s;
+  transform: scaleY(1); }
+
+.video-interaction-wrap.selected .content h2 {
+  display: block; }
+
+.video-interaction-wrap .content h1 {
+  font-size: 28px;
+  line-height: 30px;
+  font-weight: 600;
+  margin: 0px;
+  font-family: "Poppins";
+  margin-left: 13px;
+  color: #262b33;
+  height: 100%;
+  align-items: center;
+  display: flex; }
+
+.video-interaction-wrap.selected .content h1 {
+  margin: 10px 13px;
+  height: auto; }
+
+.video-interaction-wrap .content h2 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 8px 0;
+  font-family: Poppins;
+  display: none;
+  margin-left: 13px;
+  color: #262b33;
+  max-width: 300px; }
+
+.copyright h1 {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: normal;
+  margin: 0px;
+  font-family: "Poppins";
+  margin-left: 13px;
+  padding: 6px 0;
+  align-items: center;
+  display: flex;
+  cursor: default; }
