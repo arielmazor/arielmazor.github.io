@@ -6,21 +6,24 @@ nav {
   position: absolute;
   width: 100%;
   display: flex;
-  top: 0; }
+  top: 0;
+}
 
 nav .wrapper {
   width: 81%;
   display: flex;
   height: 100%;
   align-items: center;
-  max-width: 1400px; }
+  max-width: 1400px;
+}
 
 /*----------------------------------------------- */
 .logo {
   width: 230px;
   height: 100%;
   display: flex;
-  align-items: center; }
+  align-items: center;
+}
 
 .logo div {
   font-family: Poppins;
@@ -29,14 +32,16 @@ nav .wrapper {
   font-size: 48px;
   line-height: 72px;
   color: white;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 /*----------------------------------------------- */
 .widget-wrap {
   flex: 1;
   height: 100%;
   display: flex;
-  align-items: center; }
+  align-items: center;
+}
 
 /*----------------------------------------------- */
 .widget-wrap div {
@@ -48,33 +53,38 @@ nav .wrapper {
   justify-content: flex-end;
   display: flex;
   color: white;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 /*----------------------------------------------- */
 .sign-wrapper {
   height: auto;
-  cursor: pointer; }
-  .sign-wrapper .Sign-In {
-    font-family: Poppins;
-    font-size: 17px;
-    line-height: 27px;
-    padding: 5px;
-    width: 100px;
-    display: flex;
-    color: white;
-    font-weight: 100;
-    border: 1px solid;
-    border-radius: 25px;
-    transition: ease 0.2s; }
+  cursor: pointer;
+}
+.sign-wrapper .Sign-In {
+  font-family: Poppins;
+  font-size: 17px;
+  line-height: 27px;
+  padding: 5px;
+  width: 100px;
+  display: flex;
+  color: white;
+  font-weight: 100;
+  border: 1px solid;
+  border-radius: 25px;
+  transition: ease 0.2s;
+}
 
 .sign-wrapper:hover {
   height: auto;
-  cursor: pointer; }
-  .sign-wrapper:hover .Sign-In {
-    color: #324a88;
-    border-color: white;
-    background: white;
-    font-weight: 600; }
+  cursor: pointer;
+}
+.sign-wrapper:hover .Sign-In {
+  color: #324a88;
+  border-color: white;
+  background: white;
+  font-weight: 600;
+}
 
 /* -----------------------------------------------
 Home Page
@@ -85,14 +95,16 @@ Home Page
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; }
+  position: relative;
+}
 
 .home-page .wrap {
   width: 81%;
   height: 400px;
   justify-content: space-between;
   display: flex;
-  max-width: 1400px; }
+  max-width: 1400px;
+}
 
 /*----------------------------------------------- */
 .home-page .wrap .title {
@@ -101,27 +113,32 @@ Home Page
   line-height: 60px;
   color: #ffffff;
   width: 585px;
-  padding-top: 111px; }
+  padding-top: 111px;
+}
 
 /*----------------------------------------------- */
 .home-page .background {
   position: absolute;
-  height: 100%; }
+  height: 100%;
+}
 
 .home-page .wrap .img-wrapper {
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+}
 
 .gradiant {
   height: 100%;
   width: 100%;
   position: absolute;
-  background: linear-gradient(283.96deg, #4c9cf9 10.95%, #5a83ec 81.98%, #4c9cf9 81.98%, #5a83ec 81.98%); }
+  background: linear-gradient(283.96deg, #4c9cf9 10.95%, #5a83ec 81.98%, #4c9cf9 81.98%, #5a83ec 81.98%);
+}
 
 .shape {
   position: absolute;
   width: 100%;
-  bottom: 0px; }
+  bottom: 0px;
+}
 
 /* -----------------------------------------------
 Totorial
@@ -132,7 +149,8 @@ Totorial
   width: 100%;
   height: 900px;
   position: relative;
-  flex-direction: column; }
+  flex-direction: column;
+}
 
 /* -----------------------------------------------
  Totorial Video
@@ -141,7 +159,8 @@ Totorial
   height: 557px;
   width: 1120px;
   position: relative;
-  display: flex; }
+  display: flex;
+}
 
 /*----------------------------------------------- */
 .totorial .wrapper .videos-container {
@@ -150,21 +169,25 @@ Totorial
   border-radius: 6px;
   background: #f5f5fb;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .videos-container .video-wrapper {
   height: 100%;
   width: 100%;
   position: absolute;
   top: -2px;
-  display: none; }
+  display: none;
+}
 
 .videos-container .video-wrapper video {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+}
 
 .videos-container .video-wrapper.show {
-  display: block; }
+  display: block;
+}
 
 /* -----------------------------------------------
   Video interactions
@@ -176,7 +199,8 @@ Totorial
   margin-left: 40px;
   display: flex;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+}
 
 .videos-interactions .video-interaction-wrap {
   height: 62px;
@@ -187,22 +211,26 @@ Totorial
   padding: 6px;
   display: flex;
   overflow: hidden;
-  align-items: center; }
+  align-items: center;
+}
 
 .videos-interactions .video-interaction-wrap.selected {
   background: #f2f5fa;
   transition: 0.5s ease;
-  height: 127px; }
+  height: 127px;
+}
 
 .videos-interactions .video-interaction-wrap:hover {
-  background: #f2f5fa; }
+  background: #f2f5fa;
+}
 
 .videos-interactions .video-interaction-wrap .line {
   height: 80%;
   width: 3px;
   background: #cfd6e6;
   margin-left: 9px;
-  border-radius: 18%; }
+  border-radius: 18%;
+}
 
 .video-interaction-wrap .line .line-fill {
   width: 100%;
@@ -211,16 +239,19 @@ Totorial
   background-color: #2196f3;
   transform-origin: center top;
   transition: none 0s ease 0s;
-  border-radius: 18%; }
+  border-radius: 18%;
+}
 
 .video-interaction-wrap.selected .line .line-fill {
   width: 100%;
   height: 100%;
   transition: transform 7020ms linear 0s;
-  transform: scaleY(1); }
+  transform: scaleY(1);
+}
 
 .video-interaction-wrap.selected .content h2 {
-  display: block; }
+  display: block;
+}
 
 .video-interaction-wrap .content h1 {
   font-size: 28px;
@@ -232,11 +263,13 @@ Totorial
   color: #262b33;
   height: 100%;
   align-items: center;
-  display: flex; }
+  display: flex;
+}
 
 .video-interaction-wrap.selected .content h1 {
   margin: 10px 13px;
-  height: auto; }
+  height: auto;
+}
 
 .video-interaction-wrap .content h2 {
   font-size: 16px;
@@ -247,7 +280,8 @@ Totorial
   display: none;
   margin-left: 13px;
   color: #262b33;
-  max-width: 300px; }
+  max-width: 300px;
+}
 
 .copyright h1 {
   font-size: 16px;
@@ -259,4 +293,5 @@ Totorial
   padding: 6px 0;
   align-items: center;
   display: flex;
-  cursor: default; }
+  cursor: default;
+}
