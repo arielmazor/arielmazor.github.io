@@ -8,7 +8,7 @@ const sass = require('gulp-sass');
 const del = require('del');
 const { } = require('gulp');
 const templatesArr = [
-  'edgify',
+  'webi-school',
   'classic'
 ]
 function clean(cb) {
