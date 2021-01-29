@@ -87,27 +87,43 @@ main {
       height: auto;
       width: 691px; }
 
-.text-wrap {
+.titles-wrap {
   height: 100%;
   width: 346px;
   display: flex;
   flex-direction: column;
-  margin-right: 80px; }
-  .text-wrap h1 {
-    font-family: "poppins";
+  margin-right: 80px;
+  direction: rtl;
+  margin-top: 72px; }
+  .titles-wrap h1 {
+    font-family: "Varela Round", sans-serif;
     font-weight: 500;
-    color: #10dcc3;
-    font-size: 47px;
+    color: #00b1a2;
+    font-size: 54px;
     line-height: 60px;
-    margin-top: 0; }
-  .text-wrap h2 {
-    font-family: "poppins";
+    margin-top: 0;
+    margin-bottom: 0; }
+  .titles-wrap h2 {
+    font-family: "Varela Round", sans-serif;
     font-weight: 300;
-    font-size: 15px;
-    color: #333333;
+    font-size: 17px;
+    color: #232132;
     height: 240px;
     width: 346px;
-    line-height: 24px; }
+    line-height: 28px; }
+
+.main-title-wrap {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 500;
+  color: #10dcc3;
+  font-size: 41px;
+  display: flex; }
+  .main-title-wrap div {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 500;
+    color: #10dcc3;
+    font-size: 41px;
+    margin-left: 10px; }
 
 .socials {
   position: fixed;
@@ -124,10 +140,19 @@ main {
     height: auto;
     margin-bottom: 8px; }
 
+.section {
+  width: 100%;
+  height: 369px;
+  background-image: url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/dot-careers1.svg), linear-gradient(180deg, #f5f5f5, #fff 80%);
+  display: flex;
+  justify-content: center;
+  background-size: 22px, 100%;
+  position: relative; }
+
 .about-page {
   width: 100%;
   height: 669px;
-  background-image: url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/dot-careers1.svg), linear-gradient(180deg, #f5f5f5, #fff 80%);
+  background-image: url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/dot-careers1.svg);
   display: flex;
   justify-content: center;
   background-size: 22px, 100%;
@@ -156,7 +181,7 @@ main {
   .about-page .wrapper .img-wrapper .img-leng {
     height: auto;
     padding: 19px;
-    opacity: 0.7;
+    opacity: 0.8;
     transition: all 1s ease; }
     .about-page .wrapper .img-wrapper .img-leng img {
       height: auto;
@@ -187,7 +212,7 @@ main {
   background-image: url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/dot-careers1.svg), url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/circle-grey.svg);
   background-position: 3px 10px, top;
   background-repeat: repeat, no-repeat;
-  background-size: 22px, 200%, 100%;
+  background-size: 22px, 390%, 100%;
   padding-top: 300px;
   height: 1000px;
   width: 100%;
@@ -195,8 +220,7 @@ main {
   justify-content: center; }
   .suggest .wrapper {
     width: 1040px;
-    height: 100%;
-    border: 1px solid; }
+    height: 100%; }
     .suggest .wrapper .title {
       font-size: 50px;
       font-family: "poppins";
@@ -211,19 +235,39 @@ main {
   height: auto; }
 
 .sugg-wrap {
-  width: 534px; }
+  width: 534px;
+  animation: fadeInLeftBig 0.7s ease-in-out; }
   .sugg-wrap div {
-    width: 445px; }
+    width: 445px;
+    display: none; }
+
+.sugg-wrap div._active {
+  display: flex;
+  animation: opacity 0.25s ease-in-out; }
+
+.pf-wrapper {
+  height: 430px;
+  width: auto; }
+
+.pf-wrap .i._active {
+  display: block;
+  animation: opacity 0.35s ease-in-out; }
+
+.i {
+  display: none; }
 
 .pf-wrap {
-  height: 430px;
-  width: 257px;
-  overflow: hidden;
-  margin-left: 68px; }
-  .pf-wrap .info div {
-    font-family: "poppins";
-    font-weight: 400;
-    margin-bottom: 82px; }
+  position: relative;
+  animation: fadeInRightBig 0.7s ease-in-out; }
+  .pf-wrap .info {
+    flex-direction: column;
+    flex: 1; }
+    .pf-wrap .info div {
+      font-family: "poppins";
+      font-weight: 400;
+      margin-bottom: 82px; }
+  .pf-wrap svg {
+    width: 80%; }
 
 .star-wrapper ._star {
   height: 58px;
@@ -236,3 +280,23 @@ main {
 
 .active {
   background: #10dcc3; }
+
+@keyframes fadeInLeftBig {
+  0% {
+    transform: translate3d(-200px, 0, 0); }
+  to {
+    transform: translateZ(0); } }
+
+@keyframes fadeInRightBig {
+  0% {
+    transform: translate3d(200px, 0, 0); }
+  to {
+    transform: translateZ(0); } }
+
+@keyframes opacity {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.8; }
+  to {
+    opacity: 1; } }
