@@ -80,12 +80,20 @@ main {
     height: 800px;
     width: 1140px;
     padding: 30px;
+    justify-content: space-between;
     align-items: flex-start;
     position: relative;
     display: flex; }
     .home-page .wrapper .home-img {
       height: auto;
       width: 691px; }
+
+.home-page .wrapper .img-wrap {
+  width: 549px;
+  height: auto; }
+  .home-page .wrapper .img-wrap img {
+    height: 100%;
+    width: 100%; }
 
 .titles-wrap {
   height: 100%;
@@ -99,8 +107,8 @@ main {
     font-family: "Varela Round", sans-serif;
     font-weight: 500;
     color: #00b1a2;
-    font-size: 54px;
-    line-height: 60px;
+    font-size: 58px;
+    line-height: 72px;
     margin-top: 0;
     margin-bottom: 0; }
   .titles-wrap h2 {
@@ -115,14 +123,14 @@ main {
 .main-title-wrap {
   font-family: "Varela Round", sans-serif;
   font-weight: 500;
-  color: #10dcc3;
-  font-size: 41px;
+  color: #00b1a2;
+  font-size: 50px;
   display: flex; }
   .main-title-wrap div {
     font-family: "Varela Round", sans-serif;
     font-weight: 500;
-    color: #10dcc3;
-    font-size: 41px;
+    color: #e63778;
+    font-size: 50px;
     margin-left: 10px; }
 
 .socials {
