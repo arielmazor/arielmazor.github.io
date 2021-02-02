@@ -8,7 +8,7 @@ nav {
   z-index: 20;
 
   .wrapper {
-    padding: 0 75px;
+    padding: 0 137px;
     position: relative;
     width: 100%;
     display: flex;
@@ -36,14 +36,13 @@ nav {
 }
 
 .logo {
-  width: 100px;
+  width: 125px;
   height: 100%;
 }
 
 .logo img {
   height: auto;
-  max-width: 100%;
-  width: 68px;
+  width: 100%;
   cursor: pointer;
 }
 
@@ -127,7 +126,7 @@ main {
   h1 {
     font-family: "Varela Round", sans-serif;
     font-weight: 500;
-    color: #00b1a2;
+    color: #06b39e;
     font-size: 58px;
     line-height: 72px;
     margin-top: 0;
@@ -146,7 +145,7 @@ main {
 .main-title-wrap {
   font-family: "Varela Round", sans-serif;
   font-weight: 500;
-  color: #00b1a2;
+  color: #06b39e;
   font-size: 50px;
   display: flex;
   div {
@@ -173,16 +172,6 @@ main {
     margin-bottom: 8px;
   }
 }
-.section {
-  width: 100%;
-  height: 369px;
-  background-image: url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/dot-careers1.svg),
-    linear-gradient(180deg, #f5f5f5, #fff 80%);
-  display: flex;
-  justify-content: center;
-  background-size: 22px, 100%;
-  position: relative;
-}
 
 .about-page {
   width: 100%;
@@ -192,6 +181,9 @@ main {
   justify-content: center;
   background-size: 22px, 100%;
   position: relative;
+  background-image: url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/dot-careers1.svg),
+    linear-gradient(180deg, #f5f5f5, #fff 80%);
+  background-size: 22px, 100%;
   .wrapper {
     height: 527px;
     width: 1165px;
@@ -200,11 +192,13 @@ main {
     overflow: hidden;
     flex-direction: column;
     .title {
-      color: #444;
+      color: #06b39e;
       font-weight: bold;
       line-height: 1.5;
-      font-size: 23px;
-      font-family: "poppins";
+      font-size: 37px;
+      font-family: "varela Round";
+      direction: rtl;
+      margin-bottom: 43px;
     }
   }
 }
@@ -257,7 +251,7 @@ main {
 .git {
   width: 117px;
 }
-.suggest {
+.what-i-do {
   background-color: #fff;
   background-image: url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/dot-careers1.svg),
     url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/circle-grey.svg);
@@ -272,13 +266,42 @@ main {
   .wrapper {
     width: 1040px;
     height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
     .title {
-      font-size: 50px;
-      font-family: "poppins";
-      font-weight: 500;
-      color: #10dcc3;
-      width: 100%;
-      height: 100px;
+      color: #06b39e;
+      font-weight: bold;
+      line-height: 1.5;
+      font-size: 37px;
+      font-family: "varela Round";
+      direction: rtl;
+      margin-bottom: 43px;
+    }
+  }
+}
+
+.option-wrap {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .option {
+    height: 63px;
+    width: 40%;
+    border-top: 2px solid #00b1a2;
+    border-bottom: 2px solid #00b1a2;
+    margin-top: 40px;
+    position: relative;
+    .title {
+      height: 100%;
+      font-size: 19px;
+      color: #333333;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
     }
   }
 }
