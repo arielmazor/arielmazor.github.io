@@ -131,9 +131,9 @@ Home Page
     width: 346px;
     display: flex;
     flex-direction: column;
-    margin-right: 80px;
+    margin-right: 65px;
     direction: rtl;
-    margin-top: 72px;
+    margin-top: 55px;
     h1 {
         font-family: "Varela Round", sans-serif;
         font-weight: 500;
@@ -161,6 +161,8 @@ Home Page
     color: #06b39e;
     font-size: 50px;
     display: flex;
+    margin-bottom: 20px;
+
     div {
         font-family: "Varela Round", sans-serif;
         font-weight: 500;
@@ -173,19 +175,16 @@ Home Page
 What I Teach
 --------------------------------------------------*/
 
-.what-i-teach.background {
-    background-image: url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/dot-careers1.svg);
-    background-size: 22px, 100%;
-    background-image: url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/dot-careers1.svg),
-        linear-gradient(180deg, #f5f5f5, #fff 80%);
-    background-size: 22px, 100%;
-}
-
 .what-i-teach {
     width: 100%;
     height: 669px;
     display: flex;
     justify-content: center;
+    background-image: url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/dot-careers1.svg);
+    background-size: 22px, 100%;
+    background-image: url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/dot-careers1.svg),
+        linear-gradient(180deg, #f5f5f5, #fff 80%);
+    background-size: 22px, 100%;
     .wrapper {
         width: 1165px;
         display: flex;
@@ -196,18 +195,11 @@ What I Teach
             color: #06b39e;
             font-weight: 600;
             line-height: 1.5;
-            font-size: 37px;
+            font-size: 42px;
             font-family: "varela Round";
             direction: rtl;
             margin-bottom: 43px;
         }
-    }
-}
-
-/*--------------------------------------------------*/
-
-.what-i-teach {
-    .wrapper {
         .img-wrapper {
             display: flex;
             flex-direction: column;
@@ -232,6 +224,7 @@ What I Teach
         }
     }
 }
+
 /*--------------------------------------------------*/
 
 #line2 {
@@ -258,21 +251,18 @@ What I Teach
 What I Do
 --------------------------------------------------*/
 
-.what-i-do.background {
-    background-color: #fff;
-    background-image: url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/dot-careers1.svg),
-        url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/circle-grey.svg);
-    background-position: 3px 10px, top;
-    background-repeat: repeat, no-repeat;
-    background-size: 22px, 390%, 100%;
-}
-
 .what-i-do {
-    padding-top: 300px;
     height: 1000px;
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: #eee;
+    background-image: url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/dot-careers1.svg),
+        url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/circle-grey.svg),
+        linear-gradient(180deg, #f5f5f5, #fff 80%);
+    background-position: 3px 10px, top;
+    background-repeat: repeat, no-repeat;
+
     .wrapper {
         width: 1040px;
         height: 100%;
@@ -284,72 +274,79 @@ What I Do
             color: #06b39e;
             font-weight: bold;
             line-height: 1.5;
-            font-size: 37px;
+            font-size: 42px;
             font-family: "varela Round";
             direction: rtl;
             margin-bottom: 43px;
         }
-    }
-}
+        .items {
+            border-top: 2px solid #00b1a2;
 
-.item {
-    overflow: hidden;
-    height: auto;
-    border-bottom: 2px solid #00b1a2;
-    width: 550px;
-    .title-wrap {
-        height: 59px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        cursor: pointer;
-        .title {
-            font-family: "varela Round";
-            font-size: 19px;
-            color: #333333;
-            font-weight: 500;
-            margin: 0;
-            direction: rtl;
-        }
-        .plus {
-            height: 36px;
-            width: 36px;
-            background: #00b1a2;
-            border-radius: 50%;
-            cursor: pointer;
-            transition: 0.4s ease-in-out;
-            margin-right: 20px;
-            margin-left: 17px;
-            svg {
-                height: 24px;
-                width: 24px;
+            .item {
+                overflow: hidden;
+                height: auto;
+                border-bottom: 2px solid #00b1a2;
+                width: 550px;
+                cursor: pointer;
+                .title-wrap {
+                    height: 59px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    cursor: pointer;
+                    .title {
+                        font-family: "varela Round";
+                        font-size: 19px;
+                        color: #333333;
+                        font-weight: 500;
+                        margin: 0;
+                        direction: rtl;
+                    }
+                    .plus {
+                        height: 36px;
+                        width: 36px;
+                        background: #00b1a2;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        transition: 0.1s ease-in-out;
+                        margin-right: 20px;
+                        margin-left: 17px;
+                        svg {
+                            height: 24px;
+                            width: 24px;
+                        }
+                    }
+                }
+                .content {
+                    font-family: "varela Round";
+                    font-size: 14.5px;
+                    line-height: 20px;
+                    direction: rtl;
+                    margin: 2px 74px 18px 23px;
+                }
+                &:hover {
+                    .title-wrap {
+                        .plus {
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+                &.open {
+                    .title-wrap {
+                        .plus {
+                            transform: rotate(45deg);
+                        }
+                    }
+                    .content {
+                        animation: opacity2 0.9s ease;
+                    }
+                }
             }
         }
     }
-    .content {
-        opacity: 0;
-        cursor: default;
-        font-size: 15px;
-        font-family: "varela Round";
-        direction: rtl;
-        margin-right: 70px;
-    }
 }
-#i1 {
-    border-top: 2px solid #00b1a2;
-}
-.plus:hover {
-    transform: rotate(45deg);
-}
-.open {
-    .plus {
-        transform: rotate(45deg);
-    }
-    .content {
-        width: auto;
-    }
-}
+
 /*--------------------------------------------------
 KeyFrames
 --------------------------------------------------*/
@@ -375,6 +372,15 @@ KeyFrames
     }
     50% {
         opacity: 0.8;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes opacity2 {
+    from {
+        opacity: 0;
     }
     to {
         opacity: 1;
