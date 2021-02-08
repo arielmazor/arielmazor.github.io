@@ -11,3 +11,11 @@ body {
   margin: 0; }
 
 /*--------------------------------------------------*/
+.title {
+  color: #06b39e;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 42px;
+  font-family: "varela Round";
+  direction: rtl;
+  margin-bottom: 30px; }

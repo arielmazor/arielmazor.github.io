@@ -78,7 +78,12 @@ Home Page
 .home-page {
   padding-top: 90px;
   width: 100%;
-  height: 1043px; }
+  height: 1043px;
+  background-color: #f5f5f5;
+  background-image: url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/dot-careers1.svg), url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/circle.svg);
+  background-size: 22px, 200%, 100%;
+  background-position: 5px 10px, bottom 200px center;
+  background-repeat: repeat, no-repeat; }
   .home-page .wrapper {
     height: 800px;
     width: 1140px;
@@ -87,22 +92,12 @@ Home Page
     align-items: flex-start;
     position: relative;
     display: flex; }
-
-/*--------------------------------------------------*/
-.home-page.background {
-  background-color: #f5f5f5;
-  background-image: url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/dot-careers1.svg), url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/circle.svg);
-  background-size: 22px, 200%, 100%;
-  background-position: 5px 10px, bottom 200px center;
-  background-repeat: repeat, no-repeat; }
-
-/*--------------------------------------------------*/
-.home-page .wrapper .img-wrap {
-  width: 549px;
-  height: auto; }
-  .home-page .wrapper .img-wrap img {
-    height: 100%;
-    width: 100%; }
+    .home-page .wrapper .img-wrap {
+      width: 549px;
+      height: auto; }
+      .home-page .wrapper .img-wrap img {
+        height: 100%;
+        width: 100%; }
 
 /*--------------------------------------------------*/
 .titles-wrap {
@@ -145,139 +140,140 @@ Home Page
     font-size: 50px;
     margin-left: 10px; }
 
-/*--------------------------------------------------
-What I Teach
---------------------------------------------------*/
-.what-i-teach {
+.main-wrapper {
   width: 100%;
-  height: 669px;
+  height: auto;
   display: flex;
   justify-content: center;
   background-image: url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/dot-careers1.svg);
   background-size: 22px, 100%;
-  background-image: url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/dot-careers1.svg), linear-gradient(180deg, #f5f5f5, #fff 80%);
-  background-size: 22px, 100%; }
-  .what-i-teach .wrapper {
-    width: 1165px;
+  background-image: url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/dot-careers1.svg), linear-gradient(180deg, #f5f5f5, #fff 100%);
+  background-size: 22px, 100%;
+  flex-direction: column; }
+  .main-wrapper .img-outer-wrap {
+    width: 100%;
     display: flex;
     align-items: center;
     overflow: hidden;
     flex-direction: column; }
-    .what-i-teach .wrapper .title {
-      color: #06b39e;
-      font-weight: 600;
-      line-height: 1.5;
-      font-size: 42px;
-      font-family: "varela Round";
-      direction: rtl;
-      margin-bottom: 43px; }
-    .what-i-teach .wrapper .img-wrapper {
+    .main-wrapper .img-outer-wrap .img-wrapper {
       display: flex;
       flex-direction: column;
-      height: 100%;
+      height: 480px;
       width: 100%; }
-      .what-i-teach .wrapper .img-wrapper .line {
+      .main-wrapper .img-outer-wrap .img-wrapper .line {
         display: flex; }
-      .what-i-teach .wrapper .img-wrapper .img-leng {
+      .main-wrapper .img-outer-wrap .img-wrapper #line2 {
+        padding-top: 35px; }
+      .main-wrapper .img-outer-wrap .img-wrapper .img-leng {
         height: auto;
         padding: 19px;
         opacity: 0.8;
         transition: all 1s ease; }
-        .what-i-teach .wrapper .img-wrapper .img-leng img {
+        .main-wrapper .img-outer-wrap .img-wrapper .img-leng img {
           height: auto;
           width: 128px;
           transition: all 3s ease;
           margin-top: 60px;
           animation: float 4s ease infinite; }
-
-/*--------------------------------------------------*/
-#line2 {
-  padding-top: 35px; }
-
-/*--------------------------------------------------*/
-.git {
-  width: 117px; }
-
-/*--------------------------------------------------*/
-.img-leng:hover {
-  opacity: 1 !important; }
-
-.fade-in-up {
-  margin-top: 0 !important; }
+        .main-wrapper .img-outer-wrap .img-wrapper .img-leng .git {
+          width: 117px; }
+        .main-wrapper .img-outer-wrap .img-wrapper .img-leng .fade-in-up {
+          margin-top: 0 !important; }
+      .main-wrapper .img-outer-wrap .img-wrapper .img-leng:hover {
+        opacity: 1 !important; }
+  .main-wrapper .outer-wrap {
+    height: 739px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 125px;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 25px; }
+    .main-wrapper .outer-wrap .ball {
+      width: 177px;
+      height: 177px;
+      position: absolute;
+      animation: floatBall 4s ease infinite;
+      bottom: 94px;
+      right: 50px; }
+    .main-wrapper .outer-wrap .wrap {
+      height: 680px;
+      width: 720px;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      background: #ececec9e;
+      border-radius: 100%; }
+      .main-wrapper .outer-wrap .wrap h1 {
+        padding-bottom: 22px;
+        font-size: 38px;
+        color: #e63778;
+        margin-top: -55px; }
+      .main-wrapper .outer-wrap .wrap .inner-wrap {
+        border-top: 2px solid #7bcec7; }
+        .main-wrapper .outer-wrap .wrap .inner-wrap .item {
+          overflow: hidden;
+          height: auto;
+          border-bottom: 2px solid #7bcec7;
+          width: 421px;
+          cursor: pointer; }
+          .main-wrapper .outer-wrap .wrap .inner-wrap .item .title-wrap {
+            height: 59px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            cursor: pointer; }
+            .main-wrapper .outer-wrap .wrap .inner-wrap .item .title-wrap .title {
+              font-family: "varela Round";
+              font-size: 19px;
+              color: #333333;
+              font-weight: 500;
+              margin: 0;
+              direction: rtl; }
+            .main-wrapper .outer-wrap .wrap .inner-wrap .item .title-wrap .plus {
+              height: 34px;
+              width: 34px;
+              background: #06b39e;
+              border-radius: 50%;
+              cursor: pointer;
+              transition: 0.1s ease-in-out;
+              margin-right: 20px;
+              margin-left: 25px; }
+              .main-wrapper .outer-wrap .wrap .inner-wrap .item .title-wrap .plus svg {
+                height: 24px;
+                width: 24px; }
+          .main-wrapper .outer-wrap .wrap .inner-wrap .item .content {
+            font-family: "varela Round";
+            font-size: 14.5px;
+            line-height: 20px;
+            direction: rtl;
+            margin: 2px 74px 18px 23px; }
+          .main-wrapper .outer-wrap .wrap .inner-wrap .item:hover .title-wrap .plus {
+            transform: rotate(45deg); }
+          .main-wrapper .outer-wrap .wrap .inner-wrap .item.open .title-wrap .plus {
+            transform: rotate(45deg); }
+          .main-wrapper .outer-wrap .wrap .inner-wrap .item.open .content {
+            animation: opacity2 0.9s ease; }
 
 /*--------------------------------------------------
-What I Do
+copyright
 --------------------------------------------------*/
-.what-i-do {
-  height: 1000px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: #eee;
-  background-image: url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/dot-careers1.svg), url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/circle-grey.svg), linear-gradient(180deg, #f5f5f5, #fff 80%);
-  background-position: 3px 10px, top;
-  background-repeat: repeat, no-repeat; }
-  .what-i-do .wrapper {
-    width: 1040px;
-    height: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    position: relative; }
-    .what-i-do .wrapper .title {
-      color: #06b39e;
-      font-weight: bold;
-      line-height: 1.5;
-      font-size: 42px;
-      font-family: "varela Round";
-      direction: rtl;
-      margin-bottom: 43px; }
-    .what-i-do .wrapper .items {
-      border-top: 2px solid #00b1a2; }
-      .what-i-do .wrapper .items .item {
-        overflow: hidden;
-        height: auto;
-        border-bottom: 2px solid #00b1a2;
-        width: 550px;
-        cursor: pointer; }
-        .what-i-do .wrapper .items .item .title-wrap {
-          height: 59px;
-          width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: flex-end;
-          cursor: pointer; }
-          .what-i-do .wrapper .items .item .title-wrap .title {
-            font-family: "varela Round";
-            font-size: 19px;
-            color: #333333;
-            font-weight: 500;
-            margin: 0;
-            direction: rtl; }
-          .what-i-do .wrapper .items .item .title-wrap .plus {
-            height: 36px;
-            width: 36px;
-            background: #00b1a2;
-            border-radius: 50%;
-            cursor: pointer;
-            transition: 0.1s ease-in-out;
-            margin-right: 20px;
-            margin-left: 17px; }
-            .what-i-do .wrapper .items .item .title-wrap .plus svg {
-              height: 24px;
-              width: 24px; }
-        .what-i-do .wrapper .items .item .content {
-          font-family: "varela Round";
-          font-size: 14.5px;
-          line-height: 20px;
-          direction: rtl;
-          margin: 2px 74px 18px 23px; }
-        .what-i-do .wrapper .items .item:hover .title-wrap .plus {
-          transform: rotate(45deg); }
-        .what-i-do .wrapper .items .item.open .title-wrap .plus {
-          transform: rotate(45deg); }
-        .what-i-do .wrapper .items .item.open .content {
-          animation: opacity2 0.9s ease; }
+footer {
+  background: white;
+  margin-top: 15px;
+  box-shadow: 0px 0px 40px #00000029;
+  height: 65px; }
+  footer h1 {
+    font-family: "Varela Round";
+    font-size: 15px;
+    color: #333333;
+    font-weight: 100; }
 
 /*--------------------------------------------------
 KeyFrames
@@ -288,6 +284,15 @@ KeyFrames
     transform: translatey(0px); }
   50% {
     transform: translatey(-7px); }
+  100% {
+    transform: translatey(0px); } }
+
+/* <<<<<< Float BaLL >>>>>> */
+@keyframes floatBall {
+  from {
+    transform: translatey(0px); }
+  50% {
+    transform: translatey(-23px); }
   100% {
     transform: translatey(0px); } }
 
