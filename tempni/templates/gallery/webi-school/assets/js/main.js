@@ -1,17 +1,8 @@
-function initWhatIdoAccordion() {
-    $(".outer-wrap .item").on("click", function () {
-        $('.outer-wrap .item').find(".content").slideUp(350);
-
-        if ($(this).hasClass("open")) {
-            $(this).removeClass("open");
-            $(this).find(".content").slideUp(350);
-        } else {
-            $(".outer-wrap .item").removeClass("open");
-            $(this).find(".content").slideDown(350);
-            $(this).addClass("open");
-            $(this).find(".content").slideDown(350);
-        }
-    });
+function flip(i) {
+    $(`.flip-front`).animate({
+        opacity: 0,
+    }, 100);
+    $(`#item${i}.flip-back`).css("transform", "rotateY(" + 360 + "deg)");
 }
 
 function suggest(num, item) {
@@ -31,7 +22,6 @@ function suggest(num, item) {
 // })
 
 $(document).ready(function () {
-    initWhatIdoAccordion();
     $(`.sugg-wrap .i1`).addClass('_active');
     $(`.pf-wrap .i1`).addClass('_active');
     $(`.star-wrapper .star1`).addClass("active");
