@@ -211,11 +211,11 @@ Home Page
         align-items: center;
         display: flex;
         flex-direction: column;
-        position: relative;
         background: #607d8b1f;
         border-radius: 100%;
         position: absolute;
-        backface-visibility: hidden; }
+        backface-visibility: hidden;
+        transition: opacity 0.4s ease-in-out; }
         .main-wrapper .outer-wrap .wrap .flip-front h1 {
           padding-bottom: 22px;
           font-size: 38px;
@@ -274,11 +274,41 @@ Home Page
         align-items: center;
         display: flex;
         flex-direction: column;
-        position: relative;
+        position: absolute;
         background: #607d8b1f;
         border-radius: 100%;
         transform: rotateY(180deg);
-        backface-visibility: hidden; }
+        backface-visibility: hidden;
+        cursor: pointer; }
+
+/*--------------------------------------------------
+recommendation
+--------------------------------------------------*/
+.recommendation {
+  flex: 1;
+  height: auto;
+  padding: 0 434px;
+  background-size: 22px, 100%;
+  background-image: url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/dot-careers1.svg), linear-gradient(180deg, #f5f5f5, #fff 100%);
+  background-size: 22px, 100%;
+  flex-direction: column;
+  padding-bottom: 100px;
+  transition: 1s ease-in-out; }
+  .recommendation .wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px; }
+    .recommendation .wrapper .row-wrap {
+      width: 946px;
+      height: 380px;
+      border-radius: 0.75rem;
+      background: #f9f9f9;
+      box-shadow: 6px 0px 22px 8px rgba(0, 0, 0, 0.047);
+      margin-top: 37px; }
 
 /*--------------------------------------------------
 copyright

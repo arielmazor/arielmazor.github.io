@@ -4,9 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/669264/owl.carousel.css">
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/669264/owl.theme.css">
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/669264/owl.transitions.css">
     <link rel="stylesheet" href="./assets/style/main.css">
     <link rel="stylesheet" href="./assets/style/common.css">
     <link rel="stylesheet" href="./assets/style/type.css">
+    <link rel="stylesheet" href="./assets/style/gallery.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
@@ -41,7 +45,7 @@
             </a>
 
         </div>
-        <div class="home-page  f-c">
+        <div class="home-page f-c">
             <div class="wrapper">
                 <div class="img-wrap">
                     <img src="./assets/img/developer-svg.svg" alt="" class="img">
@@ -62,7 +66,6 @@
                 </div>
             </div>
         </div>
-
         <div class="main-wrapper">
             <div class="img-outer-wrap">
                 <div class="title">מה אני מלמד?</div>
@@ -153,7 +156,7 @@
                     יש לך שאלות?
                 </div> -->
                 <div class="wrap ">
-                    <div class="flip-front f-c">
+                    <div class=" flip-front f-c">
                         <h1 class="title">בחר מסלול</h1>
                         <div class="inner-wrap">
                             <div onclick="flip(1)" class="item">
@@ -176,7 +179,7 @@
                                     היי אני איימי משחקת במחשב אותה בחורה שהפכה למימ ודיי זה קצת חופר
                                 </div>
                             </div>
-                            <div class="item">
+                            <div onclick="flip(2)" class="item">
                                 <div class="title-wrap">
                                     <div class="title">קורסי אונליין</div>
                                     <div class="plus f-c">
@@ -193,7 +196,7 @@
                                     היי אני איימי משחקת במחשב אותה בחורה שהפכה למימ ודיי זה קצת חופר
                                 </div>
                             </div>
-                            <div class="item">
+                            <div onclick="flip(3)" class="item">
                                 <div class="title-wrap">
                                     <div class="title">הדרכה וליווי פרוייקטים</div>
                                     <div class="plus f-c">
@@ -215,8 +218,40 @@
                             </div>
                         </div>
                     </div>
-                    <div id="item1" class="flip-back f-c">
+                    <div onclick="flipBack(1)" id="item1" class="flip-back f-c">
                         <h1>sdadas</h1>
+                        <div>sdasd</div>
+                        <div>sdasd</div>
+                        <div>sdasd</div>
+                        <div>sdasd</div>
+                        <div>sdasd</div>
+                        <div>sdasd</div>
+                        <div>sdasd</div>
+                        <div>sdasd</div>
+                        <div>sdasd</div>
+                        <div>sdasd</div>
+                        <div>sdasd</div>
+                        <div>sdasd</div>
+                        <div>sdasd</div>
+                    </div>
+                    <div onclick="flipBack(2)" id="item2" class="flip-back f-c">
+                        <h1>dfgfdg</h1>
+                        <div>sdasd</div>
+                        <div>sdasd</div>
+                        <div>sdasd</div>
+                        <div>sdasd</div>
+                        <div>sdasd</div>
+                        <div>sdasd</div>
+                        <div>sdasd</div>
+                        <div>sdasd</div>
+                        <div>sdasd</div>
+                        <div>sdasd</div>
+                        <div>sdasd</div>
+                        <div>sdasd</div>
+                        <div>sdasd</div>
+                    </div>
+                    <div onclick="flipBack(3)" id="item3" class="flip-back f-c">
+                        <h1>iouiouiou</h1>
                         <div>sdasd</div>
                         <div>sdasd</div>
                         <div>sdasd</div>
@@ -234,6 +269,39 @@
                 </div>
             </div>
         </div>
+        <div class="recommendation">
+            <div class="wrapper">
+                <h1 class="title">תלמידים מספרים</h1>
+                <div class="row-wrap">
+                    <ul class="owl-carousel">
+                        <li>
+                            <div class="text-wrap">
+                                <div class="content">
+                                    <h1 class="title">"שיעור עם אריאל היא חוויה. <br> <strong>מורה מדהים!"</strong></h1>
+                                </div>
+                                <div class="personal-info">
+                                    <h2>כיתה י, מקיף אורט יגאל אלון, רמת גן </h2>
+
+                                    <h1>נויה חזן,</h1>
+                                </div>
+                            </div>
+                            <div class="img-wrap f-c"><img src="./assets/img/student2.png" alt="" class="img"></div>
+
+
+                        </li>
+                        <li>
+                            <div class="img-wrap"><img src="./assets/img/student1.svg" alt="" class="img"></div>
+                        </li>
+                        <li>
+                            <div class="img-wrap"><img src="./assets/img/student1.svg" alt="" class="img"></div>
+                        </li>
+                        <li>
+                            <div class="img-wrap"><img src="./assets/img/student1.svg" alt="" class="img"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <footer class="f-c">
             <h1>copyright ©2020 weby school inc. all rights reserved</h1>
         </footer>
@@ -241,8 +309,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/669264/owl.carousel.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/type.js"></script>
+    <script src="./assets/js/gallery.js"></script>
 </body>
 
 </html>
