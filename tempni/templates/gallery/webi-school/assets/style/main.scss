@@ -242,6 +242,12 @@ Home Page
             height: 600px;
             width: 610px;
             transform-style: preserve-3d;
+            .dot1-wrap {
+                position: absolute;
+                bottom: 50px;
+                left: -50px;
+                animation: dotMove 2s ease-in-out infinite;
+            }
             .flip-front {
                 height: 100%;
                 width: 100%;
@@ -539,5 +545,15 @@ KeyFrames
     }
     to {
         transform: rotate(0deg);
+    }
+}
+
+/* <<<<<< dot move >>>>>> */
+@keyframes dotMove {
+    50% {
+        bottom: 50px;
+    }
+    to {
+        left: -50px;
     }
 }
