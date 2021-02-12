@@ -92,12 +92,17 @@ Home Page
     align-items: flex-start;
     position: relative;
     display: flex; }
-    .home-page .wrapper .img-wrap {
-      width: 549px;
-      height: auto; }
-      .home-page .wrapper .img-wrap img {
-        height: 100%;
-        width: 100%; }
+    .home-page .wrapper .outer-wrap {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center; }
+      .home-page .wrapper .outer-wrap .img-wrap {
+        width: 549px;
+        height: auto; }
+        .home-page .wrapper .outer-wrap .img-wrap img {
+          height: 100%;
+          width: 100%; }
 
 /*--------------------------------------------------*/
 .titles-wrap {
@@ -279,7 +284,20 @@ Home Page
         border-radius: 100%;
         transform: rotateY(180deg);
         backface-visibility: hidden;
-        cursor: pointer; }
+        cursor: pointer;
+        overflow: hidden; }
+        .main-wrapper .outer-wrap .wrap .flip-back .content {
+          flex-direction: column;
+          flex: 1;
+          color: #646566;
+          font-family: "varela round";
+          font-weight: 400;
+          text-align: center;
+          width: 70%; }
+        .main-wrapper .outer-wrap .wrap .flip-back .title {
+          margin-top: 128px;
+          margin-bottom: 50px;
+          color: #e63778; }
 
 /*--------------------------------------------------
 recommendation
@@ -292,7 +310,7 @@ recommendation
   background-image: url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/dot-careers1.svg), linear-gradient(180deg, #f5f5f5, #fff 100%);
   background-size: 22px, 100%;
   flex-direction: column;
-  padding-bottom: 100px;
+  padding-bottom: 160px;
   transition: 1s ease-in-out; }
   .recommendation .wrapper {
     width: 100%;

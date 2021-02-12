@@ -1,0 +1,55 @@
+@media screen and (max-width: 1600px) {
+  .home-page {
+    height: 955px; }
+    .home-page .wrapper {
+      width: 1042px; }
+      .home-page .wrapper .outer-wrap .img-wrap {
+        width: 464px; }
+      .home-page .wrapper .outer-wrap .titles-wrap h1 {
+        font-size: 54px; }
+      .home-page .wrapper .outer-wrap .titles-wrap .main-titles-wrap {
+        font-size: 46px; }
+        .home-page .wrapper .outer-wrap .titles-wrap .main-titles-wrap div {
+          font-size: 46px; }
+      .home-page .wrapper .outer-wrap .titles-wrap h2 {
+        font-size: 16px; } }
+
+@media screen and (max-width: 1372px) {
+  .home-page .wrapper {
+    width: 900px; }
+    .home-page .wrapper .outer-wrap .img-wrap {
+      width: 434px; }
+    .home-page .wrapper .outer-wrap .titles-wrap {
+      width: 284px; }
+      .home-page .wrapper .outer-wrap .titles-wrap h1 {
+        font-size: 50px; }
+      .home-page .wrapper .outer-wrap .titles-wrap .main-titles-wrap {
+        font-size: 42px; }
+        .home-page .wrapper .outer-wrap .titles-wrap .main-titles-wrap div {
+          font-size: 42px; }
+      .home-page .wrapper .outer-wrap .titles-wrap h2 {
+        font-size: 15px;
+        width: auto; } }
+
+@media screen and (max-width: 913px) {
+  .home-page .wrapper {
+    padding: 0;
+    width: 100%; }
+    .home-page .wrapper .outer-wrap {
+      flex-direction: column-reverse; }
+      .home-page .wrapper .outer-wrap .img-wrap {
+        width: 406px; }
+      .home-page .wrapper .outer-wrap .titles-wrap {
+        margin-top: -50px;
+        margin-right: 0;
+        width: 460px; }
+        .home-page .wrapper .outer-wrap .titles-wrap h1 {
+          text-align: center; }
+        .home-page .wrapper .outer-wrap .titles-wrap .main-title-wrap {
+          justify-content: center; }
+          .home-page .wrapper .outer-wrap .titles-wrap .main-title-wrap div {
+            text-align: center; }
+        .home-page .wrapper .outer-wrap .titles-wrap h2 {
+          text-align: center;
+          height: auto;
+          margin-bottom: 46px; } }

@@ -1,0 +1,90 @@
+@media screen and (max-width: 1600px) {
+    .home-page {
+        height: 955px;
+        .wrapper {
+            width: 1042px;
+            .outer-wrap {
+                .img-wrap {
+                    width: 464px;
+                }
+                .titles-wrap {
+                    h1 {
+                        font-size: 54px;
+                    }
+                    .main-titles-wrap {
+                        font-size: 46px;
+                        div {
+                            font-size: 46px;
+                        }
+                    }
+                    h2 {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1372px) {
+    .home-page {
+        .wrapper {
+            width: 900px;
+            .outer-wrap {
+                .img-wrap {
+                    width: 434px;
+                }
+                .titles-wrap {
+                    width: 284px;
+                    h1 {
+                        font-size: 50px;
+                    }
+                    .main-titles-wrap {
+                        font-size: 42px;
+                        div {
+                            font-size: 42px;
+                        }
+                    }
+                    h2 {
+                        font-size: 15px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 913px) {
+    .home-page {
+        .wrapper {
+            padding: 0;
+            width: 100%;
+            .outer-wrap {
+                flex-direction: column-reverse;
+                .img-wrap {
+                    width: 406px;
+                }
+                .titles-wrap {
+                    margin-top: -50px;
+                    margin-right: 0;
+                    width: 460px;
+                    h1 {
+                        text-align: center;
+                    }
+                    .main-title-wrap {
+                        justify-content: center;
+                        div {
+                            text-align: center;
+                        }
+                    }
+                    h2 {
+                        text-align: center;
+                        height: auto;
+                        margin-bottom: 46px;
+                    }
+                }
+            }
+        }
+    }
+}
