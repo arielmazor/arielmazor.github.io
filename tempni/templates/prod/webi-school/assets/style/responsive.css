@@ -67,7 +67,7 @@
   .home-page .wrapper .outer-wrap .titles-wrap h2 {
     line-height: 25px; } }
 
-@media screen and (max-width: 571px) {
+@media screen and (max-width: 591px) {
   .home-page .wrapper .outer-wrap .titles-wrap h1 {
     font-size: 43px; }
   .home-page .wrapper .outer-wrap .titles-wrap .main-title-wrap {
@@ -81,6 +81,7 @@
 
 @media screen and (max-width: 485px) {
   .home-page .wrapper .outer-wrap .titles-wrap h2 {
-    width: 70%; }
+    font-size: 14px;
+    line-height: 23px; }
   .home-page .wrapper .outer-wrap .img-wrap {
-    width: 344px; } }
+    width: 302px; } }

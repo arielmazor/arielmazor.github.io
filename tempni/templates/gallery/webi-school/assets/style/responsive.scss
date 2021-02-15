@@ -114,7 +114,7 @@
         }
     }
 }
-@media screen and (max-width: 571px) {
+@media screen and (max-width: 591px) {
     .home-page {
         .wrapper {
             .outer-wrap {
@@ -145,11 +145,12 @@
             .outer-wrap {
                 .titles-wrap {
                     h2 {
-                        width: 70%;
+                        font-size: 14px;
+                        line-height: 23px;
                     }
                 }
                 .img-wrap {
-                    width: 344px;
+                    width: 302px;
                 }
             }
         }
