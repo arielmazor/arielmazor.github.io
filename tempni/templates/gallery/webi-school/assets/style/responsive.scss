@@ -55,7 +55,7 @@
     }
 }
 
-@media screen and (max-width: 913px) {
+@media screen and (max-width: 1048px) {
     .home-page {
         .wrapper {
             padding: 0;
@@ -69,6 +69,7 @@
                     margin-top: -50px;
                     margin-right: 0;
                     width: 460px;
+                    align-items: center;
                     h1 {
                         text-align: center;
                     }
@@ -83,6 +84,72 @@
                         height: auto;
                         margin-bottom: 46px;
                     }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 640px) {
+    .socials {
+        margin-left: 27px;
+    }
+    .home-page {
+        .wrapper {
+            .outer-wrap {
+                .titles-wrap {
+                    h1 {
+                        font-size: 45px;
+                    }
+                    .main-title-wrap {
+                        font-size: 45px;
+                        div {
+                            font-size: 45px;
+                        }
+                    }
+                    h2 {
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 571px) {
+    .home-page {
+        .wrapper {
+            .outer-wrap {
+                .titles-wrap {
+                    h1 {
+                        font-size: 43px;
+                    }
+                    .main-title-wrap {
+                        font-size: 43px;
+                        div {
+                            font-size: 43px;
+                        }
+                    }
+                    h2 {
+                        width: 80%;
+                    }
+                }
+                .img-wrap {
+                    width: 344px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 485px) {
+    .home-page {
+        .wrapper {
+            .outer-wrap {
+                .titles-wrap {
+                    h2 {
+                        width: 70%;
+                    }
+                }
+                .img-wrap {
+                    width: 344px;
                 }
             }
         }

@@ -172,9 +172,9 @@ Home Page
         padding-top: 35px; }
       .main-wrapper .img-outer-wrap .img-wrapper .img-leng {
         height: auto;
-        padding: 19px;
-        opacity: 0.8;
-        transition: all 1s ease; }
+        padding: 15px;
+        opacity: 0.6;
+        transition: all 0.6s ease; }
         .main-wrapper .img-outer-wrap .img-wrapper .img-leng img {
           height: auto;
           width: 128px;
@@ -210,9 +210,12 @@ Home Page
       transform-style: preserve-3d; }
       .main-wrapper .outer-wrap .wrap .dot1-wrap {
         position: absolute;
-        bottom: 50px;
-        left: -50px;
-        animation: dotMove 2s ease-in-out infinite; }
+        animation: dotMove 4s cubic-bezier(0.24, 0.07, 0.45, 0.82) infinite;
+        transform: translate3d(39px, 10px, 0px); }
+      .main-wrapper .outer-wrap .wrap .dot2-wrap {
+        position: absolute;
+        transform: translate3d(591px, 467px, 0px);
+        animation: dotMove2 4s cubic-bezier(0.24, 0.07, 0.45, 0.82) infinite; }
       .main-wrapper .outer-wrap .wrap .flip-front {
         height: 100%;
         width: 100%;
@@ -268,7 +271,7 @@ Home Page
             .main-wrapper .outer-wrap .wrap .flip-front .inner-wrap .item .content {
               font-family: "varela Round";
               font-size: 14.5px;
-              line-height: 20px;
+              line-height: 28px;
               direction: rtl;
               margin: 2px 74px 18px 23px; }
             .main-wrapper .outer-wrap .wrap .flip-front .inner-wrap .item:hover .title-wrap .plus {
@@ -455,7 +458,13 @@ KeyFrames
 
 /* <<<<<< dot move >>>>>> */
 @keyframes dotMove {
+  from { }
   50% {
-    bottom: 50px; }
-  to {
-    left: -50px; } }
+    transform: translate3d(-9px, 71px, 70px); }
+  to { } }
+
+@keyframes dotMove2 {
+  from { }
+  50% {
+    transform: translate3d(620px, 418px, 0px); }
+  to { } }
