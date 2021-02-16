@@ -1,0 +1,43 @@
+main {
+    background-size: 22px, 100%;
+    background-image: url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/dot-careers1.svg),
+        linear-gradient(180deg, #f5f5f5, #fff 100%);
+    background-size: 22px, 100%;
+    padding: 90px 0px;
+}
+
+.main-syllabus {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 85px;
+    display: flex;
+    justify-content: center;
+    .wrapper {
+        width: 1500px;
+        flex-direction: column;
+        .row-wrap {
+            width: 846px;
+            height: 351px;
+            border-radius: 0.75rem;
+            background: #f9f9f9;
+            box-shadow: 6px 0px 22px 8px rgba(0, 0, 0, 0.047);
+            margin-top: 63px;
+            display: flex;
+            align-items: center;
+            .img-wrap {
+                margin-left: 70px;
+                img {
+                    height: auto;
+                    width: 290px;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
