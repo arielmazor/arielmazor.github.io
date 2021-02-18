@@ -31,17 +31,22 @@ nav {
     justify-content: flex-end;
     a {
         text-decoration: none;
+        height: 100%;
+        .About {
+            margin-right: 12px;
+        }
         div {
-            width: 81px;
-            margin-left: 30px;
+            margin-right: 48px;
             font-family: "Varela Round";
             font-size: 16px;
             color: #333333;
             cursor: pointer;
+            height: 36px;
         }
         div.active {
-            font-weight: 500;
             font-size: 17px;
+            border-bottom: 1px solid #00b1a2;
+            padding: 0px 7px;
         }
     }
 }
@@ -256,7 +261,7 @@ Home Page
             }
             .dot2-wrap {
                 position: absolute;
-                transform: translate3d(591px, 467px, 0px);
+                transform: translate3d(601px, 467px, 0px);
                 animation: dotMove2 4s cubic-bezier(0.24, 0.07, 0.45, 0.82) infinite;
             }
             .flip-front {
@@ -577,7 +582,7 @@ KeyFrames
     from {
     }
     50% {
-        transform: translate3d(620px, 418px, 0px);
+        transform: translate3d(630px, 418px, 0px);
     }
     to {
     }
