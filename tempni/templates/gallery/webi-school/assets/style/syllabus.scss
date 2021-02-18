@@ -6,7 +6,6 @@ main {
 }
 
 .home-page {
-    padding-top: 0px;
     .wrapper {
         width: 1105px;
         justify-content: flex-start;
@@ -97,7 +96,7 @@ main {
     box-sizing: border-box;
     .inner-wrap {
         height: auto;
-        width: 1000px;
+        width: 930px;
         position: relative;
         .row {
             width: 100%;
@@ -109,12 +108,45 @@ main {
             box-shadow: 1px 5px 50px 1px rgba(0, 0, 0, 0.068);
             box-sizing: border-box;
             padding: 50px;
+            display: flex;
             .img-wrap {
-                width: 327px;
+                width: 703px;
                 height: 100%;
                 img {
-                    height: auto;
-                    width: 327px;
+                    height: 170px;
+                    width: auto;
+                    opacity: 0.6;
+                    transition: 0.4s ease-in-out;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+            .inner-wrap {
+                display: flex;
+                flex-direction: column;
+                .wrap {
+                    flex: 1;
+                    display: flex;
+                    padding: 12px 0;
+                    .img {
+                        height: auto;
+                        width: 18px;
+                        background: transparent;
+                        border-radius: 50%;
+                        cursor: pointer;
+                        transition: 0.1s ease-in-out;
+                        margin-right: 20px;
+                        margin-left: 25px;
+                    }
+                    .title {
+                        font-size: 18px;
+                        color: #000000;
+                        font-weight: 500;
+                        margin: 0;
+                        flex: 1;
+                        display: flex;
+                    }
                 }
             }
         }
