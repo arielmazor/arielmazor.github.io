@@ -77,11 +77,11 @@
   .home-page .wrapper .outer-wrap .titles-wrap h2 {
     width: 80%; }
   .home-page .wrapper .outer-wrap .img-wrap {
-    width: 344px; } }
+    width: 69%; } }
 
 @media screen and (max-width: 485px) {
   .home-page .wrapper .outer-wrap .titles-wrap h2 {
-    font-size: 14px;
+    width: 74%;
     line-height: 23px; }
   .home-page .wrapper .outer-wrap .img-wrap {
     width: 302px; } }

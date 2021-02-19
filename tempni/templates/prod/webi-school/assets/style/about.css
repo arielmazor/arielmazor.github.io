@@ -1,0 +1,25 @@
+.home-page {
+  display: flex;
+  justify-content: center; }
+  .home-page .wrapper {
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+    padding-top: 100px; }
+    .home-page .wrapper svg#img {
+      transform: rotate(90deg);
+      margin-bottom: 130px;
+      cursor: pointer;
+      transition: ease-in-out all 0.3s;
+      padding: 12px; }
+      .home-page .wrapper svg#img:hover {
+        margin-bottom: 115px; }
+    .home-page .wrapper .img-wrap {
+      height: auto;
+      width: auto;
+      flex: 1;
+      flex-direction: column;
+      margin-top: 36px; }
+      .home-page .wrapper .img-wrap img {
+        height: auto;
+        width: 356px; }
