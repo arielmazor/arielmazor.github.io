@@ -27,13 +27,13 @@ nav {
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 0 50px;
+    padding: 0 10px;
     justify-content: flex-end;
     a {
         text-decoration: none;
         height: 100%;
-        .About {
-            margin-right: 12px;
+        .syllabus {
+            // margin-right: 12px;
         }
         div {
             margin-right: 48px;
@@ -44,7 +44,6 @@ nav {
             height: 36px;
         }
         div.active {
-            font-size: 17px;
             border-bottom: 1px solid #00b1a2;
             padding: 0px 7px;
         }
