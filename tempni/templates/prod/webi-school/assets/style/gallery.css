@@ -20,12 +20,14 @@
   .owl-item li .img-wrap {
     height: 100%;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    padding: 0 42px 0 25px;
+    box-sizing: border-box; }
     .owl-item li .img-wrap img {
       background-repeat: no-repeat;
       height: auto;
       animation: float 4s ease infinite;
-      width: 62%; }
+      width: 78%; }
   .owl-item li .text-wrap {
     flex-direction: column;
     flex: 1;
@@ -53,7 +55,8 @@
     .owl-item li .text-wrap .personal-info {
       display: flex;
       justify-content: flex-end;
-      align-items: center; }
+      align-items: center;
+      margin-right: 18px; }
       .owl-item li .text-wrap .personal-info h1,
       .owl-item li .text-wrap .personal-info h2 {
         direction: rtl;

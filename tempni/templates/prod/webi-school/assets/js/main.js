@@ -29,6 +29,12 @@ function suggest(num, item) {
     $(`.star - wrapper.star${num}`).addClass("active");
 }
 
+$(`svg#img`).on('click', () => {
+    $("html, body").animate({
+        scrollTop: 906
+    }, "slow");
+})
+
 // $(document).on('scroll', function () {
 
 //     if ($(window).scrollTop() >= $('.what-i-teach').position().top - 1000) {

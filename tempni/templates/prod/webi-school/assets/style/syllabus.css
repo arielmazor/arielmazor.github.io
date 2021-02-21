@@ -101,7 +101,7 @@ main {
         justify-content: center; }
         .main-outer-wrap .inner-wrap .row .inner-wrap .wrap {
           display: flex;
-          height: 54px;
+          height: 50px;
           align-items: center; }
           .main-outer-wrap .inner-wrap .row .inner-wrap .wrap .img {
             height: auto;
