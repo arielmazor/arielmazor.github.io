@@ -65,12 +65,18 @@
   background-size: 22px, 100%;
   background-image: url(https://www.edgify.ai/wp-content/themes/edgifyai/dist/assets/img/dot-careers1.svg), linear-gradient(180deg, #f5f5f5, #fff 100%);
   background-size: 22px, 100%;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-top: -54px; }
   .main-outer-wrap .inner-wrap {
     padding-top: 0;
     padding: 100px;
+    padding-top: 0;
     width: 38%;
-    position: relative; }
+    position: relative;
+    flex-direction: column; }
+    .main-outer-wrap .inner-wrap .title {
+      color: #e63778;
+      margin-bottom: 60px; }
     .main-outer-wrap .inner-wrap .row {
       height: 465px;
       width: 100%;
@@ -81,8 +87,18 @@
       .main-outer-wrap .inner-wrap .row .shape {
         position: absolute; }
         .main-outer-wrap .inner-wrap .row .shape#shape1 {
-          top: -28px;
-          right: -28px; }
+          top: -21px;
+          right: -21px; }
         .main-outer-wrap .inner-wrap .row .shape#shape2 {
-          bottom: -28px;
-          left: -28px; }
+          bottom: -21px;
+          left: -21px; }
+      .main-outer-wrap .inner-wrap .row .content {
+        flex-direction: column;
+        color: #646566;
+        font-family: "varela round";
+        font-weight: 400;
+        text-align: center;
+        width: 65%;
+        direction: rtl;
+        line-height: 40px;
+        font-size: 19px; }

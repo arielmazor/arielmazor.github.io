@@ -78,11 +78,18 @@
         linear-gradient(180deg, #f5f5f5, #fff 100%);
     background-size: 22px, 100%;
     flex-direction: column;
+    margin-top: -54px;
     .inner-wrap {
         padding-top: 0;
         padding: 100px;
+        padding-top: 0;
         width: 38%;
         position: relative;
+        flex-direction: column;
+        .title {
+            color: #e63778;
+            margin-bottom: 60px;
+        }
         .row {
             height: 465px;
             width: 100%;
@@ -93,13 +100,24 @@
             .shape {
                 position: absolute;
                 &#shape1 {
-                    top: -28px;
-                    right: -28px;
+                    top: -21px;
+                    right: -21px;
                 }
                 &#shape2 {
-                    bottom: -28px;
-                    left: -28px;
+                    bottom: -21px;
+                    left: -21px;
                 }
+            }
+            .content {
+                flex-direction: column;
+                color: #646566;
+                font-family: "varela round";
+                font-weight: 400;
+                text-align: center;
+                width: 65%;
+                direction: rtl;
+                line-height: 40px;
+                font-size: 19px;
             }
         }
     }
