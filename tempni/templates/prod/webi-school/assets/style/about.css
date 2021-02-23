@@ -5,8 +5,7 @@
     flex-direction: column;
     justify-content: normal;
     align-items: center;
-    margin-top: -45px;
-    height: 85%; }
+    margin-top: 8px; }
     .home-page .wrapper svg#img {
       transform: rotate(90deg);
       margin-bottom: 48px;
@@ -38,7 +37,7 @@
         width: 100%;
         margin: -35px 0px 0px 0;
         max-width: 426px; }
-        .home-page .wrapper .inner-wrap .socials a {
+        .home-page .wrapper .inner-wrap .socials .wrap {
           margin: 0 15px;
           margin-top: 14px; }
       .home-page .wrapper .inner-wrap .img-wrap {
@@ -46,10 +45,40 @@
         width: auto;
         flex: 1;
         flex-direction: column;
-        margin-top: 159px; }
+        margin-top: 159px;
+        position: relative; }
         .home-page .wrapper .inner-wrap .img-wrap img {
           height: auto;
           width: 316px; }
+        .home-page .wrapper .inner-wrap .img-wrap .pop-up-wrap {
+          position: absolute;
+          height: 118px;
+          background: #6a91f3;
+          width: 165px;
+          border-radius: 25px;
+          right: -147px;
+          top: -57px;
+          transform: rotate(4deg);
+          animation: grow 5s ease-out infinite; }
+          .home-page .wrapper .inner-wrap .img-wrap .pop-up-wrap .txt {
+            color: white;
+            font-family: "varela Round";
+            direction: rtl;
+            height: 118px;
+            width: 165px;
+            text-align: center;
+            font-size: 20px;
+            line-height: 29px; }
+          .home-page .wrapper .inner-wrap .img-wrap .pop-up-wrap::before {
+            content: "";
+            background: #6a91f3;
+            bottom: -84px;
+            position: absolute;
+            height: 100px;
+            left: -20px;
+            clip-path: polygon(26% 0, 26% 51%, 52% 0);
+            width: 200px;
+            transform: rotate(12deg); }
       .home-page .wrapper .inner-wrap .title {
         flex: 1;
         font-size: 48px;
@@ -102,3 +131,34 @@
         direction: rtl;
         line-height: 40px;
         font-size: 19px; }
+
+@keyframes grow {
+  from {
+    transform-origin: bottom left;
+    transform: scale(0.1); }
+  20% {
+    transform-origin: bottom left;
+    transform: scale(1); }
+  90% {
+    transform-origin: bottom left;
+    transform: scale(1); }
+  100% {
+    transform-origin: bottom left;
+    transform: scale(0); } }
+
+@keyframes shake {
+  0% {
+    transform-origin: center;
+    transform: rotate(0deg); }
+  80% {
+    transform-origin: center;
+    transform: rotate(0deg); }
+  85% {
+    transform-origin: center;
+    transform: rotate(4deg); }
+  95% {
+    transform-origin: center;
+    transform: rotate(-4deg); }
+  100% {
+    transform-origin: center;
+    transform: rotate(0deg); } }

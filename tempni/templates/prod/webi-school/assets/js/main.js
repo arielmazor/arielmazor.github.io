@@ -35,6 +35,28 @@ $(`svg#img`).on('click', () => {
     }, "slow");
 })
 
+function socials() {
+    $(`.socials .wrap`).removeClass("active");
+    $(`.socials .wrap#email`).addClass("active")
+    setTimeout(function () {
+        $(`.socials .wrap#email .content`).on('click', () => {
+            var copyText = document.getElementById("email");
+            $(`.socials .wrap#email .content`).text("Copied to Your clipboard");
+        })
+    }, 0)
+}
+
+function copyToClipboard(element) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+    setTimeout(() => {
+        $(`.socials .wrap#email`).removeClass("active");
+    }, 500)
+}
+
 // $(document).on('scroll', function () {
 
 //     if ($(window).scrollTop() >= $('.what-i-teach').position().top - 1000) {

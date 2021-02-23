@@ -84,11 +84,48 @@ main {
     bottom: 50px;
     flex-direction: column;
     margin-left: 50px;
-    width: 70px;
-    img {
+    width: 400px;
+    .wrap {
         width: 40px;
-        height: auto;
-        margin-bottom: 8px;
+        height: 40px;
+        max-width: 229px;
+        transition: all 0.3s ease-in;
+        display: flex;
+        background: #ffca54;
+        border-radius: 25px;
+        cursor: pointer;
+        margin-bottom: 12px;
+        img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 8px;
+            position: relative;
+            z-index: 1;
+        }
+        .content {
+            flex: 1;
+            height: 100%;
+            font-size: 15px;
+            font-family: "varela Round";
+            align-items: center;
+            opacity: 0;
+            display: flex;
+            transition: all 0.4s ease-in-out;
+            overflow: hidden;
+        }
+        &.active {
+            width: 100%;
+            .content {
+                opacity: 1;
+                width: 100%;
+            }
+        }
+        &.discord {
+            background: #f436b6;
+        }
+        &.twitter {
+            background: #6a91f3;
+        }
     }
 }
 
