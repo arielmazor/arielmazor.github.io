@@ -111,6 +111,7 @@ main {
             opacity: 0;
             display: flex;
             transition: all 0.4s ease-in-out;
+            white-space: nowrap;
             overflow: hidden;
         }
         &.active {

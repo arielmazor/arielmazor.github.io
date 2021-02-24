@@ -55,7 +55,17 @@ function copyToClipboard(element) {
     setTimeout(() => {
         $(`.socials .wrap#email`).removeClass("active");
     }, 500)
+    setTimeout(() => {
+        $(`.socials .wrap#email .content`).text("WebySchool@gmail.com");
+    }, 1000)
 }
+
+$(document).click(function (event) {
+    var $target = $(event.target);
+    if (!$target.closest('#email').length && $('#email').hasClass("active")) {
+        $(`.socials .wrap#email`).removeClass("active");
+    }
+});
 
 // $(document).on('scroll', function () {
 
