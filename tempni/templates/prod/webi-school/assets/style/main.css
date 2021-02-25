@@ -49,6 +49,87 @@ nav {
   width: 100%;
   cursor: pointer; }
 
+/*--------------------------------------------------*/
+header {
+  width: 100%;
+  background: #ffffff;
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 1px solid #dddddd; }
+
+/* ANIMATION */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.menu-btn {
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out; }
+
+.menu-btn__burger {
+  width: 22px;
+  height: 3px;
+  background: #00b9a9;
+  border-radius: 5px;
+  justify-content: flex-end;
+  transition: all 0.5s ease-in-out; }
+  .menu-btn__burger::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 3px;
+    background: #00b9a9;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-9px); }
+  .menu-btn__burger::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 3px;
+    background: #00b9a9;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(9px); }
+
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none; }
+  .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px); }
+  .menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px); }
+
+.menu-wrap {
+  height: 0;
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  top: 90px;
+  transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  left: 0;
+  background: white; }
+  .menu-wrap.open {
+    height: 197px;
+    opacity: 1; }
+  .menu-wrap div {
+    height: 51px;
+    direction: rtl;
+    padding: 0px 39px;
+    font-family: "Varela Round";
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box; }
+
 /*--------------------------------------------------
 Main
 --------------------------------------------------*/
@@ -201,7 +282,8 @@ Home Page
       display: flex;
       flex-direction: column;
       height: 480px;
-      width: 100%; }
+      width: 100%;
+      position: relative; }
       .main-wrapper .img-outer-wrap .img-wrapper .line {
         display: flex; }
       .main-wrapper .img-outer-wrap .img-wrapper #line2 {
@@ -217,8 +299,6 @@ Home Page
           transition: all 3s ease;
           margin-top: 60px;
           animation: float 4s ease infinite; }
-        .main-wrapper .img-outer-wrap .img-wrapper .img-leng .git {
-          width: 117px; }
         .main-wrapper .img-outer-wrap .img-wrapper .img-leng .fade-in-up {
           margin-top: 0 !important; }
       .main-wrapper .img-outer-wrap .img-wrapper .img-leng:hover {

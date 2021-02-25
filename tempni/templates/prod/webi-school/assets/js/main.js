@@ -73,6 +73,20 @@ $(document).click(function (event) {
 //         $(".img-leng img").addClass("fade-in-up");
 //     }
 // })
+let _menuOpen = false;
+
+function menuOpen() {
+    if (!_menuOpen) {
+        $(".menu-btn").addClass('open');
+        $(`.menu-wrap`).addClass('open');
+        _menuOpen = true;
+    } else {
+        $(".menu-btn").removeClass('open');
+        $(`.menu-wrap`).removeClass('open');
+        _menuOpen = false;
+    }
+}
+
 
 $(document).ready(function () {
     $(`.sugg - wrap.i1`).addClass('_active');
