@@ -65,6 +65,14 @@ $(document).click(function (event) {
     if (!$target.closest('#email').length && $('#email').hasClass("active")) {
         $(`.socials .wrap#email`).removeClass("active");
     }
+    if (!$target.closest('nav').length && $('.menu-wrap').hasClass("open")) {
+        menuOpen();
+    }
+    // if (!$target.closest('.menu-wrap').length && $('.menu-wrap').hasClass("open")) {
+    //     $('.menu-wrap').removeClass("open");
+    //     $('.menu-btn').removeClass("open");
+
+    // }
 });
 
 // $(document).on('scroll', function () {
