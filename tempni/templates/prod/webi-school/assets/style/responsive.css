@@ -85,7 +85,9 @@
     .home-page .wrapper .outer-wrap .titles-wrap .main-title-wrap div {
       font-size: 45px; }
   .home-page .wrapper .outer-wrap .titles-wrap h2 {
-    line-height: 25px; } }
+    line-height: 25px; }
+  .main-wrapper .outer-wrap .wrap {
+    width: 100%; } }
 
 @media screen and (max-width: 591px) {
   .home-page .wrapper .outer-wrap .titles-wrap h1 {

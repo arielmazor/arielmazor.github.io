@@ -148,6 +148,13 @@
             }
         }
     }
+    .main-wrapper {
+        .outer-wrap {
+            .wrap {
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 591px) {
