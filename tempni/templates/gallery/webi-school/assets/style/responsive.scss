@@ -120,6 +120,12 @@
             }
         }
     }
+    .socials.first {
+        opacity: 0;
+    }
+    .git {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 859px) {

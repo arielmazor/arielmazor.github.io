@@ -70,7 +70,11 @@
     .recommendation .wrapper .row-wrap {
       width: 100%; }
   .owl-item li .img-wrap {
-    padding: 0 0 0 25px; } }
+    padding: 0 0 0 25px; }
+  .socials.first {
+    opacity: 0; }
+  .git {
+    display: none; } }
 
 @media screen and (max-width: 859px) {
   .main-wrapper .img-outer-wrap .img-wrapper {

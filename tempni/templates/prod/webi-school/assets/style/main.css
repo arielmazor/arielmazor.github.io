@@ -535,7 +535,7 @@ footer {
   top: 200px;
   transition: 1s ease-in;
   box-shadow: 0px 0px 42px #0000000d;
-  animation: pop-up 3s ease-in-out infinite;
+  animation: pop-up 3s ease-in-out;
   direction: rtl;
   font-family: "varela round";
   font-weight: 500;
