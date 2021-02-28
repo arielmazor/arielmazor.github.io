@@ -37,7 +37,11 @@ $(`svg#img`).on('click', () => {
 
 function socials() {
     $(`.socials .wrap`).removeClass("active");
-    $(`.socials .wrap#email`).addClass("active")
+    if (!$(`.socials.first`).hasClass("hidden")) {
+        $(`.socials .wrap#email`).addClass("active")
+    } else {
+        $(`.socials.menu .wrap#email`).addClass("active")
+    }
     setTimeout(function () {
         $(`.socials .wrap#email .content`).on('click', () => {
             var copyText = document.getElementById("email");
@@ -87,10 +91,12 @@ function menuOpen() {
     if (!_menuOpen) {
         $(".menu-btn").addClass('open');
         $(`.menu-wrap`).addClass('open');
+        $(`.first.socials`).addClass("hidden");
         _menuOpen = true;
     } else {
         $(".menu-btn").removeClass('open');
         $(`.menu-wrap`).removeClass('open');
+        $(`.first.socials`).removeClass("hidden");
         _menuOpen = false;
     }
 }

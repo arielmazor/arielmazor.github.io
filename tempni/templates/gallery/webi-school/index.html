@@ -39,14 +39,30 @@
                 <div class="menu-btn__burger"></div>
             </div>
             <div class="menu-wrap">
-                <div>בית</div>
-                <div>תוכנית הלימודים</div>
-                <div>קצת עלי</div>
+                <div class="wrap">
+                    <div class="menu-title">בית</div>
+                    <div class="menu-title">תוכנית הלימודים</div>
+                    <div class="menu-title">קצת עלי</div>
+                    <div class="socials menu">
+                        <div id="email" onclick="socials(1)" class="wrap email">
+                            <img src="./assets/img/email.svg" alt="" c>
+                            <div onclick="copyToClipboard('.socials.first .wrap.email .content')" class="content">
+                                WebySchool@gmail.com
+                            </div>
+                        </div>
+                        <a target="blank" href="https://discord.gg/UJDaZhwuZT" class="wrap discord">
+                            <img src="./assets/img/discord.svg" alt="">
+                        </a>
+                        <a target="blank" href="#" class="wrap twitter">
+                            <img src="./assets/img/twitter.svg" alt="">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
     <main class="main">
-        <div class="socials">
+        <div class="first socials">
             <div id="email" onclick="socials(1)" class="wrap email">
                 <img src="./assets/img/email.svg" alt="" c>
                 <div onclick="copyToClipboard('.wrap.email .content')" class="content">WebySchool@gmail.com</div>

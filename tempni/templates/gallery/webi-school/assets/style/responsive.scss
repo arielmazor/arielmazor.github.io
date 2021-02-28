@@ -59,6 +59,7 @@
     nav {
         .wrapper {
             padding: 0 32px;
+            padding-right: 6px;
             .bar-link-wrap {
                 display: none;
             }
@@ -103,6 +104,22 @@
             }
         }
     }
+    .recommendation {
+        padding-right: 0;
+        padding-left: 0;
+        .wrapper {
+            .row-wrap {
+                width: 100%;
+            }
+        }
+    }
+    .owl-item {
+        li {
+            .img-wrap {
+                padding: 0 0 0 25px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 859px) {
@@ -124,6 +141,78 @@
         }
     }
 }
+@media screen and(max-width:672px) {
+    .recommendation {
+        .wrapper {
+            .row-wrap {
+                width: 387px;
+                height: 469px;
+            }
+        }
+    }
+    .owl-item {
+        li {
+            flex-direction: column;
+            height: 469px;
+            .img-wrap {
+                width: 100%;
+                padding: 0;
+                height: auto;
+                margin-bottom: 45px;
+                img {
+                    width: 38%;
+                }
+            }
+            .text-wrap {
+                margin: 0;
+                height: 23px;
+                margin-top: 35px;
+                justify-content: flex-start;
+                .content {
+                    h1.title {
+                        width: 100%;
+                        height: auto;
+                        text-align: center;
+                        line-height: 38px;
+                        font-size: 1.65rem;
+                        strong {
+                            font-size: 1.75rem;
+                        }
+                    }
+                }
+                .personal-info {
+                    margin-top: 20px;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 688px) {
+    .main-wrapper {
+        .outer-wrap {
+            width: 100%;
+            .wrap {
+                width: 100%;
+                .dot1-wrap {
+                    display: none;
+                }
+                .dot2-wrap {
+                    display: none;
+                }
+                .flip-front {
+                    width: 100%;
+                    border-radius: 0;
+                }
+                .flip-back {
+                    width: 100%;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 640px) {
     .socials {
         margin-left: 27px;
@@ -195,6 +284,69 @@
                 }
                 .img-wrap {
                     width: 302px;
+                }
+            }
+        }
+    }
+    .main-wrapper {
+        .outer-wrap {
+            .wrap {
+                .flip-front {
+                    .inner-wrap {
+                        width: 100%;
+                        .item {
+                            width: 100%;
+                            .title-wrap {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 436px) {
+    .main-wrapper {
+        .outer-wrap {
+            .wrap {
+                height: 100%;
+                .flip-back {
+                    .title {
+                        margin-top: 94px;
+                    }
+                }
+            }
+        }
+    }
+    .recommendation {
+        .wrapper {
+            .row-wrap {
+                width: 100%;
+            }
+        }
+    }
+    .owl-item {
+        li {
+            width: 100%;
+        }
+    }
+    footer {
+        h1 {
+            font-size: 13px;
+        }
+    }
+}
+
+@media screen and(max-width:324px) {
+    .owl-item {
+        li {
+            .text-wrap {
+                .personal-info {
+                    h1 {
+                        font-size: 14px;
+                        margin-left: 3px;
+                    }
                 }
             }
         }

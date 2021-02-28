@@ -8,7 +8,7 @@ function initTestimonials() {
       itemsScaleUp: true,
       slideSpeed: 500,
       // autoPlay: 3500,
-      autoPlay: 5100,
+      autoPlay: 500100,
       stopOnHover: true,
       dots: true,
       mouseDrag: false,
