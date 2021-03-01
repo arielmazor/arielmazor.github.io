@@ -20,7 +20,7 @@
             flex-direction: column;
             flex: 1;
             width: 100%;
-            justify-content: space-between;
+            justify-content: center;
             .divider {
                 margin-top: 55px;
             }
@@ -34,24 +34,11 @@
                 height: 1px;
                 background-image: linear-gradient(to right, transparent, #333333, transparent);
             }
-            .socials {
-                display: flex;
-                flex-direction: row;
-                position: static;
-                width: 100%;
-                margin: -35px 0px 0px 0;
-                max-width: 426px;
-                .wrap {
-                    margin: 0 15px;
-                    margin-top: 14px;
-                }
-            }
+
             .img-wrap {
                 height: auto;
                 width: auto;
-                flex: 1;
                 flex-direction: column;
-                margin-top: 159px;
                 position: relative;
                 img {
                     height: auto;
@@ -92,11 +79,18 @@
                     }
                 }
             }
-            .title {
-                flex: 1;
-                font-size: 48px;
-                margin-top: 25px;
-                color: #e63778;
+            .socials {
+                display: flex;
+                flex-direction: row;
+                position: static;
+                width: 100%;
+                max-width: 426px;
+                justify-content: center;
+                margin-left: 0;
+                .wrap {
+                    margin: 0 15px;
+                    margin-top: 14px;
+                }
             }
         }
     }
@@ -113,6 +107,13 @@
     background-size: 22px, 100%;
     flex-direction: column;
     margin-top: -54px;
+    .title {
+        flex: 1;
+        font-size: 48px;
+        margin-top: -32px;
+        margin-bottom: 70px;
+        color: #e63778;
+    }
     .inner-wrap {
         padding-top: 0;
         padding: 100px;
@@ -120,16 +121,13 @@
         width: 749px;
         position: relative;
         flex-direction: column;
-        .title {
-            color: #e63778;
-            margin-bottom: 60px;
-        }
+
         .row {
             height: 465px;
             width: 100%;
             background: rgba(255, 255, 255, 0.603);
             border-radius: 15px;
-            box-shadow: 6px 0px 22px 8px rgba(0, 0, 0, 0.009);
+            box-shadow: 6px 0px 22px 8px rgba(0, 0, 0, 0.11);
             position: relative;
             .shape {
                 position: absolute;
