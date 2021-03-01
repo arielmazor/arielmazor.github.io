@@ -37,23 +37,21 @@
         position: relative; }
         .home-page .wrapper .inner-wrap .img-wrap img {
           height: auto;
-          width: 316px; }
+          width: 438px; }
         .home-page .wrapper .inner-wrap .img-wrap .pop-up-wrap {
           position: absolute;
-          height: 118px;
+          height: 108px;
           background: #6a91f3;
-          width: 165px;
+          width: 151px;
           border-radius: 25px;
-          right: -147px;
-          top: -57px;
+          right: -85px;
+          top: -41px;
           transform: rotate(4deg);
           animation: grow 5s ease-out infinite; }
           .home-page .wrapper .inner-wrap .img-wrap .pop-up-wrap .txt {
             color: white;
             font-family: "varela Round";
             direction: rtl;
-            height: 118px;
-            width: 165px;
             text-align: center;
             font-size: 21px;
             line-height: 29px; }
