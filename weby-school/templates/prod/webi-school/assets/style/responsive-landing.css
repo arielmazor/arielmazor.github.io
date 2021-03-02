@@ -64,6 +64,8 @@
           text-align: center;
           height: auto;
           margin-bottom: 46px; }
+  .main-wrapper .outer-wrap {
+    height: 544px; }
   .recommendation {
     padding-right: 0;
     padding-left: 0; }
@@ -169,7 +171,7 @@
   .home-page .wrapper .outer-wrap .img-wrap {
     width: 302px; }
   .main-wrapper .outer-wrap .wrap .flip-front .inner-wrap {
-    width: 100%; }
+    width: 82%; }
     .main-wrapper .outer-wrap .wrap .flip-front .inner-wrap .item {
       width: 100%; }
       .main-wrapper .outer-wrap .wrap .flip-front .inner-wrap .item .title-wrap {

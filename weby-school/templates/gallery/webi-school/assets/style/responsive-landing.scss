@@ -104,6 +104,11 @@
             }
         }
     }
+    .main-wrapper {
+        .outer-wrap {
+            height: 544px;
+        }
+    }
     .recommendation {
         padding-right: 0;
         padding-left: 0;
@@ -299,7 +304,7 @@
             .wrap {
                 .flip-front {
                     .inner-wrap {
-                        width: 100%;
+                        width: 82%;
                         .item {
                             width: 100%;
                             .title-wrap {
