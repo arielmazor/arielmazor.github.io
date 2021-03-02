@@ -313,7 +313,7 @@ Home Page
         color: #232132;
         height: 240px;
         width: 346px;
-        line-height: 28px;
+        line-height: 31px;
     }
 }
 /*--------------------------------------------------*/
@@ -374,6 +374,9 @@ Home Page
                     transition: all 3s ease;
                     margin-top: 60px;
                     animation: float 4s ease infinite;
+                    &.scratch {
+                        width: 150px;
+                    }
                 }
                 .fade-in-up {
                     margin-top: 0 !important;

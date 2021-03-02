@@ -267,7 +267,7 @@ Home Page
     color: #232132;
     height: 240px;
     width: 346px;
-    line-height: 28px; }
+    line-height: 31px; }
 
 /*--------------------------------------------------*/
 .main-title-wrap {
@@ -321,6 +321,8 @@ Home Page
           transition: all 3s ease;
           margin-top: 60px;
           animation: float 4s ease infinite; }
+          .main-wrapper .img-outer-wrap .img-wrapper .img-leng img.scratch {
+            width: 150px; }
         .main-wrapper .img-outer-wrap .img-wrapper .img-leng .fade-in-up {
           margin-top: 0 !important; }
       .main-wrapper .img-outer-wrap .img-wrapper .img-leng:hover {

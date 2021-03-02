@@ -34,7 +34,8 @@
         height: auto;
         width: auto;
         flex-direction: column;
-        position: relative; }
+        position: relative;
+        margin-top: 55px; }
         .home-page .wrapper .inner-wrap .img-wrap img {
           height: auto;
           width: 438px; }
@@ -74,7 +75,8 @@
         border-radius: 25px;
         background: #ffca54;
         direction: rtl;
-        font-weight: 400;
+        font-weight: 600;
+        margin-top: 22px;
         font-size: 16px;
         font-family: "varela Round"; }
 
@@ -89,21 +91,17 @@
   background-size: 22px, 100%;
   flex-direction: column;
   margin-top: -54px; }
-  .main-outer-wrap .title {
-    flex: 1;
-    font-size: 48px;
-    margin-top: -32px;
-    margin-bottom: 70px;
-    color: #e63778; }
   .main-outer-wrap .inner-wrap {
     padding-top: 0;
     padding: 100px;
     padding-top: 0;
-    width: 749px;
+    width: 100%;
+    overflow: hidden;
+    max-width: 683px;
     position: relative;
     flex-direction: column; }
     .main-outer-wrap .inner-wrap .row {
-      height: 465px;
+      height: 414px;
       width: 100%;
       background: rgba(255, 255, 255, 0.603);
       border-radius: 15px;
