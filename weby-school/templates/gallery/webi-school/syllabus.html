@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="./assets/style/type.css">
     <link rel="stylesheet" href="./assets/style/gallery.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="./assets/style/responsive.css">
     <link rel="stylesheet" href="./assets/style/syllabus.css">
+    <link rel="stylesheet" href="./assets/style/responsive-syllabus.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
@@ -29,16 +29,41 @@
                     <div class="About f-c">קצת עלי</div>
                 </a>
                 <a class="f-c" href="./syllabus.html">
-                    <div class="syllabus active f-c">תוכנית הלימודים</div>
+                    <div class="syllabus f-c">תוכנית הלימודים</div>
                 </a>
             </div>
             <a href="./index.html" class="logo f-c">
                 <img src="./assets/img/logo.svg" alt="">
             </a>
+            <span></span>
+            <div onclick="menuOpen()" class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+            <div class="menu-wrap">
+                <div class="wrap">
+                    <div class="menu-title">בית</div>
+                    <div class="menu-title">תוכנית הלימודים</div>
+                    <div class="menu-title">קצת עלי</div>
+                    <div class="socials menu">
+                        <div id="email" onclick="socials(1)" class="wrap email">
+                            <img src="./assets/img/email.svg" alt="" c>
+                            <div onclick="copyToClipboard('.socials.first .wrap.email .content')" class="content">
+                                WebySchool@gmail.com
+                            </div>
+                        </div>
+                        <a target="blank" href="https://discord.gg/UJDaZhwuZT" class="wrap discord">
+                            <img src="./assets/img/discord.svg" alt="">
+                        </a>
+                        <a target="blank" href="#" class="wrap twitter">
+                            <img src="./assets/img/twitter.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
     <main class="main">
-        <div class="socials">
+        <div class="socials first">
             <div id="email" onclick="socials(1)" class="wrap email">
                 <img src="./assets/img/email.svg" alt="" c>
                 <div onclick="copyToClipboard('.wrap.email .content')" class="content">WebySchool@gmail.com</div>
@@ -125,14 +150,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="img-wrap">
+                    <div class="img-wrap f-c">
                         <img src="./assets/img/artenpik-free-illustrations-38.svg" alt="" class="img">
                     </div>
                 </div>
             </div>
         </div>
         <div class="main-outer-wrap f-c">
-            <div class="inner-wrap">
+            <div class="main-inner-wrap">
                 <div class="row">
                     <div class="img-wrap f-c">
                         <img title="html & css" src="./assets/img/html&css.svg" alt="" class="img">

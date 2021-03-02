@@ -65,17 +65,18 @@
             clip-path: polygon(26% 0, 26% 51%, 52% 0);
             width: 200px;
             transform: rotate(12deg); }
-      .home-page .wrapper .inner-wrap .socials {
+      .home-page .wrapper .inner-wrap .name-title {
         display: flex;
-        flex-direction: row;
-        position: static;
+        height: 40px;
         width: 100%;
-        max-width: 426px;
+        max-width: 225px;
         justify-content: center;
-        margin-left: 0; }
-        .home-page .wrapper .inner-wrap .socials .wrap {
-          margin: 0 15px;
-          margin-top: 14px; }
+        border-radius: 25px;
+        background: #ffca54;
+        direction: rtl;
+        font-weight: 400;
+        font-size: 16px;
+        font-family: "varela Round"; }
 
 .main-outer-wrap {
   width: 100%;

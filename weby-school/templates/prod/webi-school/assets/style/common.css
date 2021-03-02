@@ -8,7 +8,8 @@ Header
 
 /*--------------------------------------------------*/
 body {
-  margin: 0; }
+  margin: 0;
+  background: white; }
 
 /*--------------------------------------------------*/
 .title {
@@ -19,3 +20,15 @@ body {
   font-family: "varela Round";
   direction: rtl;
   margin-bottom: 30px; }
+
+@media screen and (max-width: 1048px) {
+  nav .wrapper {
+    padding: 0 32px;
+    padding-right: 6px; }
+    nav .wrapper .bar-link-wrap {
+      display: none; }
+    nav .wrapper span {
+      flex: 1;
+      height: 100%; }
+    nav .wrapper .menu-btn {
+      display: flex; } }

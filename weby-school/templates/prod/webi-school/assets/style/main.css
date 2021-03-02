@@ -140,7 +140,8 @@ header {
       width: 100%;
       position: static;
       padding: 0px 39px;
-      margin-top: 21px; }
+      margin-top: 21px;
+      box-sizing: border-box; }
       .menu-wrap .wrap .socials .wrap {
         margin-left: 12px;
         flex-direction: row; }

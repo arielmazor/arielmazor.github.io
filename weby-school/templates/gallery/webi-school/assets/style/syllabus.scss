@@ -15,14 +15,17 @@ main {
             color: #e63778;
             margin-top: 0;
             margin-bottom: 70px;
+            font-size: 36px;
         }
         .outer-wrap {
             .inner-wrap {
+                max-width: 421px;
+                width: 100%;
                 .item {
                     overflow: hidden;
                     height: auto;
                     border-bottom: 1px solid #dcdcdc;
-                    width: 421px;
+                    width: 100%;
                     cursor: pointer;
                     background: white;
                     .title-wrap {
@@ -94,9 +97,10 @@ main {
     flex-direction: column;
     padding: 50px;
     box-sizing: border-box;
-    .inner-wrap {
+    .main-inner-wrap {
         height: auto;
-        width: 931px;
+        width: 122%;
+        max-width: 931px;
         position: relative;
         .row {
             width: 100%;
@@ -109,8 +113,9 @@ main {
             box-sizing: border-box;
             padding: 0px 50px;
             display: flex;
+            justify-content: space-between;
             .img-wrap {
-                width: 703px;
+                width: 301px;
                 height: 100%;
                 img {
                     height: 170px;

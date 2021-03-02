@@ -77,18 +77,18 @@
                     }
                 }
             }
-            .socials {
+            .name-title {
                 display: flex;
-                flex-direction: row;
-                position: static;
+                height: 40px;
                 width: 100%;
-                max-width: 426px;
+                max-width: 225px;
                 justify-content: center;
-                margin-left: 0;
-                .wrap {
-                    margin: 0 15px;
-                    margin-top: 14px;
-                }
+                border-radius: 25px;
+                background: #ffca54;
+                direction: rtl;
+                font-weight: 400;
+                font-size: 16px;
+                font-family: "varela Round";
             }
         }
     }
